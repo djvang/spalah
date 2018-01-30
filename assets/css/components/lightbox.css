@@ -1,0 +1,150 @@
+.uk-icon {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+  font: inherit;
+  color: #c5c5c5;
+  text-transform: none;
+  background-color: transparent;
+  display: inline-block;
+  fill: currentcolor;
+  line-height: 0;
+}
+
+.uk-icon:focus,
+.uk-icon:hover {
+  outline: none;
+  color: var(--color-primary);
+}
+
+.uk-lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1010;
+  background: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  -webkit-transition: opacity .15s linear;
+  transition: opacity .15s linear
+}
+
+.uk-lightbox.uk-open {
+  display: block;
+  opacity: 1
+}
+
+.uk-lightbox-page {
+  overflow: hidden
+}
+
+.uk-lightbox-items > * {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  will-change: transform, opacity
+}
+
+.uk-lightbox-items > * > * {
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.uk-lightbox-items > * > :not(iframe) {
+  width: auto;
+  height: auto;
+}
+
+.uk-lightbox-items > .uk-active {
+  display: flex;
+}
+
+.uk-lightbox-toolbar {
+  padding: 10px 10px;
+  background: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.7)
+}
+
+.uk-lightbox-toolbar * {
+  color: rgba(255, 255, 255, 0.7);
+  stroke: currentcolor;
+  fill: currentcolor;
+}
+
+.uk-lightbox-toolbar-icon {
+  padding: 5px;
+  color: rgba(255, 255, 255, 0.7)
+}
+
+.uk-lightbox-toolbar-icon:hover {
+  color: #fff
+}
+
+.uk-lightbox-button {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.7);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center
+}
+
+.uk-lightbox-button:hover {
+  color: #fff
+}
+
+.uk-lightbox-iframe {
+  width: 80%;
+  height: 80%
+}
+
+.uk-lightbox-toolbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.uk-lightbox-toolbar.uk-position-top {
+  top: 0;
+}
+
+.uk-lightbox-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.uk-slidenav-previous {
+  left: 0;
+}
+
+.uk-slidenav-next {
+  right: 0;
+}
+
+.uk-lightbox-button * {
+  color: rgba(255, 255, 255, 0.7);
+  stroke: currentcolor;
+  fill: currentcolor;
+}
+
+.uk-lightbox-toolbar-icon {
+  float: right;
+  cursor: pointer;
+}
+
+.uk-lightbox-toolbar-icon:hover,
+.uk-lightbox-toolbar-icon:focus {
+  opacity: 0.8;
+}

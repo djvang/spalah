@@ -1,0 +1,17 @@
+.card-plan {
+  background-color: #fff;
+  padding-top: var(--base-line-height);
+  padding-bottom: var(--base-line-height);
+}
+
+.card-plan .card-foreground > :not(:last-child) {
+  margin-bottom: var(--base-line-height);
+}
+
+.card-plan .card-foreground > .card-footer {
+  padding-top: var(--base-line-height);
+}
+
+.card-plan .card-footer {
+  margin-top: auto;
+}

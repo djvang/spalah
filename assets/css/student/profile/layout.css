@@ -1,0 +1,9 @@
+.layout-profile-student {
+  grid-template-columns: repeat(8, 1fr);
+  grid-row-gap: calc(var(--base-line-height) * 9);
+  grid-template-areas: "a a b b b b b b ";
+}
+
+.layout-profile-student .layout-item:first-child {
+  margin-top: -288px;
+}

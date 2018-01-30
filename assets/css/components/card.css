@@ -1,0 +1,193 @@
+.card {
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.card[href],
+.card[href]:hover,
+.card[href]:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-block {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.card-block:not(:last-child) {
+  margin-bottom: var(--base-line-height);
+}
+
+.card-pattern,
+.card-overlay,
+.card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card-overlay {
+  opacity: 0.5;
+  transition: opacity 0.25s;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img,
+.card-background img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.card-foreground {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-heading {
+  padding-left: 18px;
+  position: relative;
+}
+
+.card-heading::before {
+  content: '';
+  border-left: 4px solid var(--color-primary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.card-label {
+  background-color: #fff;
+  display: inline-flex;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--base-color);
+}
+
+.card-info {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card-info:not(:last-child) {
+  margin-bottom: calc(var(--base-line-height) - 1px);
+}
+
+.card-info + .card-info {
+  border-top: 1px dashed rgba(0, 0, 0, 0.2);
+  padding-top: var(--base-line-height);
+}
+
+.card-info > li:not(:first-child) {
+  margin-top: calc(var(--base-line-height) * 0.5);
+}
+
+.card-info-item {
+  margin-bottom: 14px;
+}
+
+.card-info-title {
+  margin-right: 4px;
+  opacity: 0.5;
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.card-price-left {
+  margin-right: 10px;
+}
+
+.card-price-value {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.card-button {
+  width: 100%;
+  background-color: #55b9ac;
+  margin: 0;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+  font: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  font-size: 12px;
+  padding: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  min-height: calc(var(--base-line-height) * 2);
+}
+
+.card-button:hover,
+.card-button:focus,
+.card-button:active {
+  background-color: #58c1b4;
+  text-decoration: none;
+  color: #fff;
+}
+
+.card-hover {
+  transition: filter 0.25s;
+}
+
+.card-hover:hover,
+.card-hover:focus,
+.card-hover:active {
+  filter: drop-shadow(0 10px 10px rgba(47, 52, 69, 0.12));
+}
+
+.inverse.background-primary.card-hover:hover,
+.inverse.background-primary.card-hover:focus,
+.inverse.background-primary.card-hover:active {
+  filter: drop-shadow(0 20px 20px rgba(56, 173, 158, 0.3));
+}
+
+.inverse .card-header {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.inverse.inverse .card-title {
+  color: inherit;
+}
+
+.inverse .card-info + .card-info {
+  border-top-color: rgba(255, 255, 255, 0.2);
+}
+
+.inverse .card-heading::before {
+  border-color: currentcolor;
+}
+
+.inverse[href],
+.inverse[href]:hover,
+.inverse[href]:focus {
+  color: #fff;
+}

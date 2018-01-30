@@ -1,0 +1,13 @@
+.hero-profile-student {
+  min-height: calc(100vh - 590px);
+}
+
+.hero-profile-student .hero-body {
+  padding-bottom: 0;
+  align-items: flex-end;
+}
+
+.hero-profile-student .hero-content-body {
+  grid-column: 3 / 8;
+}
+

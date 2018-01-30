@@ -1,0 +1,170 @@
+.table-actions td {
+  vertical-align: middle;
+}
+
+.table-actions td:last-child {
+  padding-right: 0;
+}
+
+/* .table-program-course th:first-child,
+.table-program-course td:first-child {
+  width: 60%;
+  padding-right: 90px;
+}
+
+.course-program-module > * {
+  margin: var(--base-line-height) 0;
+}
+
+.course-program-module > :first-child {
+  margin-top: 0;
+}
+
+.course-program-module > :last-child {
+  margin-bottom: 0;
+}
+
+.course-program-module-title {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.course-program-module-description {
+  color: var(--color-light);
+} */
+
+/* .profession-course-title {
+  color: var(--base-color);
+}
+
+.profession-course-value {
+  color: var(--base-color);
+}
+
+.profession-type-value {
+  text-align: right;
+}
+
+.profession-course-price {
+  margin-left: auto;
+  display: table;
+}
+
+.profession-course-cost {
+  display: table-row-group;
+}
+
+.profession-course-cost-title {
+  display: table-cell;
+  padding-right: 30px;
+}
+
+.profession-course-cost-value {
+  display: table-cell;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--base-color);
+}
+
+.profession-course-cost-value small {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.profession-course-installments {
+  display: table-row-group;
+}
+
+.profession-course-installments-title {
+  display: table-cell;
+  padding-right: 30px;
+}
+
+.profession-course-installments-value {
+  display: table-cell;
+  font-weight: bold;
+  color: var(--base-color);
+}
+
+.profession-course-installments-value small {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.table-profession {
+  color: var(--color-light);
+}
+
+.table-profession th,
+.table-profession td {
+  padding-right: 70px;
+  color: inherit;
+}
+
+.table-profession tfoot td {
+  padding-top: calc(var(--base-line-height) - 1px);
+  padding-bottom: var(--base-line-height);
+  border-bottom-color: transparent;
+}
+
+.table-profession th:first-child,
+.table-profession td:first-child {
+  width: 75%;
+}
+
+.table-profession th:last-child,
+.table-profession td:last-child {
+  text-align: right;
+}
+
+.table-profession .profession-course-title {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.table-profession-secondary {
+  color: #95a5a9;
+}
+
+.table-profession-secondary th,
+.table-profession-secondary td {
+  color: inherit;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  height: auto;
+  padding-right: 70px;
+}
+
+.table-profession-secondary tfoot td {
+  border-bottom-color: transparent;
+  padding-top: calc(var(--base-line-height) - 1px);
+  padding-bottom: var(--base-line-height);
+}
+
+.table-profession-secondary th:first-child,
+.table-profession-secondary td:first-child {
+  width: 65%;
+}
+
+.table-profession-secondary th:last-child,
+.table-profession-secondary td:last-child {
+  text-align: right;
+  padding-right: 0;
+} */
+
+.table-timeline-event th:not(:last-child),
+.table-timeline-event td:not(:last-child) {
+  padding-right: 20px;
+}
+
+.timeline-event-date {
+  font-weight: bold;
+}
+
+.timeline-event-title {
+  font-weight: bold;
+}
+
+.timeline-event-content {
+  color: var(--color-light);
+}

@@ -1,0 +1,14 @@
+.swiper-reviews {
+  overflow: visible;
+}
+
+.swiper-wrapper.grid-reviews > .grid-item {
+  width: 30%;
+  min-width: 400px;
+}
+
+@media (max-width: 379px) {
+  .swiper-wrapper.grid-reviews > .grid-item {
+    min-width: 200px;
+  }
+}

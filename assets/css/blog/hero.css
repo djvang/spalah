@@ -1,0 +1,11 @@
+.hero-blog-overview {
+  min-height: inherit;
+}
+
+.hero-blog-overview .hero-body {
+  padding: calc(var(--base-line-height) * 7) 0 calc(var(--base-line-height) * 2) 0;
+}
+
+.hero-blog-overview .hero-content-body {
+  grid-column: 1 / 8;
+}

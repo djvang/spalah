@@ -1,0 +1,131 @@
+.contact-phone {
+  font-weight: 700;
+  font-size: 1.56vw;
+  color: #37383c;
+  line-height: calc(var(--base-line-height) * 2);
+}
+
+.contact-phone-link {
+  font-size: 14px;
+}
+
+.contact-title {
+  color: var(--color-light);
+}
+
+.contact-label {
+  font-size: 14px;
+  color: var(--color-light);
+}
+
+.contact-link {
+  color: #37383c;
+}
+
+.contact-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.contact-list > li:not(:first-child) {
+  margin-top: var(--base-line-height);
+}
+
+.contact-list > li:not(:last-child) {
+  margin-bottom: var(--base-line-height);
+}
+
+.contact-socials {
+  margin-top: var(--base-line-height);
+}
+
+.contact-socials > li {
+  margin: 0 5px;
+}
+
+.card-contact {
+  font-size: inherit;
+}
+
+.card-contact .card-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card-location {
+  font-size: inherit;
+}
+
+.card-map {
+  flex-grow: 1;
+}
+
+.card-contact .card-list > li:not(:last-child) {
+  margin-bottom: calc(var(--base-line-height) * 2);
+}
+
+.card-location > :not(:first-child) {
+  margin-top: calc(var(--base-line-height) * 1);
+}
+
+.card-location > :not(:last-child) {
+  margin-bottom: calc(var(--base-line-height) * 2);
+}
+
+.card-location .card-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.card-location .list {
+  margin-top: var(--base-line-height);
+  margin-bottom: var(--base-line-height);
+}
+
+.card-location .card-title {
+  color: var(--color-light);
+}
+
+.card-location .card-map {
+  background-color: #37383c;
+  margin-top: calc(var(--base-line-height) * 2);
+  margin-bottom: calc(var(--base-line-height) * 2);
+  height: calc(var(--base-line-height) * 13);
+}
+
+.card-location .card-map:first-child {
+  margin-top: 0;
+}
+
+.card-location .card-map:last-child {
+  margin-bottom: 0;
+}
+
+.layout-contacts {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "a a a a a a" "b b b b b b";
+}
+
+.layout-contacts-small {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "a a a a a a a a" "b b b b b b b b";
+}
+
+@media (min-width: 1024px) {
+  .layout-contacts {
+    grid-template-areas: "a a a . . ." "b b b b b b";
+  }
+  
+  .layout-contacts-small {
+    grid-template-areas: "a a a a . . . ." "b b b b b b b b";
+  }
+}
+
+@media (min-width: 1440px) {
+  .layout-contacts {
+    grid-template-areas: "a a . . . ." "b b b b b b";
+  }
+  .layout-contacts-small {
+    grid-template-areas: ". a a a . . . ." ". b b b b b b .";
+  }
+}

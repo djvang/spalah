@@ -1,0 +1,10 @@
+.swiper-wrapper.grid-events > .grid-item {
+    width: 25%;
+    min-width: 350px;
+}
+
+@media (max-width: 350px) {
+    .swiper-wrapper.grid-events > .grid-item {
+        min-width: 200px;
+    }
+}

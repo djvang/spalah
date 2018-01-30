@@ -1,0 +1,22 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toolbar.uk-active {
+  background-color: #fff;
+  z-index: 981;
+}
+
+.toolbar.uk-active::before {
+  content: '';
+  position: absolute;
+  left: -9999px;
+  right: -9999px;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: inherit;
+  border-top: 1px solid #eaeaea;
+}

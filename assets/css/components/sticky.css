@@ -1,0 +1,15 @@
+.uk-sticky-fixed {
+  z-index: 980;
+  box-sizing: border-box;
+  margin: 0 !important;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden
+}
+
+.uk-sticky[class*='uk-animation-'] {
+  animation-duration: .2s
+}
+
+.uk-sticky.uk-animation-reverse {
+  animation-duration: .2s
+}

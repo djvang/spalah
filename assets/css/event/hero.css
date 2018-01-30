@@ -1,0 +1,7 @@
+.hero-event-single .hero-content-body {
+  grid-column: 1 / 6;
+}
+
+.hero-event-single .hero-title:not(:first-child) {
+  margin-top: calc(var(--base-line-height) * 2);
+}

@@ -1,0 +1,20 @@
+.card-coworking-application {
+  background-color: #fff;
+  padding-top: var(--base-line-height);
+  padding-bottom: calc(var(--base-line-height) * 2);
+}
+
+.card-coworking-post {
+  background-color: #fff;
+  margin: -16px;
+  flex-direction: row;
+}
+
+.card-coworking-post > * {
+  margin: 16px;
+}
+
+.card-coworking-post .card-left {
+  width: 45%;
+  flex-shrink: 0;
+}

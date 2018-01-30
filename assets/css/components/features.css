@@ -1,0 +1,16 @@
+.card-feature {
+  font-size: 1rem;
+}
+
+.card-feature .card-header {
+  margin-bottom: var(--base-line-height);
+}
+
+.card-feature .card-image {
+  width: 100px;
+  height: calc(var(--base-line-height) * 4);
+}
+
+.card-feature .card-image img {
+  object-fit: contain;
+}

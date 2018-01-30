@@ -1,0 +1,23 @@
+.filter-item {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.filter-control label {
+  user-select: none;
+  color: #000;
+  cursor: pointer;
+  font-size: var(--input-font-size);
+  padding-top: calc(var(--base-line-height) / 2);
+  padding-bottom: calc(var(--base-line-height) / 2);
+}
+
+.filter-title {
+  padding-top: var(--base-line-height);
+  padding-bottom: var(--base-line-height);
+  border-bottom: 1px solid;
+  border-color: var(--border-color);
+}
+
+.content-filter > :not(.uk-active) {
+  display: none;
+}

@@ -1,0 +1,14 @@
+.swiper-photos-secondary .swiper-buttons {
+  margin-left: -10px;
+  margin-right: -10px;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  right: 25%;
+  transform: translateX(100%);
+}
+
+.swiper-photos-secondary .swiper-buttons > * {
+  margin-left: 0;
+  margin-right: 0;
+}

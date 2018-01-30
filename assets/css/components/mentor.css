@@ -1,0 +1,36 @@
+.card-mentor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.card-mentor .card-avatar {
+  height: 143px;
+}
+
+.card-mentor .card-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-mentor .card-fullname {
+  font-weight: bold;
+}
+
+.card-mentor .card-socials {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.card-mentor .card-social {
+  display: inline-flex;
+  padding: 8px;
+}
+
+.card-mentor .card-social:hover,
+.card-mentor .card-social:focus {
+  text-decoration: none;
+  color: inherit;
+}

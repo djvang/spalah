@@ -1,0 +1,25 @@
+.rating-value {
+  color: var(--base-color);
+  font-weight: bold;
+}
+
+.rating-value::after {
+  content: ' - ';
+  font-weight: normal;
+}
+
+.rating-label {
+  color: var(--color-light);
+}
+
+.rating-for {
+  color: var(--color-primary);
+}
+
+.ratings:not(:first-child) {
+  margin-top: var(--base-line-height);
+}
+
+.ratings:not(:last-child) {
+  margin-bottom: var(--base-line-height);
+}

@@ -1,0 +1,12 @@
+.grid-photos-coworking > .grid-item {
+  width: 70%;
+}
+.grid-plans {
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+
+@media (max-width: 379px) {
+  .grid-plans {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

@@ -1,0 +1,85 @@
+.card-review {
+  padding-top: calc(var(--base-line-height) - 1px);
+  border-top: 1px solid var(--card-border-color);
+}
+
+.card-review .card-block {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.card-review > :not(:last-child) {
+  margin-bottom: var(--base-line-height);
+}
+
+.card-review .card-title {
+  font-size: 20px;
+}
+
+.card-review-expert {
+  border-bottom: 1px solid var(--color-light);
+  margin-left: -35px;
+  margin-right: -35px;
+}
+
+.card-review-expert > * {
+  padding-left: 35px;
+  padding-right: 35px;
+  width: 50%;
+}
+
+.card-review-expert .card-quote::before {
+  content: '«';
+  font-size: 90px;
+  display: block;
+  line-height: calc(var(--base-line-height) * 4);
+}
+
+.card-review-expert .card-expert-fullname {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: var(--base-line-height);
+}
+
+.card-review-expert .card-expert-profession {
+  font-size: 14px;
+}
+
+.card-review-expert .card-avatar {
+  margin-top: -10px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card-review-expert .card-avatar img {
+  display: block;
+  object-fit: contain;
+}
+
+.card-review-expert .card-body {
+  align-self: center;
+}
+
+.card-review-expert .card-right {
+  display: flex;
+}
+
+.card-review-expert .card-expert-meta {
+  flex-grow: 1;
+  align-self: flex-end;
+  padding-bottom: calc(var(--base-line-height) * 4);
+  margin-left: 10px;
+}
+
+.card-review-expert-reverse {
+  flex-direction: row-reverse;
+}
+
+.card-review-expert-reverse .card-right {
+  flex-direction: row-reverse;
+}
+
+.card-review-expert-reverse .card-expert-meta {
+  margin-left: 0;
+  margin-right: 15px;
+}

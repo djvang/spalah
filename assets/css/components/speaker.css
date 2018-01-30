@@ -1,0 +1,28 @@
+.card-speaker {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+}
+
+.card-speaker .card-left {
+  grid-column: 1 / 3;
+}
+
+.card-speaker .card-body {
+  grid-column: 3 / 7;
+}
+
+.card-speaker .card-avatar {
+  height: 143px;
+}
+
+.card-speaker .card-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-speaker .card-fullname {
+  font-weight: bold;
+}

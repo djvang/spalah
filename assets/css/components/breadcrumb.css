@@ -1,0 +1,20 @@
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.breadcrumb-item.active {
+  color: var(--color-light);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "\f105";
+  font-family: 'spalah';
+  display: inline-block;
+  padding-right: .5rem;
+  padding-left: .5rem;
+  color: var(--color-primary);
+}

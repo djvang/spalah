@@ -1,0 +1,14 @@
+.download {
+  font-size: 14px;
+}
+
+.download,
+.download:hover,
+.download:focus {
+  text-decoration: none;
+}
+
+.download-title {
+  border-bottom: 1px dashed;
+  padding-bottom: 3px;
+}

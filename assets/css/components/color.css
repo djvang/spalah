@@ -1,0 +1,31 @@
+.color-primary {
+  color: var(--color-primary) !important;
+}
+
+.color-accent {
+  color: var(--color-accent) !important;
+}
+
+.color-light {
+  color: var(--color-light) !important;
+}
+
+.color-telegram {
+  color: #2ba4dd;
+}
+
+.color-viber {
+  color: #7b519d;
+}
+
+.color-facebook {
+  color: #0084ff;
+}
+
+.color-danger {
+  color: #f95245;
+}
+
+.color-inactive {
+  color: var(--color-light);
+}

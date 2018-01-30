@@ -1,0 +1,33 @@
+.grid-courses {
+  display: block;
+  column-gap: var(--grid-gap);
+  column-count: 3;
+}
+
+.grid-courses > .grid-item {
+  margin-bottom: var(--grid-gap);
+}
+
+.grid-sets {
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+
+.grid-photos-course > .grid-item {
+  width: 100%;
+}
+
+.grid-mentors-course {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1660px) {
+  .grid-courses {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 830px) {
+  .grid-courses {
+    column-count: 1;
+  }
+}

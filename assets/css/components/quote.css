@@ -1,0 +1,13 @@
+.quote {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quote:first-child {
+  margin-top: 0;
+}
+
+.quote:last-child {
+  margin-bottom: 0;
+}

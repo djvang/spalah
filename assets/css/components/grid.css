@@ -1,0 +1,12 @@
+.grid {
+  display: grid;
+  grid-gap: 70px var(--grid-gap);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-auto-flow: dense row;
+}
+
+.grid-item {
+  display: inline-flex;
+  width: 100%;
+  max-width: 100%;
+}

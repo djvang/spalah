@@ -1,0 +1,7 @@
+.switcher > :not(.uk-active) {
+    display: none !important;
+}
+
+.switcher-block + .switcher-block {
+    margin-top: calc(var(--base-line-height) * 3);
+}

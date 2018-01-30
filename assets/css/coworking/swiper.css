@@ -1,0 +1,7 @@
+.swiper-articles-coworking {
+  overflow: visible;
+}
+
+.grid-photos-coworking > .swiper-slide:not(:last-child) {
+  padding-right: calc(var(--grid-gap) * 2);
+}

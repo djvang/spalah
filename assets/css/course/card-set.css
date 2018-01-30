@@ -1,0 +1,92 @@
+.card-set {
+  background-color: #fff;
+}
+
+.card-set::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 400px;
+  background-image: linear-gradient(to right, #fff 40%, transparent 100%);
+}
+
+.card-set .card-background {
+  display: flex;
+  justify-content: flex-end;
+  top: 80px;
+  left: auto;
+  max-width: 300px;
+  width: 100%;
+}
+
+.card-set .card-background img {
+  width: auto;
+  object-fit: contain;
+  object-position: 60px 100%;
+}
+
+.card-set .card-foreground > * {
+  margin-bottom: calc(var(--base-line-height) * 2);
+}
+
+.card-set .card-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: var(--base-line-height);
+  padding-bottom: var(--base-line-height);
+}
+
+.card-set .card-actions {
+  display: flex;
+}
+
+.card-set .card-actions > :not(:last-child) {
+  margin-right: 16px;
+}
+
+.card-set .card-title {
+  margin-bottom: 0;
+}
+
+.card-set .card-subtitle {
+  opacity: 0.5;
+}
+
+.card-set .card-subtitle a {
+  color: inherit;
+}
+
+.card-set .card-title a {
+  color: inherit;
+}
+
+.card-set .card-info > li {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-set .card-info-title {
+  margin-right: 4px;
+  min-width: 120px;
+  opacity: 0.5;
+}
+
+.card-set .card-info-content {
+  font-weight: bold;
+}
+
+.card-set .card-info + .card-info {
+  border-top: 1px dashed rgba(255, 255, 255, 0.2);
+  padding-top: 4px;
+}
+
+.card-set .button-icon {
+  text-decoration: none;
+  font-size: 48px;
+}
+
+.background-primary.inverse.card-set::before {
+  background-image: linear-gradient(to right, var(--color-primary) 40%, transparent 100%);
+}

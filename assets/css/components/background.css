@@ -1,0 +1,15 @@
+.background-primary {
+  background-color: var(--background-primary) !important;
+}
+
+.background-accent {
+  background-color: var(--background-accent) !important;
+}
+
+.background-light {
+  background-color: var(--background-light) !important;
+}
+
+.background-dark {
+  background-color: #37383c !important;
+}

@@ -1,0 +1,9 @@
+.card-instrument .card-image {
+  width: 48px;
+  height: 48px;
+}
+
+.card-instrument:focus,
+.card-instrument:hover {
+  filter: grayscale(100%)
+}

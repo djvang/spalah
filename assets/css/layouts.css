@@ -1,0 +1,389 @@
+/* .layout {
+  display: grid;
+  grid-gap: 70px;
+  grid-template-columns: minmax(260px, 1fr);
+  /*grid-template-columns: repeat(8, 1fr);*/
+/*grid-template-areas:*/
+/*"a a a a a a a a"*/
+/*"b b b b b b b b"*/
+/*"c c c c c c c c"*/
+/*"d d d d d d d d"*/
+/*"f f f f f f f f"*/
+/*"g g g g g g g g";*/
+/*}*/
+/* .layout > .layout-item {
+  max-width: 100%;
+}
+
+.layout > .layout-item:nth-child(1) {
+  grid-area: a;
+}
+
+.layout > .layout-item:nth-child(2) {
+  grid-area: b;
+}
+
+.layout > .layout-item:nth-child(3) {
+  grid-area: c;
+}
+
+.layout > .layout-item:nth-child(4) {
+  grid-area: d;
+}
+
+.layout > .layout-item:nth-child(5) {
+  grid-area: e;
+}
+
+.layout > .layout-item:nth-child(6) {
+  grid-area: f;
+} */
+
+/*.layout-photos-course {*/
+/*grid-template-columns: repeat(8, 1fr);*/
+/*grid-template-areas:*/
+/*"a a a a a a a a";*/
+/*}*/
+
+/*.layout-about-gallery-course {*/
+/*grid-template-columns: repeat(8, 1fr);*/
+/*grid-template-areas:*/
+/*"a a a a b b b b"*/
+/*"c c c c c c c c";*/
+/*}*/
+
+/*.layout-about-gallery-course > .layout-item:nth-child(2) {*/
+/*text-align: right;*/
+/*}*/
+
+.layout-about-gallery-coworking {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "a a a a b b b b" "c c c c c c c c";
+}
+
+.layout-about-gallery-coworking > .layout-item:nth-child(2) {
+  text-align: right;
+}
+
+/*.layout-result-gallery-course {*/
+/*grid-template-columns: repeat(8, 1fr);*/
+/*grid-template-areas:*/
+/*"a a a a a a a a";*/
+/*}*/
+
+.layout-photos-school {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "a a a a a a a a";
+}
+
+.layout-professions-course-header {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "a a a a a a a a" "b b b b b b b b";
+}
+
+.layout-sets {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "a a a a a a a a" "b b b b b b b b";
+}
+
+.layout-sets .heading {
+  max-width: none;
+
+}
+
+.layout-sets .heading-title {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+/* .layout-mentors-course {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: ". a a a a a a a" ". b b b b b b b";
+} */
+
+.layout-features {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "a a a a a a a a" "b b b b b b b b";
+}
+
+/* .layout-features-coworking {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: ". a a a a a a a" ". b b b b b b b";
+} */
+
+.layout-educational-programs-header {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "a a a a a a a a" "b b b b b b b b";
+}
+
+.layout-reviews {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "a a a a a a a a" "b b b b b b b b";
+}
+
+/* .layout-plans-coworking {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "a a a a a a" "b b b b c c";
+} */
+
+/* .layout-photos-coworking {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: ". a a a a a a a" ". b b b b b b b";
+} */
+
+/*.layout-plans-coworking > .layout-item:nth-child(2) {*/
+/*text-align: right;*/
+/*}*/
+
+/* .layout-reviews-coworking {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "a a a a a a a a" "b b b b b b b b";
+} */
+
+/* .layout-about-school {
+  grid-template-columns: repeat(8, 1fr);
+  grid-row-gap: calc(var(--base-line-height) * 12);
+  grid-template-areas: ". a a a . b b ." ". c c c . b b .";
+}
+
+.layout-about-school > .layout-item:nth-child(2) {
+  align-self: center;
+}
+
+.layout-about-school .list-hyphen li:not(:last-child) {
+  margin-bottom: calc(var(--base-line-height) * 0.5);
+}
+
+.layout-about-school .grid-statistics {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.layout-about-school .grid-statistics .grid-item:nth-child(1) {
+  grid-column: 1 / 3;
+} */
+
+/*.layout-about-course {*/
+/*grid-template-columns: repeat(8, 1fr);*/
+/*grid-row-gap: calc(var(--base-line-height) * 12);*/
+/*grid-template-areas: ". a a a . b b ." ". c c c . b b .";*/
+/*}*/
+
+/*.layout-about-course .list-hyphen li:not(:last-child)  {*/
+/*margin-bottom: calc(var(--base-line-height) * 0.5);*/
+/*}*/
+
+/*.layout-about-course > .layout-item:nth-child(2) {*/
+/*align-self: center;*/
+/*}*/
+
+/* .layout-about-profession {
+  grid-template-columns: repeat(8, 1fr);
+  grid-row-gap: calc(var(--base-line-height) * 12);
+  grid-template-areas: ". a a a . b b ." ". c c c . b b .";
+}
+
+.layout-about-profession .list-hyphen li:not(:last-child) {
+  margin-bottom: calc(var(--base-line-height) * 0.5);
+}
+
+.layout-about-profession > .layout-item:nth-child(2) {
+  align-self: center;
+} */
+
+/* .layout-about-coworking {
+  grid-template-columns: repeat(8, 1fr);
+  grid-row-gap: calc(var(--base-line-height) * 12);
+  grid-template-areas: ". a a a . b b ." ". c c c . b b .";
+}
+
+.layout-about-coworking > .layout-item:nth-child(2) {
+  margin-top: calc(var(--base-line-height) * 6);
+}
+
+.layout-about-coworking .list-hyphen li:not(:last-child) {
+  margin-bottom: calc(var(--base-line-height) * 0.5);
+} */
+
+/* .layout-about-event {
+  grid-template-columns: repeat(8, 1fr);
+  grid-row-gap: calc(var(--base-line-height) * 12);
+  grid-template-areas:
+      ". a a a . b b ."
+      ". d d d . c c ."
+      ". e e e . f f .";
+}
+
+.layout-about-event .list-hyphen li:not(:last-child)  {
+  margin-bottom: calc(var(--base-line-height) * 0.5);
+}
+
+.layout-about-event > .layout-item:nth-child(2) {
+  align-self: center;
+  margin-top: -800px;
+}
+
+
+/*.layout-about-event > .layout-item:nth-child(3) {*/
+/*margin-top: -280px;*/
+/*}*/
+
+/* .layout-program-event {
+  position: relative;
+  grid-template-columns: repeat(8, 1fr);
+  margin-top: calc(var(--base-line-height) * 3);
+  margin-bottom: calc(var(--base-line-height) * 3);
+  grid-template-areas:
+      "a a a a a a a a"
+      "b b b b b c c c";
+} */
+
+/* .layout-program-event > .layout-item:nth-child(3) .box {
+  margin-bottom: calc(var(--base-line-height) * 3);
+  /*border-bottom-left-radius: 0;*/
+/*border-bottom-right-radius: 0;*/
+/*}*/
+
+/* .layout-educational-programs-header {
+  grid-gap: 48px;
+}
+
+.layout-educational-programs-body {
+  margin-top: calc(var(--base-line-height) * 3);
+  grid-template-columns: 350px;
+  grid-template-areas: "a b b b b b b b" "c c c c c c c c";
+} */
+
+.layout-statistics {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "a a a a a b b b" "c c c c c c c c";
+}
+
+.layout-statistics > .layout-item:nth-child(2) {
+  align-self: center;
+  text-align: right;
+}
+
+/* .layout-posts {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas:
+      ". a a a b b b ."
+      ". c c c c c c .";
+}
+
+.layout-posts > .layout-item:nth-child(2) {
+  align-self: center;
+  text-align: right;
+}
+
+.layout-posts-secondary {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+      "a a a b b b"
+      "c c c c c c";
+}
+
+.layout-posts-secondary > .layout-item:nth-child(2) {
+  align-self: center;
+  text-align: right;
+} */
+
+/* .layout-events {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+      "a a a b b b"
+      "c c c c c c";
+}
+
+.layout-events > .layout-item:nth-child(2) {
+  align-self: center;
+  text-align: right;
+} */
+
+/* .layout-contacts {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "a a . . . ." "b b b b b b";
+}
+
+.layout-contacts-small {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: ". a a a . . . ." ". b b b b b b .";
+} */
+
+/* .layout-program-course {
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-areas: ". . a a a a a a a a b b b c c c" ". . d d d d d d d . e e e e e e" ". . f f f f f f f f f f f f f f";
+} */
+
+/* .layout-result-course {
+  grid-template-columns: repeat(8, 1fr);
+  grid-row-gap: 216px;
+  grid-template-areas: ". a a a . b b ." ". c c . . d d .";
+}
+
+.layout-result-course .list-hyphen li:not(:last-child) {
+  margin-bottom: calc(var(--base-line-height) * 0.5);
+}
+
+.layout-result-course > .layout-item:nth-child(2) {
+  align-self: flex-end;
+} */
+
+.layout-professions-course-body {
+  margin-top: calc(var(--base-line-height) * 3);
+  margin-bottom: calc(var(--base-line-height) * 3);
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "a a a a . b b b" "c c c c . d d d";
+}
+
+.layout-work-students-course {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "a a a a a a a a" "b b b b b b b b";
+}
+
+.layout-reviews-course {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "a a a . b b b b" "c c c c c c c c";
+}
+
+/* .layout-events-overview {*/
+/*margin-top: calc(var(--base-line-height) * 3);*/
+/*margin-bottom: calc(var(--base-line-height) * 12);*/
+/*grid-template-columns: repeat(8, 1fr);*/
+/*grid-template-areas: "a a b b b b b b";*/
+/*}*/
+
+/* .layout-blog-overview {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas:
+      "a a a a a a a a"
+      "b b b b b b b b";
+} */
+
+/* .layout-contacts-coworking {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: ". a a a . . . ." ". b b c c c c ." ". b b d d d d .";
+}
+
+.layout-contacts-coworking .card-location .card-map {
+  height: calc(var(--base-line-height) * 12);
+} */
+
+/* .layout-contacts-coworking .grid {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+      "a a b b b b"
+}
+
+.layout-contacts-coworking .grid-item:first-child {
+  grid-area: a;
+}
+
+.layout-contacts-coworking .grid-item:last-child {
+  grid-area: b;
+} */
+
+.layout-contacts-contacts {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas: "a a a . . ." "b b b b b b";
+}

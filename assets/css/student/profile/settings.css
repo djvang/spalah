@@ -1,0 +1,27 @@
+.student-settings {
+  width: calc(100% / 8 * 5);
+}
+.student-accounts td:last-child,
+.student-accounts td:last-child {
+  text-align: right;
+}
+
+.student-accounts td, 
+.student-accounts th {
+  height: 50px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.student-accounts [class^="icon-"], 
+.student-accounts [class*=" icon-"] {
+  margin-right: 5px;
+}
+
+.student-accounts .inactive {
+  color: var(--color-light);
+}
+
+.student-accounts .inactive .color-primary {
+  color: inherit !important;
+}

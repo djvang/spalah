@@ -1,0 +1,15 @@
+.grid-posts-secondary {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid-blog-overview  {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.grid-blog-overview > .grid-item {
+  grid-column-end: span 1;
+}
+
+.grid-blog-overview > .grid-item-large {
+  grid-column-end: span 2;
+}

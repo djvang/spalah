@@ -1,0 +1,7 @@
+.grid-timeline {
+  grid-template-columns: none;
+}
+
+.grid-box-blog .grid-item {
+  width: 100%;
+}

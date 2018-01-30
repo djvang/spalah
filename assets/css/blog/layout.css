@@ -1,0 +1,38 @@
+.layout-posts {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas:
+      "a a a a b b b b"
+      "c c c c c c c c";
+}
+
+.layout-posts > .layout-item:nth-child(2) {
+  align-self: center;
+  text-align: right;
+}
+
+.layout-posts-secondary {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+      "a a a b b b"
+      "c c c c c c";
+}
+
+.layout-posts-secondary > .layout-item:nth-child(2) {
+  align-self: center;
+  text-align: right;
+}
+
+.layout-blog-overview {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas:
+      "a a a a a a a a"
+      "b b b b b b b b";
+}
+
+@media (min-width: 1441px) {
+  .layout-posts {
+    grid-template-areas:
+    ". a a a b b b ."
+    ". c c c c c c .";
+  }
+}

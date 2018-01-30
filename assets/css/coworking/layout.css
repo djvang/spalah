@@ -1,0 +1,57 @@
+.layout-about-coworking {
+    grid-template-columns: repeat(8, 1fr);
+    grid-row-gap: calc(var(--base-line-height) * 12);
+    grid-template-areas: "a a a a . b b b" "c c c c . b b b";
+}
+
+.layout-about-coworking > .layout-item:nth-child(2) {
+    margin-top: calc(var(--base-line-height) * 6);
+}
+
+.layout-about-coworking .list-hyphen li:not(:last-child) {
+    margin-bottom: calc(var(--base-line-height) * 0.5);
+}
+
+.layout-plans-coworking {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "a a a a a a" "b b b c c c";
+}
+
+.layout-photos-coworking {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "a a a a a a a a" "b b b b b b b b";
+}
+
+.layout-reviews-coworking {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "a a a a a a a a" "b b b b b b b b";
+}
+
+.layout-contacts-coworking {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "a a a a . . . ." "b b b c c c c c" "b b b d d d d d";
+}
+
+.layout-contacts-coworking .card-location .card-map {
+    height: calc(var(--base-line-height) * 12);
+}
+
+.layout-features-coworking {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: "a a a a a a a a" "b b b b b b b b";
+}
+
+@media (min-width: 1441px) {
+    .layout-plans-coworking {
+        grid-template-areas: "a a a a a a" "b b b b c c";
+    }
+    .layout-photos-coworking {
+        grid-template-areas: ". a a a a a a a" ". b b b b b b b";
+    }
+    .layout-contacts-coworking {
+        grid-template-areas: ". a a a . . . ." ". b b c c c c ." ". b b d d d d .";
+    }
+    .layout-features-coworking {
+        grid-template-areas: ". a a a a a a a" ". b b b b b b b";
+    }
+}

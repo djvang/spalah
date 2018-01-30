@@ -1,0 +1,32 @@
+.swiper-photos-course,
+.swiper-course-teachers,
+.swiper-articles-course {
+  overflow: visible;
+}
+
+.swiper-work-students-course .swiper-buttons {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  right: 40%;
+  transform: translateX(100%);
+}
+
+.swiper-course-teachers .swiper-pagination-custom,
+.swiper-course-teachers .swiper-pagination-bullets {
+  display: flex;
+  bottom: auto !important;
+  top: 0;
+  left: 50% !important;
+  width: auto !important;
+}
+
+.swiper-work-students-course .swiper-buttons {
+  margin-left: -10px;
+  margin-right: -10px
+}
+
+.swiper-work-students-course .swiper-buttons > * {
+  margin-left: 0;
+  margin-right: 0;
+}

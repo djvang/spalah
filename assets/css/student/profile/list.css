@@ -1,0 +1,30 @@
+.list-status {
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-status .list-item {
+    margin-bottom: calc(var(--base-line-height) / 2);
+}
+
+.list-status .list-link {
+    width: 100%;
+    padding: 13px 17px;
+    border-radius: 30px;
+    border: 2px dashed transparent;
+    line-height: calc(var(--base-line-height) / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-light);
+}
+
+.list-status .list-link:hover,
+.list-status .list-link:focus,
+.list-status .list-link:active,
+.list-status .list-item.uk-active .list-link  {
+    text-decoration: none;
+    color: var(--color-primary);
+    border-color: currentColor;
+}
+  

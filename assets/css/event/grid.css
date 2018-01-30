@@ -1,0 +1,15 @@
+.grid-events-overview {
+  display: block;
+  column-gap: var(--grid-gap);
+  column-count: 2;
+}
+
+.grid-events-overview > .grid-item {
+  margin-bottom: var(--grid-gap);
+}
+
+@media (min-width: 1441px) {
+  .grid-events-overview {
+    column-count: 3;
+  }
+}

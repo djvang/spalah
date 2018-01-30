@@ -1,0 +1,7 @@
+.nav-student-settings > li > a:hover:not(.dropdown-button)::after, 
+.nav-student-settings > li > a:focus:not(.dropdown-button)::after, 
+.nav-student-settings > li > a:active:not(.dropdown-button)::after, 
+.nav-student-settings > li.is-active > a:not(.dropdown-button)::after, 
+.nav-student-settings > li.uk-active > a:not(.dropdown-button)::after {
+  /* border-color: #fff; */
+}
