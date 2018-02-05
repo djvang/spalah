@@ -1,0 +1,15 @@
+.grid-photos-school > .grid-item {
+  width: 80%;
+}
+
+.swiper-photos-school {
+  margin-left: calc(var(--grid-gap) / -1);
+  margin-right: calc(var(--grid-gap) / -1);
+}
+
+.swiper-photos-school > .grid > .swiper-slide {
+  padding-right: calc(var(--grid-gap));
+  padding-left: calc(var(--grid-gap));
+}
+
+

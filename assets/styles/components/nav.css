@@ -1,0 +1,94 @@
+.nav {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-tab {
+  font-size: 14px;
+  margin-left: -14px;
+  margin-right: -14px;
+  margin-bottom: 0;
+}
+
+.nav-tab > li {
+  padding: 0 14px;
+}
+
+.nav-tab > li > a {
+  line-height: calc(var(--base-line-height) * 2 - 3px);
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-tab > li > a::after {
+  content: '';
+  border-bottom: 3px solid transparent
+}
+
+.nav-tab > li > a:hover,
+.nav-tab > li > a:focus,
+.nav-tab > li > a:active,
+.nav-tab > li.is-active > a,
+.nav-tab > li.uk-active > a {
+  color: #191a1b;
+  text-decoration: none;
+}
+
+.nav-tab > li > a:hover::after,
+.nav-tab > li.is-active > a::after,
+.nav-tab > li.uk-active > a::after {
+  border-color: var(--color-primary);
+}
+
+.nav-tags {
+  margin-left: -14px;
+  margin-right: -14px;
+  margin-bottom: 0;
+}
+
+.nav-tags > li {
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+
+.nav-scrollspy {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 72px;
+  left: var(--grid-gap);
+  z-index: 2;
+}
+
+.nav-scrollspy > li > a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-scrollspy > li > a::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: var(--color-light);
+  border: 2px solid transparent;
+  border-radius: 50%;
+}
+
+.nav-scrollspy > li > a:hover::before,
+.nav-scrollspy > li > a:focus::before,
+.nav-scrollspy > li > a:active::before,
+.nav-scrollspy > .uk-active > a::before {
+  border-color: var(--color-primary);
+  background-color: #fff;
+  width: 8px;
+  height: 8px;
+}

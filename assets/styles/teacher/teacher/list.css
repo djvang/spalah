@@ -1,0 +1,15 @@
+.list-primary {
+  padding-left: 0;
+  list-style: none;
+  font-size: 14px;
+}
+
+.list-primary .list-item {
+  padding-top: var(--base-line-height);
+  padding-bottom: var(--base-line-height);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.list-primary .list-item:first-child {
+  border-top: 1px solid var(--border-color);
+}

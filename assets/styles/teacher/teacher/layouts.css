@@ -1,0 +1,9 @@
+.layout-about-teacher {
+  grid-template-columns: repeat(8, 1fr);
+  grid-row-gap: calc(var(--base-line-height) * 12);
+  grid-template-areas: ". a a a . b b . " ". c c c . b b ." ". с с с . d d ." ". e e e . d d ." ". e e e . f f .";
+}
+
+.layout-about-teacher .grid-statistics .grid-item:nth-child(1) {
+  grid-column: 1 / 3;
+}

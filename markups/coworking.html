@@ -1,0 +1,1565 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Coworking</title>
+
+  <link rel="stylesheet" href="../assets/icomoon/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.css">
+  <link rel="stylesheet" href="../assets/styles/main.css">
+
+</head>
+<body class="page page-coworking">
+<div class="wrapper uk-offcanvas-content">
+
+  <div class="hero hero-coworking inverse" id="hero">
+    <div class="hero-background">
+      <img src="../assets/images/coworking.jpg" alt="">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-foreground">
+      <div class="hero-header">
+        <button class="navbar-toggler" type="button" data-uk-toggle="target: #offcanvas">
+          <span class="icon-menu"></span>
+          <span uk-close></span>
+        </button>
+        <nav class="navbar" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
+          <div class="container">
+            <div class="navbar-container">
+              <div>
+                <a class="navbar-brand">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="81" height="32" viewBox="0 0 81 32">
+                    <title>i-logo</title>
+                    <path fill="#444"
+                          d="M0 1.829v0l1.829-1.829v32l-1.829-1.829h81.371l-1.829 1.829v-32l1.829 1.829h-81.371zM0 0h81.371v32h-81.371v-32z"></path>
+                    <path fill="#444"
+                          d="M11.429 18.1l1.131-1.22c0.723 0.519 1.529 0.795 2.377 0.795 0.546 0 0.839-0.172 0.839-0.474 0-0.275-0.242-0.426-1.237-0.634-1.56-0.323-2.765-0.72-2.765-2.102 0-1.232 1.080-2.122 2.837-2.122 1.248 0 2.222 0.304 3.018 0.882l-1.017 1.298c-0.67-0.426-1.404-0.654-2.053-0.654-0.492 0-0.733 0.189-0.733 0.444 0 0.304 0.251 0.436 1.268 0.644 1.687 0.332 2.734 0.823 2.734 2.084 0 1.355-1.184 2.159-2.966 2.159-1.298 0-2.534-0.37-3.434-1.1z"></path>
+                    <path fill="#444"
+                          d="M24.583 15.752c0.746 0 1.202-0.352 1.202-0.912 0-0.586-0.456-0.899-1.212-0.899h-0.986v1.811h0.996zM21.486 12.343h3.248c1.916 0 3.152 0.893 3.152 2.43 0 1.617-1.377 2.469-3.26 2.469h-1.039v1.958h-2.1v-6.857z"></path>
+                    <path fill="#444"
+                          d="M34.175 16.514l-0.819-1.933-0.83 1.933h1.65zM32.389 12.343h1.967l3.13 6.857h-2.186l-0.535-1.216h-2.838l-0.525 1.216h-2.144l3.131-6.857z"></path>
+                    <path fill="#444" d="M40.686 12.343h1.997v5.192h3.489v1.666h-5.486v-6.857z"></path>
+                    <path fill="#444"
+                          d="M54.291 16.514l-0.82-1.933-0.828 1.933h1.648zM52.504 12.343h1.965l3.131 6.857h-2.185l-0.536-1.216h-2.836l-0.527 1.216h-2.144l3.132-6.857z"></path>
+                    <path fill="#444"
+                          d="M60.343 12.343h1.949v2.567h2.5v-2.567h1.95v6.857h-1.95v-2.606h-2.5v2.606h-1.949v-6.857z"></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="navbar-dropdown">
+                <div class="dropdown dropdown-branches">
+                  <a href="#" class="dropdown-button">Харьков <span class="icon-dropdown"></span></a>
+                  <div data-uk-dropdown="mode: click">
+                    <ul class="dropdown-list">
+                      <li><a href="#">Днепр</a></li>
+                      <li><a href="#">Одесса</a></li>
+                      <li><a href="#">Запорожье</a></li>
+                      <li><a href="#">Киев</a></li>
+                      <li><a href="#">Мариуполь</a></li>
+                      <li><a href="#">Дистанционное образование</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <ul class="navbar-nav">
+                <li class="is-active"><a href="#">Образование</a></li>
+                <li><a href="#">Мероприятия</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-button">Коворкинг <span class="icon-dropdown"></span></a>
+                  <div data-uk-dropdown="mode: click">
+                    <ul class="dropdown-list">
+                      <li><a href="#">на Девичей</a></li>
+                      <li><a href="#">на Лопанской набережной</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+              <div class="navbar-dropdown">
+                <div class="dropdown dropdown-languages toggle-course" hidden>
+                  <a href="#" class="dropdown-button">
+                    <img src="../assets/images/ua.jpg" alt="">
+                    <span>УКР, ГРН</span>
+                    <span class="icon-dropdown"></span>
+                  </a>
+                  <div data-uk-dropdown="mode: click">
+                    <ul class="dropdown-list">
+                      <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
+                      <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
+                      <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
+                      <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
+                      <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="navbar-phone">
+                <span class="phone">+380 (67)-010-12-02</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div id="offcanvas" data-uk-offcanvas="overlay: true; mode: none;">
+          <div class="uk-offcanvas-bar">
+            <div class="uk-offcanvas-header">
+              <div class="container">
+                <div class="uk-offcanvas-header-container">
+                  <a class="uk-offcanvas-brand">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="81" height="32" viewBox="0 0 81 32">
+                      <title>i-logo</title>
+                      <path fill="#444"
+                            d="M0 1.829v0l1.829-1.829v32l-1.829-1.829h81.371l-1.829 1.829v-32l1.829 1.829h-81.371zM0 0h81.371v32h-81.371v-32z"></path>
+                      <path fill="#444"
+                            d="M11.429 18.1l1.131-1.22c0.723 0.519 1.529 0.795 2.377 0.795 0.546 0 0.839-0.172 0.839-0.474 0-0.275-0.242-0.426-1.237-0.634-1.56-0.323-2.765-0.72-2.765-2.102 0-1.232 1.080-2.122 2.837-2.122 1.248 0 2.222 0.304 3.018 0.882l-1.017 1.298c-0.67-0.426-1.404-0.654-2.053-0.654-0.492 0-0.733 0.189-0.733 0.444 0 0.304 0.251 0.436 1.268 0.644 1.687 0.332 2.734 0.823 2.734 2.084 0 1.355-1.184 2.159-2.966 2.159-1.298 0-2.534-0.37-3.434-1.1z"></path>
+                      <path fill="#444"
+                            d="M24.583 15.752c0.746 0 1.202-0.352 1.202-0.912 0-0.586-0.456-0.899-1.212-0.899h-0.986v1.811h0.996zM21.486 12.343h3.248c1.916 0 3.152 0.893 3.152 2.43 0 1.617-1.377 2.469-3.26 2.469h-1.039v1.958h-2.1v-6.857z"></path>
+                      <path fill="#444"
+                            d="M34.175 16.514l-0.819-1.933-0.83 1.933h1.65zM32.389 12.343h1.967l3.13 6.857h-2.186l-0.535-1.216h-2.838l-0.525 1.216h-2.144l3.131-6.857z"></path>
+                      <path fill="#444" d="M40.686 12.343h1.997v5.192h3.489v1.666h-5.486v-6.857z"></path>
+                      <path fill="#444"
+                            d="M54.291 16.514l-0.82-1.933-0.828 1.933h1.648zM52.504 12.343h1.965l3.131 6.857h-2.185l-0.536-1.216h-2.836l-0.527 1.216h-2.144l3.132-6.857z"></path>
+                      <path fill="#444"
+                            d="M60.343 12.343h1.949v2.567h2.5v-2.567h1.95v6.857h-1.95v-2.606h-2.5v2.606h-1.949v-6.857z"></path>
+                    </svg>
+                  </a>
+                  <ul class="uk-offcanvas-navbar">
+                    <li><a href="#">Все курсы</a></li>
+                    <li><a href="#">Дистанционное образование </a></li>
+                    <li><a href="#">Блог</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="uk-offcanvas-body">
+              <div class="container">
+                <div class="uk-offcanvas-navs">
+                  <div>
+                    <div class="uk-offcanvas-nav">
+                      <div class="uk-offcanvas-nav-title">Харьков</div>
+                      <ul class="uk-offcanvas-nav-list">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Коворкинг</a></li>
+                        <li><a href="#">Контакты</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-offcanvas-nav uk-active">
+                      <div class="uk-offcanvas-nav-title">Днепр</div>
+                      <ul class="uk-offcanvas-nav-list">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Коворкинг</a></li>
+                        <li><a href="#">Контакты</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-offcanvas-nav">
+                      <div class="uk-offcanvas-nav-title">Одесса</div>
+                      <ul class="uk-offcanvas-nav-list">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Контакты</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-offcanvas-nav">
+                      <div class="uk-offcanvas-nav-title">Киев</div>
+                      <ul class="uk-offcanvas-nav-list">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Контакты</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-offcanvas-nav">
+                      <div class="uk-offcanvas-nav-title">Запорожье</div>
+                      <ul class="uk-offcanvas-nav-list">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Контакты</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="uk-offcanvas-nav">
+                      <div class="uk-offcanvas-nav-title">Мариуполь</div>
+                      <ul class="uk-offcanvas-nav-list">
+                        <li><a href="#">Образование</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">Коворкинг</a></li>
+                        <li><a href="#">Контакты</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="uk-offcanvas-footer">
+              <div class="container">
+                <div class="uk-offcanvas-footer-container">
+                  <ul class="uk-offcanvas-footer-nav">
+                    <li><a href="#">О Spalah</a></li>
+                    <li><a href="#">Партнерская программа</a></li>
+                    <li><a href="#">Карьера в Spalah</a></li>
+                    <li><a href="#">Франчайзи, инвесторам, арендодателям</a></li>
+                  </ul>
+                  <div class="uk-offcanvas-copyright">© 2017</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-body">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-content-body">
+              <div class="hero-description">Коворкинг, ул. Девичья 6, Харьков</div>
+              <h1 class="hero-title">Место для совместной <br> работы IT-профессионалов</h1>
+              <div class="hero-actions">
+                <a href="#section-plans-coworking" class="button" data-uk-scroll>Выбрать тариф</a>
+                <span>Есть 8 свободных мест</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="main" id="main">
+    <div></div>
+    <section class="section section-about-course" id="section-about-course">
+      <div class="section-foreground">
+        <div class="section-body">
+          <div class="container">
+            <div class="layout layout-about-coworking">
+              <div class="layout-item">
+                <div class="heading">
+                  <h2 class="heading-title">Место, в котором есть все необходимое для совместной работы небольших IT
+                    компаний, стартапов и предпринимателей </h2>
+                  <div class="heading-content">
+                    <p>Мы развиваем IT комьюнити в Украине и формируем новое поколение IT профессионалов. Spalah
+                      IT-School каждый день работает для того, чтобы предоставить студентам возможности для
+                      профессионального развития, а выпускники были востребованы на рынке IT и задействованы в
+                      масштабных проектах.</p>
+                    <p>Здесь на расстоянии вытянутой руки находятся преподаватели и интересные спикеры, которые смогут
+                      держать вас в тонусе и вдохновлять на новые свершения. А команда Spalah всегда придет на помощь в
+                      решении любого вопроса.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="layout-item">
+                <div class="card card-coworking-application card-hover background-primary inverse">
+                  <div class="card-pattern pattern"></div>
+                  <div class="card-foreground">
+                    <div class="card-body">
+                      <div class="card-block">
+                        <h4 class="card-title">
+                          Тестовый период для новых резидентов
+                        </h4>
+                      </div>
+                      <div class="card-block">
+                        <div class="grid grid-statistics">
+                          <div class="grid-item">
+                            <div class="statistic">
+                              <div class="statistic-value">2<span class="statistic-symbol">&nbsp;дня</span>
+                              </div>
+                              <div class="statistic-label">Мы даем два дня для того, что-бы резидент смог обжиться и
+                                привыкнуть к окружению. Только после этого вы вносите оплату.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card-block">
+                        <div class="card-actions">
+                          <div class="button button-block">Отправить заявку</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-about-gallery-coworking" id="section-about-gallery-coworking">
+      <div class="section-foreground">
+        <div class="section-body">
+          <div class="container">
+            <div class="layout layout-about-gallery-coworking">
+              <div class="layout-item">
+                <div class="heading">
+                  <h2 class="heading-title">Почему стоит выбрать нас</h2>
+                </div>
+              </div>
+              <div class="layout-item">
+                <div class="swiper-buttons swiper-buttons-articles-coworking">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+              <div class="layout-item">
+                <div class="swiper-container swiper-articles-coworking">
+                  <div class="swiper-wrapper grid grid-articles">
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-article">
+                        <div class="card-header">
+                          <div class="card-image">
+                            <img src="../assets/images/img-article-1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Личный наставник</h3>
+                          <div class="card-description">
+                            У каждого студента во время учебы всегда есть возможность обратиться за помощью к ментору,
+                            как в онлайн режиме так и во время личных встреч. Ментор - выпускник Spalah IT-School,
+                            который успешно окончил курс и прошел тесты для подтверждения навыков.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-article">
+                        <div class="card-header">
+                          <div class="card-image">
+                            <img src="../assets/images/img-article-1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Личный наставник</h3>
+                          <div class="card-description">
+                            У каждого студента во время учебы всегда есть возможность обратиться за помощью к ментору,
+                            как в онлайн режиме так и во время личных встреч. Ментор - выпускник Spalah IT-School,
+                            который успешно окончил курс и прошел тесты для подтверждения навыков.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-article">
+                        <div class="card-header">
+                          <div class="card-image">
+                            <img src="../assets/images/img-article-1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Личный наставник</h3>
+                          <div class="card-description">
+                            У каждого студента во время учебы всегда есть возможность обратиться за помощью к ментору,
+                            как в онлайн режиме так и во время личных встреч. Ментор - выпускник Spalah IT-School,
+                            который успешно окончил курс и прошел тесты для подтверждения навыков.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-article">
+                        <div class="card-header">
+                          <div class="card-image">
+                            <img src="../assets/images/img-article-1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Личный наставник</h3>
+                          <div class="card-description">
+                            У каждого студента во время учебы всегда есть возможность обратиться за помощью к ментору,
+                            как в онлайн режиме так и во время личных встреч. Ментор - выпускник Spalah IT-School,
+                            который успешно окончил курс и прошел тесты для подтверждения навыков.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-article">
+                        <div class="card-header">
+                          <div class="card-image">
+                            <img src="../assets/images/img-article-1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Личный наставник</h3>
+                          <div class="card-description">
+                            У каждого студента во время учебы всегда есть возможность обратиться за помощью к ментору,
+                            как в онлайн режиме так и во время личных встреч. Ментор - выпускник Spalah IT-School,
+                            который успешно окончил курс и прошел тесты для подтверждения навыков.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-article">
+                        <div class="card-header">
+                          <div class="card-image">
+                            <img src="../assets/images/img-article-1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Личный наставник</h3>
+                          <div class="card-description">
+                            У каждого студента во время учебы всегда есть возможность обратиться за помощью к ментору,
+                            как в онлайн режиме так и во время личных встреч. Ментор - выпускник Spalah IT-School,
+                            который успешно окончил курс и прошел тесты для подтверждения навыков.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-article">
+                        <div class="card-header">
+                          <div class="card-image">
+                            <img src="../assets/images/img-article-1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Личный наставник</h3>
+                          <div class="card-description">
+                            У каждого студента во время учебы всегда есть возможность обратиться за помощью к ментору,
+                            как в онлайн режиме так и во время личных встреч. Ментор - выпускник Spalah IT-School,
+                            который успешно окончил курс и прошел тесты для подтверждения навыков.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-article">
+                        <div class="card-header">
+                          <div class="card-image">
+                            <img src="../assets/images/img-article-1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Личный наставник</h3>
+                          <div class="card-description">
+                            У каждого студента во время учебы всегда есть возможность обратиться за помощью к ментору,
+                            как в онлайн режиме так и во время личных встреч. Ментор - выпускник Spalah IT-School,
+                            который успешно окончил курс и прошел тесты для подтверждения навыков.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-article">
+                        <div class="card-header">
+                          <div class="card-image">
+                            <img src="../assets/images/img-article-1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <h3 class="card-title">Личный наставник</h3>
+                          <div class="card-description">
+                            У каждого студента во время учебы всегда есть возможность обратиться за помощью к ментору,
+                            как в онлайн режиме так и во время личных встреч. Ментор - выпускник Spalah IT-School,
+                            который успешно окончил курс и прошел тесты для подтверждения навыков.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-features" id="section-features">
+      <div class="section-foreground">
+        <div class="section-body">
+          <div class="container">
+            <div class="layout layout-features-coworking">
+              <div class="layout-item">
+                <div class="heading">
+                  <h2 class="heading-title">Необходимая для работыинфраструктура</h2>
+                </div>
+              </div>
+              <div class="layout-item">
+                <div class="grid grid-features">
+                  <div class="grid-item">
+                    <div class="card card-feature">
+                      <div class="card-header">
+                        <div class="card-image">
+                          <img src="../assets/images/img-1.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Кейсовый метод</h4>
+                        <div class="card-content">
+                          <p>
+                            У каждого студента во время учебы всегда есть возможность
+                            обратиться за помощью к ментору, как в онлайн режиме так и во
+                            время личных встреч. Ментор - выпускник Spalah IT-School,
+                            который успешно окончил курс и прошел тесты для подтверждения
+                            навыков.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="card card-feature">
+                      <div class="card-header">
+                        <div class="card-image">
+                          <img src="../assets/images/img-1.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Кейсовый метод</h4>
+                        <div class="card-content">
+                          <p>
+                            У каждого студента во время учебы всегда есть возможность
+                            обратиться за помощью к ментору, как в онлайн режиме так и во
+                            время личных встреч. Ментор - выпускник Spalah IT-School,
+                            который успешно окончил курс и прошел тесты для подтверждения
+                            навыков.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="card card-feature">
+                      <div class="card-header">
+                        <div class="card-image">
+                          <img src="../assets/images/img-1.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Кейсовый метод</h4>
+                        <div class="card-content">
+                          <p>
+                            У каждого студента во время учебы всегда есть возможность
+                            обратиться за помощью к ментору, как в онлайн режиме так и во
+                            время личных встреч. Ментор - выпускник Spalah IT-School,
+                            который успешно окончил курс и прошел тесты для подтверждения
+                            навыков.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="card card-feature">
+                      <div class="card-header">
+                        <div class="card-image">
+                          <img src="../assets/images/img-1.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Кейсовый метод</h4>
+                        <div class="card-content">
+                          <p>
+                            У каждого студента во время учебы всегда есть возможность
+                            обратиться за помощью к ментору, как в онлайн режиме так и во
+                            время личных встреч. Ментор - выпускник Spalah IT-School,
+                            который успешно окончил курс и прошел тесты для подтверждения
+                            навыков.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="card card-feature">
+                      <div class="card-header">
+                        <div class="card-image">
+                          <img src="../assets/images/img-1.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Кейсовый метод</h4>
+                        <div class="card-content">
+                          <p>
+                            У каждого студента во время учебы всегда есть возможность
+                            обратиться за помощью к ментору, как в онлайн режиме так и во
+                            время личных встреч. Ментор - выпускник Spalah IT-School,
+                            который успешно окончил курс и прошел тесты для подтверждения
+                            навыков.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="card card-feature">
+                      <div class="card-header">
+                        <div class="card-image">
+                          <img src="../assets/images/img-1.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Кейсовый метод</h4>
+                        <div class="card-content">
+                          <p>
+                            У каждого студента во время учебы всегда есть возможность
+                            обратиться за помощью к ментору, как в онлайн режиме так и во
+                            время личных встреч. Ментор - выпускник Spalah IT-School,
+                            который успешно окончил курс и прошел тесты для подтверждения
+                            навыков.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="card card-feature">
+                      <div class="card-header">
+                        <div class="card-image">
+                          <img src="../assets/images/img-1.png" alt="">
+                        </div>
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">Кейсовый метод</h4>
+                        <div class="card-content">
+                          <p>
+                            У каждого студента во время учебы всегда есть возможность
+                            обратиться за помощью к ментору, как в онлайн режиме так и во
+                            время личных встреч. Ментор - выпускник Spalah IT-School,
+                            который успешно окончил курс и прошел тесты для подтверждения
+                            навыков.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section background-light section-plans-coworking" id="section-plans-coworking">
+      <div class="section-foreground">
+        <div class="section-body">
+          <div class="container">
+            <div class="layout layout-plans-coworking">
+              <div class="layout-item">
+                <div class="heading">
+                  <h2 class="heading-title">Тарифные планы</h2>
+                </div>
+              </div>
+              <div class="layout-item">
+                <div class="grid grid-plans">
+                  <div class="grid-item">
+                    <div class="card card-plan">
+                      <div class="card-pattern pattern"></div>
+                      <div class="card-foreground">
+                        <div class="card-header">
+                          <div class="card-block">
+                            <div class="card-heading">
+                              <h4 class="card-title">Месяц без закрепления рабочего места</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="card-block">
+                            <div class="card-description">
+                              Базовый тариф для тех, кто любит
+                              работать не много, но качественно.
+                              Выбирайте любые 10 дней в течение
+                              календарного месяца, приносите свой
+                              ноутбук, наливайте чашечку кофе и
+                              работайте в удовольствие.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-footer">
+                          <div class="card-block">
+                            <div class="card-price">
+                              <div class="card-price-left">
+                                <div class="card-price-value">15 000</div>
+                              </div>
+                              <div class="card-price-body">
+                                <div class="card-price-currency">грн</div>
+                                <div class="card-price-label">день</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="card card-plan">
+                      <div class="card-pattern pattern"></div>
+                      <div class="card-foreground">
+                        <div class="card-header">
+                          <div class="card-block">
+                            <div class="card-heading">
+                              <h4 class="card-title">Месяц без закрепления рабочего места</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="card-block">
+                            <div class="card-description">
+                              Базовый тариф для тех, кто любит
+                              работать не много, но качественно.
+                              Выбирайте любые 10 дней в течение
+                              календарного месяца, приносите свой
+                              ноутбук, наливайте чашечку кофе и
+                              работайте в удовольствие.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-footer">
+                          <div class="card-block">
+                            <div class="card-price">
+                              <div class="card-price-left">
+                                <div class="card-price-value">15 000</div>
+                              </div>
+                              <div class="card-price-body">
+                                <div class="card-price-currency">грн</div>
+                                <div class="card-price-label">день</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="card card-plan">
+                      <div class="card-pattern pattern"></div>
+                      <div class="card-foreground">
+                        <div class="card-header">
+                          <div class="card-block">
+                            <div class="card-heading">
+                              <h4 class="card-title">Месяц без закрепления рабочего места</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="card-block">
+                            <div class="card-description">
+                              Базовый тариф для тех, кто любит
+                              работать не много, но качественно.
+                              Выбирайте любые 10 дней в течение
+                              календарного месяца, приносите свой
+                              ноутбук, наливайте чашечку кофе и
+                              работайте в удовольствие.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-footer">
+                          <div class="card-block">
+                            <div class="card-price">
+                              <div class="card-price-left">
+                                <div class="card-price-value">15 000</div>
+                              </div>
+                              <div class="card-price-body">
+                                <div class="card-price-currency">грн</div>
+                                <div class="card-price-label">день</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid-item">
+                    <div class="card card-plan">
+                      <div class="card-pattern pattern"></div>
+                      <div class="card-foreground">
+                        <div class="card-header">
+                          <div class="card-block">
+                            <div class="card-heading">
+                              <h4 class="card-title">Месяц без закрепления рабочего места</h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="card-block">
+                            <div class="card-description">
+                              Базовый тариф для тех, кто любит
+                              работать не много, но качественно.
+                              Выбирайте любые 10 дней в течение
+                              календарного месяца, приносите свой
+                              ноутбук, наливайте чашечку кофе и
+                              работайте в удовольствие.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-footer">
+                          <div class="card-block">
+                            <div class="card-price">
+                              <div class="card-price-left">
+                                <div class="card-price-value">15 000</div>
+                              </div>
+                              <div class="card-price-body">
+                                <div class="card-price-currency">грн</div>
+                                <div class="card-price-label">день</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="layout-item">
+                <div data-uk-sticky="offset: 100; bottom: true">
+                  <div class="box box-form box-form-coworking background-primary inverse">
+                    <div class="box-header">
+                      <h3 class="box-title">Забронировать место</h3>
+                    </div>
+                    <div class="box-body">
+                      <div class="box-item">
+                        <form action="#" class="form form-event">
+                          <div class="form-groups form-group-fullname">
+                            <div class="form-group">
+                              <input type="text" required>
+                              <label class="placeholder">Имя</label>
+                            </div>
+                            <div class="form-group">
+                              <input type="text" required>
+                              <label class="placeholder">Фамилия</label>
+                            </div>
+                          </div>
+                          <div class="form-groups form-group-email">
+                            <div class="form-group">
+                              <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                              <label class="placeholder">E-mail</label>
+                            </div>
+                          </div>
+                          <div class="form-groups form-group-tel">
+                            <div class="form-group">
+                              <input type="tel" pattern="\+[0-9]{3}\s\([0-9]{2}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                                     data-inputmask-showmaskonhover="false"
+                                     data-inputmask="'mask': '+380 (99) 999-99-99'" required>
+                              <label class="placeholder">Номер телефона</label>
+                            </div>
+                          </div>
+                          <div class="form-groups form-group-price">
+                            <div class="form-group">
+                              <select>
+                                <option value="У меня нет скидки">Смотреь онлайн – 150 грн</option>
+                                <option value="У меня нет скидки">Смотреь онлайн – 15000 грн</option>
+                                <option value="У меня нет скидки">Смотреь онлайн – 150 грн</option>
+                                <option value="У меня нет скидки">Смотреь онлайн – 150 грн</option>
+                              </select>
+                              <label class="placeholder">Стоимость участия</label>
+                            </div>
+                          </div>
+                          <div class="form-groups form-group-contract">
+                            <div class="form-group-checkbox">
+                              <label class="label"><input type="checkbox">
+                                С <a href="#">публичным договором</a> ознакомлен</label>
+                            </div>
+                          </div>
+                          <div class="form-groups form-group-actions">
+                            <div>
+                              <button type="submit" class="button">Отправить заявку</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-photos-coworking" id="section-photos-coworking">
+      <div class="section-foreground">
+        <div class="section-body">
+          <div class="container">
+            <div class="layout layout-photos-coworking">
+              <div class="layout-item">
+                <div class="heading">
+                  <h2 class="heading-title">Интерьер</h2>
+                </div>
+              </div>
+              <div class="layout-item">
+                <div class="swiper-container swiper-photos-coworking">
+                  <div class="swiper-wrapper grid grid-photos-coworking">
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-photo">
+                        <div class="card-header">
+                          <div class="card-image">
+                            <img src="../assets/images/photo-1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="card-description">
+                            Студенты курса HTML/CSS верстка на мастер-классе Ивана Голвинова —
+                            Боевая верста
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-photo">
+                        <div class="card-header">
+                          <div class="card-image">
+                            <img src="../assets/images/photo-1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="card-description">
+                            Студенты курса HTML/CSS верстка на мастер-классе Ивана Голвинова —
+                            Боевая верста
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-photo">
+                        <div class="card-header">
+                          <div class="card-image">
+                            <img src="../assets/images/photo-1.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="card-description">
+                            Студенты курса HTML/CSS верстка на мастер-классе Ивана Голвинова —
+                            Боевая верста
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-reviews-coworking" id="section-reviews-coworking">
+      <div class="section-foreground">
+        <div class="section-body">
+          <div class="container">
+            <div class="layout layout-reviews-coworking">
+              <div class="layout-item">
+                <div class="heading">
+                  <h2 class="heading-title">Отзывы резидентов</h2>
+                  <div class="heading-description">
+                    Мы всегда развиваем наши методы обучения
+                    и программы, на что в первую очередь влияет
+                    мнения наших студентов.
+                  </div>
+                </div>
+              </div>
+              <div class="layout-item">
+                <div class="swiper-container swiper-reviews">
+                  <div class="swiper-wrapper grid grid-reviews">
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-review">
+                        <div class="card-header">
+                          <div class="author author-review">
+                            <div class="avatar-left">
+                              <div class="author-avatar">
+                                <img src="../assets/images/img-2.png" alt="">
+                              </div>
+                            </div>
+                            <div class="avatar-body">
+                              <div class="author-name">Амалия Робертовна</div>
+                              <ul class="socials-list">
+                                <li>
+                                  <a href="#" class="social">
+                                    <span class="icon-facebook"></span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" class="social">
+                                    <span class="icon-behance"></span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="card-block">
+                            <div class="card-heading">
+                              <h3 class="card-title">
+                                «Хотелось чтоб работа была не только хорошим заработком, но и
+                                приносила какое-то моральное удовлетворение»
+                              </h3>
+                            </div>
+                          </div>
+                          <div class="card-block">
+                            <div class="card-description">
+                              «Проработав на своей работе около 3х лет поняла, то хочу
+                              заниматься совсем другим, хотелось чтоб работа была не только
+                              хорошим заработком,но и приносила какое-то моральное
+                              удовлетворение. Я решилась пойти на курсы веб-дизайна интенсив,
+                              т.е освоить дизайн
+                              за 1 месяц.»
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-review">
+                        <div class="card-header">
+                          <div class="author author-review">
+                            <div class="avatar-left">
+                              <div class="author-avatar">
+                                <img src="../assets/images/img-2.png" alt="">
+                              </div>
+                            </div>
+                            <div class="avatar-body">
+                              <div class="author-name">Амалия Робертовна</div>
+                              <ul class="socials-list">
+                                <li>
+                                  <a href="#" class="social">
+                                    <span class="icon-facebook"></span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" class="social">
+                                    <span class="icon-behance"></span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="card-block">
+                            <div class="card-heading">
+                              <h3 class="card-title">
+                                «Хотелось чтоб работа была не только хорошим заработком, но и
+                                приносила какое-то моральное удовлетворение»
+                              </h3>
+                            </div>
+                          </div>
+                          <div class="card-block">
+                            <div class="card-description">
+                              «Проработав на своей работе около 3х лет поняла, то хочу
+                              заниматься совсем другим, хотелось чтоб работа была не только
+                              хорошим заработком,но и приносила какое-то моральное
+                              удовлетворение. Я решилась пойти на курсы веб-дизайна интенсив,
+                              т.е освоить дизайн
+                              за 1 месяц.»
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-review">
+                        <div class="card-header">
+                          <div class="author author-review">
+                            <div class="avatar-left">
+                              <div class="author-avatar">
+                                <img src="../assets/images/img-2.png" alt="">
+                              </div>
+                            </div>
+                            <div class="avatar-body">
+                              <div class="author-name">Амалия Робертовна</div>
+                              <ul class="socials-list">
+                                <li>
+                                  <a href="#" class="social">
+                                    <span class="icon-facebook"></span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" class="social">
+                                    <span class="icon-behance"></span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="card-block">
+                            <div class="card-heading">
+                              <h3 class="card-title">
+                                «Хотелось чтоб работа была не только хорошим заработком, но и
+                                приносила какое-то моральное удовлетворение»
+                              </h3>
+                            </div>
+                          </div>
+                          <div class="card-block">
+                            <div class="card-description">
+                              «Проработав на своей работе около 3х лет поняла, то хочу
+                              заниматься совсем другим, хотелось чтоб работа была не только
+                              хорошим заработком,но и приносила какое-то моральное
+                              удовлетворение. Я решилась пойти на курсы веб-дизайна интенсив,
+                              т.е освоить дизайн
+                              за 1 месяц.»
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-review">
+                        <div class="card-header">
+                          <div class="author author-review">
+                            <div class="avatar-left">
+                              <div class="author-avatar">
+                                <img src="../assets/images/img-2.png" alt="">
+                              </div>
+                            </div>
+                            <div class="avatar-body">
+                              <div class="author-name">Амалия Робертовна</div>
+                              <ul class="socials-list">
+                                <li>
+                                  <a href="#" class="social">
+                                    <span class="icon-facebook"></span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" class="social">
+                                    <span class="icon-behance"></span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="card-block">
+                            <div class="card-heading">
+                              <h3 class="card-title">
+                                «Хотелось чтоб работа была не только хорошим заработком, но и
+                                приносила какое-то моральное удовлетворение»
+                              </h3>
+                            </div>
+                          </div>
+                          <div class="card-block">
+                            <div class="card-description">
+                              «Проработав на своей работе около 3х лет поняла, то хочу
+                              заниматься совсем другим, хотелось чтоб работа была не только
+                              хорошим заработком,но и приносила какое-то моральное
+                              удовлетворение. Я решилась пойти на курсы веб-дизайна интенсив,
+                              т.е освоить дизайн
+                              за 1 месяц.»
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-review">
+                        <div class="card-header">
+                          <div class="author author-review">
+                            <div class="avatar-left">
+                              <div class="author-avatar">
+                                <img src="../assets/images/img-2.png" alt="">
+                              </div>
+                            </div>
+                            <div class="avatar-body">
+                              <div class="author-name">Амалия Робертовна</div>
+                              <ul class="socials-list">
+                                <li>
+                                  <a href="#" class="social">
+                                    <span class="icon-facebook"></span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" class="social">
+                                    <span class="icon-behance"></span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="card-block">
+                            <div class="card-heading">
+                              <h3 class="card-title">
+                                «Хотелось чтоб работа была не только хорошим заработком, но и
+                                приносила какое-то моральное удовлетворение»
+                              </h3>
+                            </div>
+                          </div>
+                          <div class="card-block">
+                            <div class="card-description">
+                              «Проработав на своей работе около 3х лет поняла, то хочу
+                              заниматься совсем другим, хотелось чтоб работа была не только
+                              хорошим заработком,но и приносила какое-то моральное
+                              удовлетворение. Я решилась пойти на курсы веб-дизайна интенсив,
+                              т.е освоить дизайн
+                              за 1 месяц.»
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-review">
+                        <div class="card-header">
+                          <div class="author author-review">
+                            <div class="avatar-left">
+                              <div class="author-avatar">
+                                <img src="../assets/images/img-2.png" alt="">
+                              </div>
+                            </div>
+                            <div class="avatar-body">
+                              <div class="author-name">Амалия Робертовна</div>
+                              <ul class="socials-list">
+                                <li>
+                                  <a href="#" class="social">
+                                    <span class="icon-facebook"></span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" class="social">
+                                    <span class="icon-behance"></span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="card-block">
+                            <div class="card-heading">
+                              <h3 class="card-title">
+                                «Хотелось чтоб работа была не только хорошим заработком, но и
+                                приносила какое-то моральное удовлетворение»
+                              </h3>
+                            </div>
+                          </div>
+                          <div class="card-block">
+                            <div class="card-description">
+                              «Проработав на своей работе около 3х лет поняла, то хочу
+                              заниматься совсем другим, хотелось чтоб работа была не только
+                              хорошим заработком,но и приносила какое-то моральное
+                              удовлетворение. Я решилась пойти на курсы веб-дизайна интенсив,
+                              т.е освоить дизайн
+                              за 1 месяц.»
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-review">
+                        <div class="card-header">
+                          <div class="author author-review">
+                            <div class="avatar-left">
+                              <div class="author-avatar">
+                                <img src="../assets/images/img-2.png" alt="">
+                              </div>
+                            </div>
+                            <div class="avatar-body">
+                              <div class="author-name">Амалия Робертовна</div>
+                              <ul class="socials-list">
+                                <li>
+                                  <a href="#" class="social">
+                                    <span class="icon-facebook"></span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" class="social">
+                                    <span class="icon-behance"></span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="card-block">
+                            <div class="card-heading">
+                              <h3 class="card-title">
+                                «Хотелось чтоб работа была не только хорошим заработком, но и
+                                приносила какое-то моральное удовлетворение»
+                              </h3>
+                            </div>
+                          </div>
+                          <div class="card-block">
+                            <div class="card-description">
+                              «Проработав на своей работе около 3х лет поняла, то хочу
+                              заниматься совсем другим, хотелось чтоб работа была не только
+                              хорошим заработком,но и приносила какое-то моральное
+                              удовлетворение. Я решилась пойти на курсы веб-дизайна интенсив,
+                              т.е освоить дизайн
+                              за 1 месяц.»
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid-item swiper-slide">
+                      <div class="card card-review">
+                        <div class="card-header">
+                          <div class="author author-review">
+                            <div class="avatar-left">
+                              <div class="author-avatar">
+                                <img src="../assets/images/img-2.png" alt="">
+                              </div>
+                            </div>
+                            <div class="avatar-body">
+                              <div class="author-name">Амалия Робертовна</div>
+                              <ul class="socials-list">
+                                <li>
+                                  <a href="#" class="social">
+                                    <span class="icon-facebook"></span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#" class="social">
+                                    <span class="icon-behance"></span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card-body">
+                          <div class="card-block">
+                            <div class="card-heading">
+                              <h3 class="card-title">
+                                «Хотелось чтоб работа была не только хорошим заработком, но и
+                                приносила какое-то моральное удовлетворение»
+                              </h3>
+                            </div>
+                          </div>
+                          <div class="card-block">
+                            <div class="card-description">
+                              «Проработав на своей работе около 3х лет поняла, то хочу
+                              заниматься совсем другим, хотелось чтоб работа была не только
+                              хорошим заработком,но и приносила какое-то моральное
+                              удовлетворение. Я решилась пойти на курсы веб-дизайна интенсив,
+                              т.е освоить дизайн
+                              за 1 месяц.»
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-contacts" id="section-contacts">
+      <div class="section-foreground">
+        <div class="section-body">
+          <div class="container">
+            <div class="layout layout-contacts layout-contacts-coworking">
+              <div class="layout-item">
+                <div class="heading">
+                  <h2 class="heading-title">Как нас найти</h2>
+                </div>
+              </div>
+              <div class="layout-item">
+                <div class="card card-contact">
+                  <ul class="card-list">
+                    <li>
+                      <div class="contact">
+                        <div class="contact-title">Посетите нас по адресу:</div>
+                        <div>ул. Девичья 6, г. Харьков</div>
+                        <div>Третий и четвертый этаж</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contact">
+                        <div class="contact-title">Звоните нам:</div>
+                        <div class="contact-phone">+380 (67) 01-01-202</div>
+                        <a href="#" class="contact-phone-link" data-uk-toggle="target: #modal-call-me">Заказать обратный
+                          звонок</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contact">
+                        <div class="contact-title">Время работы:</div>
+                        <div>Пн - Сб: 09:00 - 22:00</div>
+                        <div>Вс: 11:00 - 20:00</div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="contact">
+                        <div class="contact-title">Подпишитесь на соц. сети:</div>
+                        <ul class="socials-list contact-socials">
+                          <li>
+                            <a href="#" class="social">
+                              <span class="icon-facebook"></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class="social">
+                              <span class="icon-youtube-play"></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class="social">
+                              <span class="icon-instagram"></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class="social">
+                              <span class="icon-linkedin"></span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class="social">
+                              <span class="icon-behance"></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <form action="#" class="form form-newsletter-news">
+                        <div class="form-title">Подпишитесь на новости:</div>
+                        <div class="form-group">
+                          <button class="form-icon"><span class="icon-arrow-right"></span></button>
+                          <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+                          <label class="placeholder">Введите вашу эл. почту</label>
+                        </div>
+                      </form>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="layout-item">
+                <div class="card card-location">
+                  <div class="card-map"></div>
+                </div>
+              </div>
+              <div class="layout-item">
+                <div class="card card-coworking-post">
+                  <div class="card-left">
+                    <div class="card-image">
+                      <img src="../assets/images/coworking.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-heading">
+                      <h4 class="card-title">
+                        Коворкинг на Лопанской набережной
+                      </h4>
+                    </div>
+                    <p class="card-description">
+                      У нас есть еще один коворкинг на 84 места по адресу Лопанская набережная 3. Тихий центр города и
+                      отличный вид из окна мотивируют и вдохновляют.
+                    </p>
+                    <div class="card-actions">
+                      <a href="#" class="card-link">Подробнее о коворкинге <span class="icon-angle-right"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-list">
+          <div class="footer-item">
+            <div class="footer-copyright">© Светим с 2014 года. Spalah</div>
+            <ul class="footer-item-list">
+              <li><a href="#">Политика конфиденциальности</a></li>
+              <li><a href="#">Публичный договор</a></li>
+              <li><a href="#">Реквизиты</a></li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <div class="footer-item-title">Spalah в Харькове:</div>
+            <ul class="footer-item-list">
+              <li><a href="#">IT-школа</a></li>
+              <li><a href="#">Ковморкинг</a></li>
+              <li><a href="#">Мероприятия</a></li>
+              <li><a href="#">Блог</a></li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <div class="footer-item-title">Филиалы:</div>
+            <ul class="footer-item-list">
+              <li><a href="#">Харьков</a></li>
+              <li><a href="#">Днепр</a></li>
+              <li><a href="#">Одесса</a></li>
+              <li><a href="#">Киев</a></li>
+              <li><a href="#">Запорожье</a></li>
+              <li class="footer-item-gutter"><a href="#">Дистанционное обучение</a></li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <div class="footer-item-title">Компания:</div>
+            <ul class="footer-item-list">
+              <li><a href="#">О Spalah</a></li>
+              <li><a href="#">Партнерская программа</a></li>
+              <li><a href="#">Карьера в Spalah</a></li>
+              <li class="footer-item-gutter"><a href="#">Франчайзи, инвесторам, арендодателям</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<div id="modal-call-me" class="uk-modal uk-modal-call-me uk-modal-small"
+     uk-modal="sel-close: .uk-modal-close-default, .uk-modal-close">
+  <div class="uk-modal-dialog">
+    <div class="uk-modal-header">
+      <button class="uk-modal-close-default" type="button" uk-close></button>
+      <h4 class="uk-modal-title">Обратный звонок</h4>
+    </div>
+    <div class="uk-modal-body">
+      <form action="#" class="form form-call-me">
+        <div class="form-groups form-group-fullname">
+          <div class="form-group">
+            <input type="text" required>
+            <label class="placeholder">Имя</label>
+          </div>
+          <div class="form-group">
+            <input type="tel" pattern="\+[0-9]{3}\s\([0-9]{2}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                   data-inputmask-showmaskonhover="false" data-inputmask="'mask': '+380 (99) 999-99-99'" required>
+            <label class="placeholder">Номер телефона</label>
+          </div>
+        </div>
+        <div class="form-groups form-group-info">
+          <div class="form-group">
+            После отправки заявки на обратный
+            звонок наш менеджер свяжется с вами
+            в течение 1-5 минут.
+          </div>
+        </div>
+        <div class="form-groups form-group-actions">
+          <div>
+            <button class="button button-block">Отправить заявку</button>
+            <button class="button-link button-block uk-modal-close">Отменить</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit.min.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/dependencyLibs/inputmask.dependencyLib.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/inputmask/inputmask.js"></script>
+<script src="../assets/scripts/progressbar.js"></script>
+<script src="../assets/scripts/main.js"></script>
+</body>
+</html>

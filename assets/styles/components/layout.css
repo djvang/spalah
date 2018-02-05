@@ -1,0 +1,37 @@
+.layout {
+  display: grid;
+  grid-gap: 96px var(--grid-gap);
+  grid-template-columns: minmax(260px, 1fr);
+}
+
+.layout > .layout-item {
+  max-width: 100%;
+}
+
+.layout > .layout-item:nth-child(1) {
+  grid-area: a;
+}
+
+.layout > .layout-item:nth-child(2) {
+  grid-area: b;
+}
+
+.layout > .layout-item:nth-child(3) {
+  grid-area: c;
+}
+
+.layout > .layout-item:nth-child(4) {
+  grid-area: d;
+}
+
+.layout > .layout-item:nth-child(5) {
+  grid-area: e;
+}
+
+.layout > .layout-item:nth-child(6) {
+  grid-area: f;
+}
+
+.layout > .layout-item:nth-child(7) {
+  grid-area: g;
+}

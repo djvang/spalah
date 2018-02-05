@@ -1,0 +1,30 @@
+.socials-title {
+  color: var(--color-light);
+}
+
+.socials-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.socials-list > li {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+}
+
+.social:hover,
+.social:focus {
+  text-decoration: none;
+  color: inherit;
+}
