@@ -1,0 +1,73 @@
+.teacher-foreground {
+  padding: calc(var(--base-line-height) * 3) 0;
+  padding-right: 10px;
+  grid-column: 1/5;
+  position: relative;
+}
+.teacher-header .breadcrumb {
+  font-size: 12px;
+}
+
+.teacher-fullname {
+  margin-right: -10px;
+  margin-left: -10px;
+  display: flex;
+}
+
+.teacher-fullname h1{
+  font-size: 60px;
+  margin-top: 0;
+  padding: 0 10px;
+}
+
+.teacher-social-list {
+  margin-bottom: calc(var(--base-line-height) * 2);
+}
+
+.teacher .teacher-position {
+  margin-bottom: calc(var(--base-line-height) * 2);
+}
+
+.hero-teacher-single .teacher {
+  height: 100%;
+  display: grid;
+  grid-gap: 70px;
+  grid-template-columns: repeat(8, 1fr);
+  position: relative; 
+}
+
+.teacher-background {
+  padding-top: calc(var(--base-line-height) * 3);
+  grid-column: 5/9;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+
+.teacher-avatar  img {
+  height: 100%;
+}
+
+.teacher .teacher-avatar::before {
+  display: none;
+}
+
+
+.teacher .teacher-avatar {
+  margin-top: 0;
+  margin-bottom: 0; 
+}
+
+.teacher-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.teacher .pattern {
+  background-size: 1026px 908px;
+  background-position: calc(100% + 40px) calc(100% + 60px);
+}

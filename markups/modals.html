@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modals</title>
+
+  <link rel="stylesheet" href="../assets/icomoon/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.css">
+  <link rel="stylesheet" href="../assets/styles/main.css">
+
+</head>
+
+<body class="page page-blog">
+  <br>
+  <div class=" uk-offcanvas-content">
+    <div class="container">
+      <h3>Modals</h3>
+      <button class="button" data-uk-toggle="target: #modal-student-profile-view">Профиль студента</button>
+      <button class="button" data-uk-toggle="target: #modal-student-course-add">Добавить курс</button>
+      <button class="button" data-uk-toggle="target: #modal-student-course-request">Покупка курса</button>
+      <button class="button" data-uk-toggle="target: #modal-student-course-request-success">Покупка курса (Заявка на курс принята)</button>
+      <button class="button" data-uk-toggle="target: #modal-student-course-request-towns-example">Покупка курса (Наборы на курс очно)</button>
+      <button class="button" data-uk-toggle="target: #modal-student-course-registration">Регистрация на курс</button>
+      <button class="button" data-uk-toggle="target: #modal-student-course-login">Вход в личный кабинет</button>
+    </div>
+  </div>
+
+  <div id="modal-student-profile-view" class="uk-modal uk-modal-student-profile-view uk-modal-full" data-uk-modal="sel-close: .uk-modal-toggler">
+    <div class="uk-modal-dialog">
+      <div class="uk-modal-layout">
+        <div class="uk-modal-layout-sidebar">
+          <div class="uk-modal-layout-header">
+            <button class="uk-modal-toggler">
+              <span class="icon-arrow-left"></span>
+            </button>
+            <a class="uk-modal-brand">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="81" height="32" viewBox="0 0 81 32">
+                <title>i-logo</title>
+                <path fill="#444" d="M0 1.829v0l1.829-1.829v32l-1.829-1.829h81.371l-1.829 1.829v-32l1.829 1.829h-81.371zM0 0h81.371v32h-81.371v-32z"></path>
+                <path fill="#444" d="M11.429 18.1l1.131-1.22c0.723 0.519 1.529 0.795 2.377 0.795 0.546 0 0.839-0.172 0.839-0.474 0-0.275-0.242-0.426-1.237-0.634-1.56-0.323-2.765-0.72-2.765-2.102 0-1.232 1.080-2.122 2.837-2.122 1.248 0 2.222 0.304 3.018 0.882l-1.017 1.298c-0.67-0.426-1.404-0.654-2.053-0.654-0.492 0-0.733 0.189-0.733 0.444 0 0.304 0.251 0.436 1.268 0.644 1.687 0.332 2.734 0.823 2.734 2.084 0 1.355-1.184 2.159-2.966 2.159-1.298 0-2.534-0.37-3.434-1.1z"></path>
+                <path fill="#444" d="M24.583 15.752c0.746 0 1.202-0.352 1.202-0.912 0-0.586-0.456-0.899-1.212-0.899h-0.986v1.811h0.996zM21.486 12.343h3.248c1.916 0 3.152 0.893 3.152 2.43 0 1.617-1.377 2.469-3.26 2.469h-1.039v1.958h-2.1v-6.857z"></path>
+                <path fill="#444" d="M34.175 16.514l-0.819-1.933-0.83 1.933h1.65zM32.389 12.343h1.967l3.13 6.857h-2.186l-0.535-1.216h-2.838l-0.525 1.216h-2.144l3.131-6.857z"></path>
+                <path fill="#444" d="M40.686 12.343h1.997v5.192h3.489v1.666h-5.486v-6.857z"></path>
+                <path fill="#444" d="M54.291 16.514l-0.82-1.933-0.828 1.933h1.648zM52.504 12.343h1.965l3.131 6.857h-2.185l-0.536-1.216h-2.836l-0.527 1.216h-2.144l3.132-6.857z"></path>
+                <path fill="#444" d="M60.343 12.343h1.949v2.567h2.5v-2.567h1.95v6.857h-1.95v-2.606h-2.5v2.606h-1.949v-6.857z"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="uk-modal-layout-footer">
+            <h2>Профиль студента</h2>
+            <div class="card card-profile-student-secondary">
+              <div class="card-left">
+                <div class="card-avatar">
+                  <img src="../assets/images/img-interview-1.jpg" alt="">
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="card-position">Студент</div>
+                <h4 class="card-fullname">
+                  <span class="card-name">Артемий</span>
+                  <span class="card-lastname">Лебедев</span>
+                </h4>
+                <div class="card-status">В поиске работы</div>
+                <ul class="socials-list">
+                  <li>
+                    <a href="" class="social">
+                      <span class="icon-github"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="social">
+                      <span class="icon-facebook"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="social">
+                      <span class="icon-linkedin"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="" class="social">
+                      <span class="icon-behance"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-modal-layout-body">
+          <div class="uk-modal-layout-block">
+            <div class="heading">
+              <h3 class="heading-title">Пройденные курсы</h3>
+            </div>
+            <table class="table table-courses table-student-courses">
+              <tbody>
+                <tr>
+                  <td>Angular 5 (2+)</td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <span class="color-light">Итоговый балл:</span>
+                    <b>
+                      <span class="color-primary">88</span> из 100</b>
+                  </td>
+                  <td>
+                    <a href="#" class="link">Сертификат</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Основы веб-технологий</td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <span class="color-light">Итоговый балл:</span>
+                    <b>
+                      <span class="color-primary">88</span> из 100</b>
+                  </td>
+                  <td>
+                    <a href="#" class="link">Сертификат</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Курс CMS 1С-Битрикс</td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <span class="color-light">Итоговый балл:</span>
+                    <b>
+                      <span class="color-primary">88</span> из 100</b>
+                  </td>
+                  <td>
+                    <a href="#" class="link">Сертификат</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Курс Magento 2</td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <span class="color-light">Итоговый балл:</span>
+                    <b>
+                      <span class="color-primary">88</span> из 100</b>
+                  </td>
+                  <td>
+                    <span class="color-light">Нет сертификата</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Курс JavaScript</td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <span class="color-light">Итоговый балл:</span>
+                    <b>
+                      <span class="color-primary">88</span> из 100</b>
+                  </td>
+                  <td>
+                    <a href="#" class="link">Сертификат</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="uk-modal-layout-block">
+            <div class="heading">
+              <h3 class="heading-title">Текущие курсы</h3>
+            </div>
+            <table class="table table-courses table-student-courses">
+              <tbody>
+                <tr>
+                  <td>Angular 5 (2+)</td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <span class="color-light">Пройдено:</span> 44%</td>
+                </tr>
+                <tr>
+                  <td>Angular 5 (2+)</td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <span class="color-light">Пройдено:</span> 44%</td>
+                </tr>
+                <tr>
+                  <td>Angular 5 (2+)</td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <span class="color-light">Пройдено:</span> 44%</td>
+                </tr>
+                <tr>
+                  <td>Angular 5 (2+)</td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <span class="color-light">Пройдено:</span> 44%</td>
+                </tr>
+                <tr>
+                  <td>Angular 5 (2+)</td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <span class="color-light">Пройдено:</span> 44%</td>
+                </tr>
+                <tr>
+                  <td>Angular 5 (2+)</td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <span class="color-light">Пройдено:</span> 44%</td>
+                </tr>
+                <tr>
+                  <td>Angular 5 (2+)</td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <span class="color-light">Пройдено:</span> 44%</td>
+                </tr>
+                <tr>
+                  <td>Angular 5 (2+)</td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <span class="color-light">Пройдено:</span> 44%</td>
+                </tr>
+                <tr>
+                  <td>Angular 5 (2+)</td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <span class="color-light">Пройдено:</span> 44%</td>
+                </tr>
+                <tr>
+                  <td>Angular 5 (2+)</td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <span class="color-light">Пройдено:</span> 44%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="modal-student-course-add" class="uk-modal uk-modal-student-course-add uk-modal-full" data-uk-modal="sel-close: .uk-modal-toggler">
+    <div class="uk-modal-dialog">
+      <div class="uk-modal-layout">
+        <div class="uk-modal-layout-sidebar">
+          <div class="uk-modal-layout-header">
+            <button class="uk-modal-toggler">
+              <span class="icon-arrow-left"></span>
+            </button>
+            <a class="uk-modal-brand">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="81" height="32" viewBox="0 0 81 32">
+                <title>i-logo</title>
+                <path fill="#444" d="M0 1.829v0l1.829-1.829v32l-1.829-1.829h81.371l-1.829 1.829v-32l1.829 1.829h-81.371zM0 0h81.371v32h-81.371v-32z"></path>
+                <path fill="#444" d="M11.429 18.1l1.131-1.22c0.723 0.519 1.529 0.795 2.377 0.795 0.546 0 0.839-0.172 0.839-0.474 0-0.275-0.242-0.426-1.237-0.634-1.56-0.323-2.765-0.72-2.765-2.102 0-1.232 1.080-2.122 2.837-2.122 1.248 0 2.222 0.304 3.018 0.882l-1.017 1.298c-0.67-0.426-1.404-0.654-2.053-0.654-0.492 0-0.733 0.189-0.733 0.444 0 0.304 0.251 0.436 1.268 0.644 1.687 0.332 2.734 0.823 2.734 2.084 0 1.355-1.184 2.159-2.966 2.159-1.298 0-2.534-0.37-3.434-1.1z"></path>
+                <path fill="#444" d="M24.583 15.752c0.746 0 1.202-0.352 1.202-0.912 0-0.586-0.456-0.899-1.212-0.899h-0.986v1.811h0.996zM21.486 12.343h3.248c1.916 0 3.152 0.893 3.152 2.43 0 1.617-1.377 2.469-3.26 2.469h-1.039v1.958h-2.1v-6.857z"></path>
+                <path fill="#444" d="M34.175 16.514l-0.819-1.933-0.83 1.933h1.65zM32.389 12.343h1.967l3.13 6.857h-2.186l-0.535-1.216h-2.838l-0.525 1.216h-2.144l3.131-6.857z"></path>
+                <path fill="#444" d="M40.686 12.343h1.997v5.192h3.489v1.666h-5.486v-6.857z"></path>
+                <path fill="#444" d="M54.291 16.514l-0.82-1.933-0.828 1.933h1.648zM52.504 12.343h1.965l3.131 6.857h-2.185l-0.536-1.216h-2.836l-0.527 1.216h-2.144l3.132-6.857z"></path>
+                <path fill="#444" d="M60.343 12.343h1.949v2.567h2.5v-2.567h1.95v6.857h-1.95v-2.606h-2.5v2.606h-1.949v-6.857z"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="uk-modal-layout-footer">
+            <h2>Выберите курс для изучения и добавьте его в личный кабинет</h2>
+          </div>
+          <div class="uk-modal-pattern pattern"></div>
+        </div>
+        <div class="uk-modal-layout-body">
+          <div class="uk-modal-layout-block">
+            <div class="heading">
+              <h3 class="heading-title">Backend разработка</h3>
+            </div>
+            <table class="table table-courses table-student-courses">
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#">Angular 5 (2+)</a>
+                  </td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <a href="#" class="button-icon">
+                      <span class="icon-plus-outline"></span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">Angular 5 (2+)</a>
+                  </td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <a href="#" class="button-icon">
+                      <span class="icon-plus-outline"></span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">Angular 5 (2+)</a>
+                  </td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <a href="#" class="button-icon">
+                      <span class="icon-plus-outline"></span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">Angular 5 (2+)</a>
+                  </td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <a href="#" class="button-icon">
+                      <span class="icon-plus-outline"></span>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="uk-modal-layout-block">
+            <div class="heading">
+              <h3 class="heading-title">Frontend разработка</h3>
+            </div>
+            <table class="table table-courses table-student-courses">
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="#">Angular 5 (2+)</a>
+                  </td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <a href="#" class="button-icon">
+                      <span class="icon-plus-outline"></span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">Angular 5 (2+)</a>
+                  </td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <a href="#" class="button-icon">
+                      <span class="icon-plus-outline"></span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">Angular 5 (2+)</a>
+                  </td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <a href="#" class="button-icon">
+                      <span class="icon-plus-outline"></span>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">Angular 5 (2+)</a>
+                  </td>
+                  <td>
+                    <span class="color-light">Продвинутый уровень</span>
+                  </td>
+                  <td>
+                    <a href="#" class="button-icon">
+                      <span class="icon-plus-outline"></span>
+                    </a>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="modal-student-course-request" class="uk-modal uk-modal-student-course-request uk-modal-full" data-uk-modal="sel-close: .uk-modal-toggler">
+    <div class="uk-modal-dialog">
+      <div class="uk-modal-layout">
+        <div class="uk-modal-layout-sidebar">
+          <div class="uk-modal-layout-header">
+            <button class="uk-modal-toggler">
+              <span class="icon-arrow-left"></span>
+            </button>
+            <a class="uk-modal-brand">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="81" height="32" viewBox="0 0 81 32">
+                <title>i-logo</title>
+                <path fill="#444" d="M0 1.829v0l1.829-1.829v32l-1.829-1.829h81.371l-1.829 1.829v-32l1.829 1.829h-81.371zM0 0h81.371v32h-81.371v-32z"></path>
+                <path fill="#444" d="M11.429 18.1l1.131-1.22c0.723 0.519 1.529 0.795 2.377 0.795 0.546 0 0.839-0.172 0.839-0.474 0-0.275-0.242-0.426-1.237-0.634-1.56-0.323-2.765-0.72-2.765-2.102 0-1.232 1.080-2.122 2.837-2.122 1.248 0 2.222 0.304 3.018 0.882l-1.017 1.298c-0.67-0.426-1.404-0.654-2.053-0.654-0.492 0-0.733 0.189-0.733 0.444 0 0.304 0.251 0.436 1.268 0.644 1.687 0.332 2.734 0.823 2.734 2.084 0 1.355-1.184 2.159-2.966 2.159-1.298 0-2.534-0.37-3.434-1.1z"></path>
+                <path fill="#444" d="M24.583 15.752c0.746 0 1.202-0.352 1.202-0.912 0-0.586-0.456-0.899-1.212-0.899h-0.986v1.811h0.996zM21.486 12.343h3.248c1.916 0 3.152 0.893 3.152 2.43 0 1.617-1.377 2.469-3.26 2.469h-1.039v1.958h-2.1v-6.857z"></path>
+                <path fill="#444" d="M34.175 16.514l-0.819-1.933-0.83 1.933h1.65zM32.389 12.343h1.967l3.13 6.857h-2.186l-0.535-1.216h-2.838l-0.525 1.216h-2.144l3.131-6.857z"></path>
+                <path fill="#444" d="M40.686 12.343h1.997v5.192h3.489v1.666h-5.486v-6.857z"></path>
+                <path fill="#444" d="M54.291 16.514l-0.82-1.933-0.828 1.933h1.648zM52.504 12.343h1.965l3.131 6.857h-2.185l-0.536-1.216h-2.836l-0.527 1.216h-2.144l3.132-6.857z"></path>
+                <path fill="#444" d="M60.343 12.343h1.949v2.567h2.5v-2.567h1.95v6.857h-1.95v-2.606h-2.5v2.606h-1.949v-6.857z"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="uk-modal-layout-footer">
+            <h2>Покупка полного доступа к курсу «Дизайн цифровых интерфейсов начальный уровень»</h2>
+            <p>Мы можем предложить вам как дистанционные форматы обучения так и очные в конкретном городе. Выбирите интересующий
+              вас формат и переходите к оплате.</p>
+          </div>
+          <div class="uk-modal-pattern pattern"></div>
+        </div>
+        <div class="uk-modal-layout-body">
+          <div class="course-sets">
+            <div class="course course-set column-left">
+              <div class="course-header">
+                <div class="course-block">
+                  <div class="heading">
+                    <h4 class="heading-title">Наборы на курс дистанционно</h4>
+                  </div>
+                </div>
+                <div class="course-block">
+                  <div class="course-switcher">
+                    <div class="course-switcher-title">Идет 3 набора:</div>
+                    <div>
+                      <ul class="nav nav-tab course-switcher-nav" data-uk-tab="connect: #switcher-course-sets-1; animation: uk-animation-fade uk-animation-fast">
+                        <li class="uk-active">
+                          <a href="#">26 июня</a>
+                        </li>
+                        <li>
+                          <a href="#">8 июля</a>
+                        </li>
+                        <li>
+                          <a href="#">12 августа</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="switcher course-switcher-sets" id="switcher-course-sets-1">
+                <div class="switcher-item">
+                  <div class="course-container">
+                    <div class="course-content">
+                      <div>
+                        <div class="course-block">
+                          <ul class="course-info">
+                            <li>
+                              <span class="course-info-title">Формат:</span>
+                              <span class="course-info-label">
+                              <a href="#" data-uk-toggle="target: #modal-intensive-intensity" class="link">Очный интенсив</a>
+                            </span>
+                            </li>
+                            <li>
+                              <span class="course-info-title">Старт занятий:</span>
+                              <span class="course-info-label">12 августа</span>
+                            </li>
+                            <li>
+                              <span class="course-info-title">Длительность:</span>
+                              <span class="course-info-label">3 месяца / 24 занятия</span>
+                            </li>
+                            <li>
+                              <span class="course-info-title">Расписание:</span>
+                              <span class="course-info-label">Вт 19:00 — 21:00, Пт 9:00 — 11:00
+                              <span class="datepicker">
+                                <span data-toggle class="color-primary icon-calendar-o"></span>
+                              </span>
+                            </span>
+                            </li>
+                            <li>
+                              <span class="course-info-title">Адрес:</span>
+                              <span class="course-info-label"> г. Харьков, ул. Девичья 6, 3 этаж</span>
+                            </li>
+                            <li>
+                              <span class="course-info-title">Мест осталось:</span>
+                              <span class="course-info-label">4 из 15</span>
+                            </li>
+                            <li>
+                              <span class="course-info-title">Преподаватель:</span>
+                              <span class="course-info-label">
+                                <a href="#">Игорь Прокопенко</a>
+                                <span class="socials">
+                                  <a href="#" class="social icon-github"></a>
+                                  <a href="#" class="social icon-facebook"></a>
+                                  <a href="#" class="social icon-linkedin"></a>
+                                </span>
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="course-block">
+                          <div class="course-price">
+                            <div class="course-price-title dropdown">
+                              Стоимость курса
+                              <a href="#" class="link">в гривнах</a>:
+                              <div data-uk-dropdown="mode: click; offset: 10">
+                                <ul class="dropdown-list">
+                                  <li>
+                                    <a href="#">
+                                      <img src="../assets/images/ua.jpg" alt="">
+                                      <span>УКР, ГРН</span>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <img src="../assets/images/ua.jpg" alt="">
+                                      <span>УКР, ГРН</span>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <img src="../assets/images/ua.jpg" alt="">
+                                      <span>УКР, ГРН</span>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <img src="../assets/images/ua.jpg" alt="">
+                                      <span>УКР, ГРН</span>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <img src="../assets/images/ua.jpg" alt="">
+                                      <span>УКР, ГРН</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="course-prices">
+                              <div class="course-price-all">
+                                <span class="course-price-value">7 500</span>
+                                <span class="course-price-currency">грн</span>
+                                <div class="course-price-label">одним платежем</div>
+                              </div>
+                              <div class="course-price-parts">
+                                <span class="course-price-value">2 600</span>
+                                <span class="course-price-currency">грн</span>
+                                <div class="course-price-label">тремя платежами</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="course-block">
+                          <div class="course-payment-installments">
+                            <!--<img src="../assets/images/big-opch-img.png" alt="" class="icon">-->
+                            <!--<a href="#" data-uk-toggle="target: #modal-payment-by-installments" class="link">Оплата частями-->
+                            <!--</a>-->
+                            <!--от Приват Банка -->
+                            Также у нас работает
+                            <a href="#" data-uk-toggle="target: #modal-discount-system" class="link">скидочная система</a>
+                            <a href="#" data-uk-toggle="target: #modal-refund-policy" class="link">Условия возврата денег
+                            </a>
+                          </div>
+                        </div>
+                        <div class="course-block">
+                          <div class="course-actions">
+                            <button class="button">
+                              отправить заявку
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="switcher-item">
+                  <div class="course-container">
+                    <div>
+                      <div class="course-block">
+                        <ul class="course-info">
+                          <li>
+                            <span class="course-info-title">Формат:</span>
+                            <span class="course-info-label">
+                              <a href="#" data-uk-toggle="target: #modal-intensive-intensity" class="link">Очный интенсив</a>
+                            </span>
+                            <div class="uk-dropdown" data-uk-dropdown>
+                              Lorem ipsum dolor sit.
+                            </div>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Старт занятий:</span>
+                            <span class="course-info-label">26 июня 2017</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Длительность:</span>
+                            <span class="course-info-label">3 месяца / 24 занятия</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Расписание:</span>
+                            <span class="course-info-label">Вт 19:00 — 21:00, Пт 9:00 — 11:00
+                              <span class="datepicker">
+                                <span data-toggle class="color-primary icon-calendar-o"></span>
+                              </span>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Адрес:</span>
+                            <span class="course-info-label"> г. Харьков, ул. Девичья 6, 3 этаж</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Мест осталось:</span>
+                            <span class="course-info-label">4 из 15</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Преподаватель:</span>
+                            <span class="course-info-label">
+                                <a href="#">Игорь Прокопенко</a>
+                                <span class="socials">
+                                  <a href="#" class="social icon-github"></a>
+                                  <a href="#" class="social icon-facebook"></a>
+                                  <a href="#" class="social icon-linkedin"></a>
+                                </span>
+                              </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-price">
+                          <div class="course-price-title dropdown">
+                            Стоимость курса
+                            <a href="#" class="link">в гривнах</a>:
+                            <div data-uk-dropdown="mode: click; offset: 10">
+                              <ul class="dropdown-list">
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="course-prices">
+                            <div class="course-price-all">
+                              <span class="course-price-value">7 500</span>
+                              <span class="course-price-currency">грн</span>
+                              <div class="course-price-label">одним платежем</div>
+                            </div>
+                            <div class="course-price-parts">
+                              <span class="course-price-value">2 600</span>
+                              <span class="course-price-currency">грн</span>
+                              <div class="course-price-label">тремя платежами</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-payment-installments">
+                          <!--<img src="../assets/images/big-opch-img.png" alt="" class="icon">-->
+                          <!--<a href="#" data-uk-toggle="target: #modal-payment-by-installments" class="link">Оплата частями-->
+                          <!--</a>-->
+                          <!--от Приват Банка -->
+                          Также у нас работает
+                          <a href="#" data-uk-toggle="target: #modal-discount-system" class="link">скидочная система</a>
+                          <a href="#" data-uk-toggle="target: #modal-refund-policy" class="link">Условия возврата денег
+                          </a>
+                        </div>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-actions">
+                          <button class="button">
+                            отправить заявку
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="switcher-item">
+                  <div class="course-container">
+                    <div>
+                      <div class="course-block">
+                        <ul class="course-info">
+                          <li>
+                            <span class="course-info-title">Формат:</span>
+                            <span class="course-info-label">
+                              <a href="#" data-uk-toggle="target: #modal-intensive-intensity" class="link">Очный интенсив</a>
+                            </span>
+                            <div class="uk-dropdown" data-uk-dropdown>
+                              Lorem ipsum dolor sit.
+                            </div>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Старт занятий:</span>
+                            <span class="course-info-label">8 июля</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Длительность:</span>
+                            <span class="course-info-label">3 месяца / 24 занятия</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Расписание:</span>
+                            <span class="course-info-label">Вт 19:00 — 21:00, Пт 9:00 — 11:00
+                              <span class="datepicker">
+                                <span data-toggle class="color-primary icon-calendar-o"></span>
+                              </span>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Адрес:</span>
+                            <span class="course-info-label"> г. Харьков, ул. Девичья 6, 3 этаж</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Мест осталось:</span>
+                            <span class="course-info-label">4 из 15</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Преподаватель:</span>
+                            <span class="course-info-label">
+                                <a href="#">Игорь Прокопенко</a>
+                                <span class="socials">
+                                  <a href="#" class="social icon-github"></a>
+                                  <a href="#" class="social icon-facebook"></a>
+                                  <a href="#" class="social icon-linkedin"></a>
+                                </span>
+                              </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-price">
+                          <div class="course-price-title dropdown">
+                            Стоимость курса
+                            <a href="#" class="link">в гривнах</a>:
+                            <div data-uk-dropdown="mode: click; offset: 10">
+                              <ul class="dropdown-list">
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="course-prices">
+                            <div class="course-price-all">
+                              <span class="course-price-value">7 500</span>
+                              <span class="course-price-currency">грн</span>
+                              <div class="course-price-label">одним платежем</div>
+                            </div>
+                            <div class="course-price-parts">
+                              <span class="course-price-value">2 600</span>
+                              <span class="course-price-currency">грн</span>
+                              <div class="course-price-label">тремя платежами</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-payment-installments">
+                          <!--<img src="../assets/images/big-opch-img.png" alt="" class="icon">-->
+                          <!--<a href="#" data-uk-toggle="target: #modal-payment-by-installments" class="link">Оплата частями-->
+                          <!--</a>-->
+                          <!--от Приват Банка -->
+                          Также у нас работает
+                          <a href="#" data-uk-toggle="target: #modal-discount-system" class="link">скидочная система</a>
+                          <a href="#" data-uk-toggle="target: #modal-refund-policy" class="link">Условия возврата денег
+                          </a>
+                        </div>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-actions">
+                          <button class="button">
+                            отправить заявку
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="course course-set column-right">
+              <div class="course-header">
+                <div class="course-block">
+                  <div class="heading">
+                    <h4 class="heading-title">Наборы на курс очно в
+                      <a href="#" class="link"> г. Харьков <span class="icon-angle-down"></span></a>
+                      <div data-uk-dropdown="mode: click; offset: 10">
+                        <ul class="dropdown-list">
+                          <li>
+                            <a data-uk-toggle="target: .toggle-course; animation: uk-animation-fade" href="#">Днепр</a>
+                          </li>
+                          <li>
+                            <a data-uk-toggle="target: .toggle-course; animation: uk-animation-fade" href="#">Одесса</a>
+                          </li>
+                          <li>
+                            <a data-uk-toggle="target: .toggle-course; animation: uk-animation-fade" href="#">Запорожье</a>
+                          </li>
+                          <li>
+                            <a data-uk-toggle="target: .toggle-course; animation: uk-animation-fade" href="#">Киев</a>
+                          </li>
+                          <li>
+                            <a data-uk-toggle="target: .toggle-course; animation: uk-animation-fade" href="#">Мариуполь</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </h4>
+                  </div>
+                </div>
+                <div class="course-block">
+                  <div class="course-switcher">
+                    <div class="course-switcher-title">Идет 3 набора:</div>
+                    <div>
+                      <ul class="nav nav-tab course-switcher-nav" data-uk-tab="connect: #switcher-course-sets-2; animation: uk-animation-fade uk-animation-fast">
+                        <li class="uk-active">
+                          <a href="#">26 июня</a>
+                        </li>
+                        <li>
+                          <a href="#">8 июля</a>
+                        </li>
+                        <li>
+                          <a href="#">12 августа</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="switcher course-switcher-sets" id="switcher-course-sets-2">
+                <div class="switcher-item">
+                  <div class="course-container">
+                    <div class="course-content">
+                      <div class="course-block">
+                        <ul class="course-info">
+                          <li>
+                            <span class="course-info-title">Формат:</span>
+                            <span class="course-info-label">
+                              <a href="#" data-uk-toggle="target: #modal-intensive-intensity" class="link">Очный интенсив</a>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Старт занятий:</span>
+                            <span class="course-info-label">12 августа</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Длительность:</span>
+                            <span class="course-info-label">3 месяца / 24 занятия</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Расписание:</span>
+                            <span class="course-info-label">Вт 19:00 — 21:00, Пт 9:00 — 11:00
+                              <span class="datepicker">
+                                <span data-toggle class="color-primary icon-calendar-o"></span>
+                              </span>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Адрес:</span>
+                            <span class="course-info-label"> г. Харьков, ул. Девичья 6, 3 этаж</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Мест осталось:</span>
+                            <span class="course-info-label">4 из 15</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Преподаватель:</span>
+                            <span class="course-info-label">
+                                <a href="#">Игорь Прокопенко</a>
+                                <span class="socials">
+                                  <a href="#" class="social icon-github"></a>
+                                  <a href="#" class="social icon-facebook"></a>
+                                  <a href="#" class="social icon-linkedin"></a>
+                                </span>
+                              </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-price">
+                          <div class="course-price-title dropdown">
+                            Стоимость курса
+                            <a href="#" class="link">в гривнах</a>:
+                            <div data-uk-dropdown="mode: click; offset: 10">
+                              <ul class="dropdown-list">
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="course-prices">
+                            <div class="course-price-all">
+                              <span class="course-price-value">7 500</span>
+                              <span class="course-price-currency">грн</span>
+                              <div class="course-price-label">одним платежем</div>
+                            </div>
+                            <div class="course-price-parts">
+                              <span class="course-price-value">2 600</span>
+                              <span class="course-price-currency">грн</span>
+                              <div class="course-price-label">тремя платежами</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-payment-installments">
+                          <!--<img src="../assets/images/big-opch-img.png" alt="" class="icon">-->
+                          <!--<a href="#" data-uk-toggle="target: #modal-payment-by-installments" class="link">Оплата частями-->
+                          <!--</a>-->
+                          <!--от Приват Банка -->
+                          Также у нас работает
+                          <a href="#" data-uk-toggle="target: #modal-discount-system" class="link">скидочная система</a>
+                          <a href="#" data-uk-toggle="target: #modal-refund-policy" class="link">Условия возврата денег
+                          </a>
+                        </div>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-actions">
+                          <button class="button">
+                            отправить заявку
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="switcher-item">
+                  <div class="course-container">
+                    <div class="course-content">
+                      <div class="course-block">
+                        <ul class="course-info">
+                          <li>
+                            <span class="course-info-title">Формат:</span>
+                            <span class="course-info-label">
+                              <a href="#" data-uk-toggle="target: #modal-intensive-intensity" class="link">Очный интенсив</a>
+                            </span>
+                            <div class="uk-dropdown" data-uk-dropdown>
+                              Lorem ipsum dolor sit.
+                            </div>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Старт занятий:</span>
+                            <span class="course-info-label">26 июня 2017</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Длительность:</span>
+                            <span class="course-info-label">3 месяца / 24 занятия</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Расписание:</span>
+                            <span class="course-info-label">Вт 19:00 — 21:00, Пт 9:00 — 11:00
+                              <span class="datepicker">
+                                <span data-toggle class="color-primary icon-calendar-o"></span>
+                              </span>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Адрес:</span>
+                            <span class="course-info-label"> г. Харьков, ул. Девичья 6, 3 этаж</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Мест осталось:</span>
+                            <span class="course-info-label">4 из 15</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Преподаватель:</span>
+                            <span class="course-info-label">
+                                <a href="#">Игорь Прокопенко</a>
+                                <span class="socials">
+                                  <a href="#" class="social icon-github"></a>
+                                  <a href="#" class="social icon-facebook"></a>
+                                  <a href="#" class="social icon-linkedin"></a>
+                                </span>
+                              </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-price">
+                          <div class="course-price-title dropdown">
+                            Стоимость курса
+                            <a href="#" class="link">в гривнах</a>:
+                            <div data-uk-dropdown="mode: click; offset: 10">
+                              <ul class="dropdown-list">
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="course-prices">
+                            <div class="course-price-all">
+                              <span class="course-price-value">7 500</span>
+                              <span class="course-price-currency">грн</span>
+                              <div class="course-price-label">одним платежем</div>
+                            </div>
+                            <div class="course-price-parts">
+                              <span class="course-price-value">2 600</span>
+                              <span class="course-price-currency">грн</span>
+                              <div class="course-price-label">тремя платежами</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-payment-installments">
+                          <!--<img src="../assets/images/big-opch-img.png" alt="" class="icon">-->
+                          <!--<a href="#" data-uk-toggle="target: #modal-payment-by-installments" class="link">Оплата частями-->
+                          <!--</a>-->
+                          <!--от Приват Банка -->
+                          Также у нас работает
+                          <a href="#" data-uk-toggle="target: #modal-discount-system" class="link">скидочная система</a>
+                          <a href="#" data-uk-toggle="target: #modal-refund-policy" class="link">Условия возврата денег
+                          </a>
+                        </div>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-actions">
+                          <button class="button">
+                            отправить заявку
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="switcher-item">
+                  <div class="course-container">
+                    <div class="course-sidebar">
+                      <div class="course-block">
+                        <ul class="course-info">
+                          <li>
+                            <span class="course-info-title">Формат:</span>
+                            <span class="course-info-label">
+                              <a href="#" data-uk-toggle="target: #modal-intensive-intensity" class="link">Очный интенсив</a>
+                            </span>
+                            <div class="uk-dropdown" data-uk-dropdown>
+                              Lorem ipsum dolor sit.
+                            </div>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Старт занятий:</span>
+                            <span class="course-info-label">8 июля</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Длительность:</span>
+                            <span class="course-info-label">3 месяца / 24 занятия</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Расписание:</span>
+                            <span class="course-info-label">Вт 19:00 — 21:00, Пт 9:00 — 11:00
+                              <span class="datepicker">
+                                <span data-toggle class="color-primary icon-calendar-o"></span>
+                              </span>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Адрес:</span>
+                            <span class="course-info-label"> г. Харьков, ул. Девичья 6, 3 этаж</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Мест осталось:</span>
+                            <span class="course-info-label">4 из 15</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Преподаватель:</span>
+                            <span class="course-info-label">
+                                <a href="#">Игорь Прокопенко</a>
+                                <span class="socials">
+                                  <a href="#" class="social icon-github"></a>
+                                  <a href="#" class="social icon-facebook"></a>
+                                  <a href="#" class="social icon-linkedin"></a>
+                                </span>
+                              </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-price">
+                          <div class="course-price-title dropdown">
+                            Стоимость курса
+                            <a href="#" class="link">в гривнах</a>:
+                            <div data-uk-dropdown="mode: click; offset: 10">
+                              <ul class="dropdown-list">
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="course-prices">
+                            <div class="course-price-all">
+                              <span class="course-price-value">7 500</span>
+                              <span class="course-price-currency">грн</span>
+                              <div class="course-price-label">одним платежем</div>
+                            </div>
+                            <div class="course-price-parts">
+                              <span class="course-price-value">2 600</span>
+                              <span class="course-price-currency">грн</span>
+                              <div class="course-price-label">тремя платежами</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-payment-installments">
+                          <!--<img src="../assets/images/big-opch-img.png" alt="" class="icon">-->
+                          <!--<a href="#" data-uk-toggle="target: #modal-payment-by-installments" class="link">Оплата частями-->
+                          <!--</a>-->
+                          <!--от Приват Банка -->
+                          Также у нас работает
+                          <a href="#" data-uk-toggle="target: #modal-discount-system" class="link">скидочная система</a>
+                          <a href="#" data-uk-toggle="target: #modal-refund-policy" class="link">Условия возврата денег
+                          </a>
+                        </div>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-actions">
+                          <button class="button">
+                            отправить заявку
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="modal-student-course-request-towns-example" class="uk-modal uk-modal-student-course-request uk-modal-full" data-uk-modal="sel-close: .uk-modal-toggler">
+    <div class="uk-modal-dialog">
+      <div class="uk-modal-layout">
+        <div class="uk-modal-layout-sidebar">
+          <div class="uk-modal-layout-header">
+            <button class="uk-modal-toggler">
+              <span class="icon-arrow-left"></span>
+            </button>
+            <a class="uk-modal-brand">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="81" height="32" viewBox="0 0 81 32">
+                <title>i-logo</title>
+                <path fill="#444" d="M0 1.829v0l1.829-1.829v32l-1.829-1.829h81.371l-1.829 1.829v-32l1.829 1.829h-81.371zM0 0h81.371v32h-81.371v-32z"></path>
+                <path fill="#444" d="M11.429 18.1l1.131-1.22c0.723 0.519 1.529 0.795 2.377 0.795 0.546 0 0.839-0.172 0.839-0.474 0-0.275-0.242-0.426-1.237-0.634-1.56-0.323-2.765-0.72-2.765-2.102 0-1.232 1.080-2.122 2.837-2.122 1.248 0 2.222 0.304 3.018 0.882l-1.017 1.298c-0.67-0.426-1.404-0.654-2.053-0.654-0.492 0-0.733 0.189-0.733 0.444 0 0.304 0.251 0.436 1.268 0.644 1.687 0.332 2.734 0.823 2.734 2.084 0 1.355-1.184 2.159-2.966 2.159-1.298 0-2.534-0.37-3.434-1.1z"></path>
+                <path fill="#444" d="M24.583 15.752c0.746 0 1.202-0.352 1.202-0.912 0-0.586-0.456-0.899-1.212-0.899h-0.986v1.811h0.996zM21.486 12.343h3.248c1.916 0 3.152 0.893 3.152 2.43 0 1.617-1.377 2.469-3.26 2.469h-1.039v1.958h-2.1v-6.857z"></path>
+                <path fill="#444" d="M34.175 16.514l-0.819-1.933-0.83 1.933h1.65zM32.389 12.343h1.967l3.13 6.857h-2.186l-0.535-1.216h-2.838l-0.525 1.216h-2.144l3.131-6.857z"></path>
+                <path fill="#444" d="M40.686 12.343h1.997v5.192h3.489v1.666h-5.486v-6.857z"></path>
+                <path fill="#444" d="M54.291 16.514l-0.82-1.933-0.828 1.933h1.648zM52.504 12.343h1.965l3.131 6.857h-2.185l-0.536-1.216h-2.836l-0.527 1.216h-2.144l3.132-6.857z"></path>
+                <path fill="#444" d="M60.343 12.343h1.949v2.567h2.5v-2.567h1.95v6.857h-1.95v-2.606h-2.5v2.606h-1.949v-6.857z"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="uk-modal-layout-footer">
+            <h2>Покупка полного доступа к курсу «Дизайн цифровых интерфейсов начальный уровень»</h2>
+            <p>Мы можем предложить вам как дистанционные форматы обучения так и очные в конкретном городе. Выбирите интересующий
+              вас формат и переходите к оплате.</p>
+          </div>
+          <div class="uk-modal-pattern pattern"></div>
+        </div>
+        <div class="uk-modal-layout-body">
+          <div class="course-sets">
+            <div class="course course-set column-left">
+              <div class="course-header">
+                <div class="course-block">
+                  <div class="heading">
+                    <h4 class="heading-title">Наборы на курс дистанционно</h4>
+                  </div>
+                </div>
+                <div class="course-block">
+                  <div class="course-switcher">
+                    <div class="course-switcher-title">Идет 3 набора:</div>
+                    <div>
+                      <ul class="nav nav-tab course-switcher-nav" data-uk-tab="connect: #switcher-course-sets-1; animation: uk-animation-fade uk-animation-fast">
+                        <li class="uk-active">
+                          <a href="#">26 июня</a>
+                        </li>
+                        <li>
+                          <a href="#">8 июля</a>
+                        </li>
+                        <li>
+                          <a href="#">12 августа</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="switcher course-switcher-sets" id="switcher-course-sets-1">
+                <div class="switcher-item">
+                  <div class="course-container">
+                    <div class="course-content">
+                      <div>
+                        <div class="course-block">
+                          <ul class="course-info">
+                            <li>
+                              <span class="course-info-title">Формат:</span>
+                              <span class="course-info-label">
+                              <a href="#" data-uk-toggle="target: #modal-intensive-intensity" class="link">Очный интенсив</a>
+                            </span>
+                            </li>
+                            <li>
+                              <span class="course-info-title">Старт занятий:</span>
+                              <span class="course-info-label">12 августа</span>
+                            </li>
+                            <li>
+                              <span class="course-info-title">Длительность:</span>
+                              <span class="course-info-label">3 месяца / 24 занятия</span>
+                            </li>
+                            <li>
+                              <span class="course-info-title">Расписание:</span>
+                              <span class="course-info-label">Вт 19:00 — 21:00, Пт 9:00 — 11:00
+                              <span class="datepicker">
+                                <span data-toggle class="color-primary icon-calendar-o"></span>
+                              </span>
+                            </span>
+                            </li>
+                            <li>
+                              <span class="course-info-title">Адрес:</span>
+                              <span class="course-info-label"> г. Харьков, ул. Девичья 6, 3 этаж</span>
+                            </li>
+                            <li>
+                              <span class="course-info-title">Мест осталось:</span>
+                              <span class="course-info-label">4 из 15</span>
+                            </li>
+                            <li>
+                              <span class="course-info-title">Преподаватель:</span>
+                              <span class="course-info-label">
+                                <a href="#">Игорь Прокопенко</a>
+                                <span class="socials">
+                                  <a href="#" class="social icon-github"></a>
+                                  <a href="#" class="social icon-facebook"></a>
+                                  <a href="#" class="social icon-linkedin"></a>
+                                </span>
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="course-block">
+                          <div class="course-price">
+                            <div class="course-price-title dropdown">
+                              Стоимость курса
+                              <a href="#" class="link">в гривнах</a>:
+                              <div data-uk-dropdown="mode: click; offset: 10">
+                                <ul class="dropdown-list">
+                                  <li>
+                                    <a href="#">
+                                      <img src="../assets/images/ua.jpg" alt="">
+                                      <span>УКР, ГРН</span>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <img src="../assets/images/ua.jpg" alt="">
+                                      <span>УКР, ГРН</span>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <img src="../assets/images/ua.jpg" alt="">
+                                      <span>УКР, ГРН</span>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <img src="../assets/images/ua.jpg" alt="">
+                                      <span>УКР, ГРН</span>
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="#">
+                                      <img src="../assets/images/ua.jpg" alt="">
+                                      <span>УКР, ГРН</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="course-prices">
+                              <div class="course-price-all">
+                                <span class="course-price-value">7 500</span>
+                                <span class="course-price-currency">грн</span>
+                                <div class="course-price-label">одним платежем</div>
+                              </div>
+                              <div class="course-price-parts">
+                                <span class="course-price-value">2 600</span>
+                                <span class="course-price-currency">грн</span>
+                                <div class="course-price-label">тремя платежами</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="course-block">
+                          <div class="course-payment-installments">
+                            <!--<img src="../assets/images/big-opch-img.png" alt="" class="icon">-->
+                            <!--<a href="#" data-uk-toggle="target: #modal-payment-by-installments" class="link">Оплата частями-->
+                            <!--</a>-->
+                            <!--от Приват Банка -->
+                            Также у нас работает
+                            <a href="#" data-uk-toggle="target: #modal-discount-system" class="link">скидочная система</a>
+                            <a href="#" data-uk-toggle="target: #modal-refund-policy" class="link">Условия возврата денег
+                            </a>
+                          </div>
+                        </div>
+                        <div class="course-block">
+                          <div class="course-actions">
+                            <button class="button">
+                              отправить заявку
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="switcher-item">
+                  <div class="course-container">
+                    <div>
+                      <div class="course-block">
+                        <ul class="course-info">
+                          <li>
+                            <span class="course-info-title">Формат:</span>
+                            <span class="course-info-label">
+                              <a href="#" data-uk-toggle="target: #modal-intensive-intensity" class="link">Очный интенсив</a>
+                            </span>
+                            <div class="uk-dropdown" data-uk-dropdown>
+                              Lorem ipsum dolor sit.
+                            </div>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Старт занятий:</span>
+                            <span class="course-info-label">26 июня 2017</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Длительность:</span>
+                            <span class="course-info-label">3 месяца / 24 занятия</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Расписание:</span>
+                            <span class="course-info-label">Вт 19:00 — 21:00, Пт 9:00 — 11:00
+                              <span class="datepicker">
+                                <span data-toggle class="color-primary icon-calendar-o"></span>
+                              </span>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Адрес:</span>
+                            <span class="course-info-label"> г. Харьков, ул. Девичья 6, 3 этаж</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Мест осталось:</span>
+                            <span class="course-info-label">4 из 15</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Преподаватель:</span>
+                            <span class="course-info-label">
+                                <a href="#">Игорь Прокопенко</a>
+                                <span class="socials">
+                                  <a href="#" class="social icon-github"></a>
+                                  <a href="#" class="social icon-facebook"></a>
+                                  <a href="#" class="social icon-linkedin"></a>
+                                </span>
+                              </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-price">
+                          <div class="course-price-title dropdown">
+                            Стоимость курса
+                            <a href="#" class="link">в гривнах</a>:
+                            <div data-uk-dropdown="mode: click; offset: 10">
+                              <ul class="dropdown-list">
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="course-prices">
+                            <div class="course-price-all">
+                              <span class="course-price-value">7 500</span>
+                              <span class="course-price-currency">грн</span>
+                              <div class="course-price-label">одним платежем</div>
+                            </div>
+                            <div class="course-price-parts">
+                              <span class="course-price-value">2 600</span>
+                              <span class="course-price-currency">грн</span>
+                              <div class="course-price-label">тремя платежами</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-payment-installments">
+                          <!--<img src="../assets/images/big-opch-img.png" alt="" class="icon">-->
+                          <!--<a href="#" data-uk-toggle="target: #modal-payment-by-installments" class="link">Оплата частями-->
+                          <!--</a>-->
+                          <!--от Приват Банка -->
+                          Также у нас работает
+                          <a href="#" data-uk-toggle="target: #modal-discount-system" class="link">скидочная система</a>
+                          <a href="#" data-uk-toggle="target: #modal-refund-policy" class="link">Условия возврата денег
+                          </a>
+                        </div>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-actions">
+                          <button class="button">
+                            отправить заявку
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="switcher-item">
+                  <div class="course-container">
+                    <div>
+                      <div class="course-block">
+                        <ul class="course-info">
+                          <li>
+                            <span class="course-info-title">Формат:</span>
+                            <span class="course-info-label">
+                              <a href="#" data-uk-toggle="target: #modal-intensive-intensity" class="link">Очный интенсив</a>
+                            </span>
+                            <div class="uk-dropdown" data-uk-dropdown>
+                              Lorem ipsum dolor sit.
+                            </div>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Старт занятий:</span>
+                            <span class="course-info-label">8 июля</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Длительность:</span>
+                            <span class="course-info-label">3 месяца / 24 занятия</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Расписание:</span>
+                            <span class="course-info-label">Вт 19:00 — 21:00, Пт 9:00 — 11:00
+                              <span class="datepicker">
+                                <span data-toggle class="color-primary icon-calendar-o"></span>
+                              </span>
+                            </span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Адрес:</span>
+                            <span class="course-info-label"> г. Харьков, ул. Девичья 6, 3 этаж</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Мест осталось:</span>
+                            <span class="course-info-label">4 из 15</span>
+                          </li>
+                          <li>
+                            <span class="course-info-title">Преподаватель:</span>
+                            <span class="course-info-label">
+                                <a href="#">Игорь Прокопенко</a>
+                                <span class="socials">
+                                  <a href="#" class="social icon-github"></a>
+                                  <a href="#" class="social icon-facebook"></a>
+                                  <a href="#" class="social icon-linkedin"></a>
+                                </span>
+                              </span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-price">
+                          <div class="course-price-title dropdown">
+                            Стоимость курса
+                            <a href="#" class="link">в гривнах</a>:
+                            <div data-uk-dropdown="mode: click; offset: 10">
+                              <ul class="dropdown-list">
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <img src="../assets/images/ua.jpg" alt="">
+                                    <span>УКР, ГРН</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="course-prices">
+                            <div class="course-price-all">
+                              <span class="course-price-value">7 500</span>
+                              <span class="course-price-currency">грн</span>
+                              <div class="course-price-label">одним платежем</div>
+                            </div>
+                            <div class="course-price-parts">
+                              <span class="course-price-value">2 600</span>
+                              <span class="course-price-currency">грн</span>
+                              <div class="course-price-label">тремя платежами</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-payment-installments">
+                          <!--<img src="../assets/images/big-opch-img.png" alt="" class="icon">-->
+                          <!--<a href="#" data-uk-toggle="target: #modal-payment-by-installments" class="link">Оплата частями-->
+                          <!--</a>-->
+                          <!--от Приват Банка -->
+                          Также у нас работает
+                          <a href="#" data-uk-toggle="target: #modal-discount-system" class="link">скидочная система</a>
+                          <a href="#" data-uk-toggle="target: #modal-refund-policy" class="link">Условия возврата денег
+                          </a>
+                        </div>
+                      </div>
+                      <div class="course-block">
+                        <div class="course-actions">
+                          <button class="button">
+                            отправить заявку
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="course course-set column-right">
+              <div class="course-header">
+                <div class="course-block">
+                  <div class="heading">
+                    <h4 class="heading-title">Наборы на курс очно</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="course-box">
+                <div class="box-content">
+                  Очные наборы предполагают встречи
+                  с преподавателем. Такой формат обучения есть
+                  в нескольких городах. Выберите город
+                  для просмотра очных наборов:
+                </div>
+                <div class="box-content">
+                  <ul class="list">
+                    <li><a href="#">Харьков</a></li>
+                    <li><a href="#">Киев</a></li>
+                    <li><a href="#">Днепр</a></li>
+                    <li><a href="#">Одесса</a></li>
+                    <li><a href="#">Запорожье</a></li>
+                    <li><a href="#">Мариуполь</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="modal-student-course-request-success" class="uk-modal uk-modal-student-course-request uk-modal-full" data-uk-modal="sel-close: .uk-modal-toggler">
+    <div class="uk-modal-dialog">
+      <div class="uk-modal-layout">
+        <div class="uk-modal-layout-sidebar">
+          <div class="uk-modal-layout-header">
+            <button class="uk-modal-toggler">
+              <span class="icon-arrow-left"></span>
+            </button>
+            <a class="uk-modal-brand">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="81" height="32" viewBox="0 0 81 32">
+                <title>i-logo</title>
+                <path fill="#444" d="M0 1.829v0l1.829-1.829v32l-1.829-1.829h81.371l-1.829 1.829v-32l1.829 1.829h-81.371zM0 0h81.371v32h-81.371v-32z"></path>
+                <path fill="#444" d="M11.429 18.1l1.131-1.22c0.723 0.519 1.529 0.795 2.377 0.795 0.546 0 0.839-0.172 0.839-0.474 0-0.275-0.242-0.426-1.237-0.634-1.56-0.323-2.765-0.72-2.765-2.102 0-1.232 1.080-2.122 2.837-2.122 1.248 0 2.222 0.304 3.018 0.882l-1.017 1.298c-0.67-0.426-1.404-0.654-2.053-0.654-0.492 0-0.733 0.189-0.733 0.444 0 0.304 0.251 0.436 1.268 0.644 1.687 0.332 2.734 0.823 2.734 2.084 0 1.355-1.184 2.159-2.966 2.159-1.298 0-2.534-0.37-3.434-1.1z"></path>
+                <path fill="#444" d="M24.583 15.752c0.746 0 1.202-0.352 1.202-0.912 0-0.586-0.456-0.899-1.212-0.899h-0.986v1.811h0.996zM21.486 12.343h3.248c1.916 0 3.152 0.893 3.152 2.43 0 1.617-1.377 2.469-3.26 2.469h-1.039v1.958h-2.1v-6.857z"></path>
+                <path fill="#444" d="M34.175 16.514l-0.819-1.933-0.83 1.933h1.65zM32.389 12.343h1.967l3.13 6.857h-2.186l-0.535-1.216h-2.838l-0.525 1.216h-2.144l3.131-6.857z"></path>
+                <path fill="#444" d="M40.686 12.343h1.997v5.192h3.489v1.666h-5.486v-6.857z"></path>
+                <path fill="#444" d="M54.291 16.514l-0.82-1.933-0.828 1.933h1.648zM52.504 12.343h1.965l3.131 6.857h-2.185l-0.536-1.216h-2.836l-0.527 1.216h-2.144l3.132-6.857z"></path>
+                <path fill="#444" d="M60.343 12.343h1.949v2.567h2.5v-2.567h1.95v6.857h-1.95v-2.606h-2.5v2.606h-1.949v-6.857z"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="uk-modal-layout-footer">
+            <h2>Покупка полного доступа к курсу «Дизайн цифровых интерфейсов начальный уровень»</h2>
+            <p>Мы можем предложить вам как дистанционные форматы обучения так и очные в конкретном городе. Выбирите интересующий
+              вас формат и переходите к оплате.</p>
+          </div>
+          <div class="uk-modal-pattern pattern"></div>
+        </div>
+        <div class="uk-modal-layout-body">
+          <div class="course-box">
+                <h4>Заявка на курс принята</h4>
+                <div class="box-content">
+                  <p>
+                    <b>Что дальше?</b> На ваш e-mail отправлено письмо
+                    с вупительным тестом, который вам нужно пойти перед поступлением на этот курс.
+                  </p>
+                  <p>
+                    Если у вас есть вопросы, наш менеджер поможет вам:
+                  </p>
+                </div>
+                <div class="box-content">
+                  <ul class="list list-contacts">
+                    <li>
+                      <span class="list-contact-title">Телефон:</span>
+                      <span class="list-contact-label">+380 (67) 01 01 202</span>
+                    </li>
+                    <li>
+                      <span class="list-contact-title">E-mail:</span>
+                      <span class="list-contact-label">school@spalah.ua</span>
+                    </li>
+                    <li>
+                      <span class="list-contact-title">Messengers:</span>
+                      <span class="list-contact-label">
+                        <a href="#" class="list-contact-link color-telegram">Telegram</a>
+                        <a href="#" class="list-contact-link color-viber">Viber</a>
+                        <a href="#" class="list-contact-link color-facebook">Facebook</a>
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="box-content">
+                  <p>Мы можем
+                    <a href="#" class="link" data-uk-toggle="target: #modal-call-me">перезвонить</a>
+                    вам в течение 1 минуты</p>
+                </div>
+                <div class="box-content">
+                    <a href="#" class="button">Вернуться в кабинет</a>
+                </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="modal-student-course-registration" class="uk-modal uk-modal-student-course-registration uk-modal-full" data-uk-modal="sel-close: .uk-modal-toggler">
+    <div class="uk-modal-dialog">
+      <div class="uk-modal-layout">
+        <div class="uk-modal-layout-sidebar">
+          <div class="uk-modal-layout-header">
+            <button class="uk-modal-toggler">
+              <span class="icon-arrow-left"></span>
+            </button>
+            <a class="uk-modal-brand">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="81" height="32" viewBox="0 0 81 32">
+                <title>i-logo</title>
+                <path fill="#444" d="M0 1.829v0l1.829-1.829v32l-1.829-1.829h81.371l-1.829 1.829v-32l1.829 1.829h-81.371zM0 0h81.371v32h-81.371v-32z"></path>
+                <path fill="#444" d="M11.429 18.1l1.131-1.22c0.723 0.519 1.529 0.795 2.377 0.795 0.546 0 0.839-0.172 0.839-0.474 0-0.275-0.242-0.426-1.237-0.634-1.56-0.323-2.765-0.72-2.765-2.102 0-1.232 1.080-2.122 2.837-2.122 1.248 0 2.222 0.304 3.018 0.882l-1.017 1.298c-0.67-0.426-1.404-0.654-2.053-0.654-0.492 0-0.733 0.189-0.733 0.444 0 0.304 0.251 0.436 1.268 0.644 1.687 0.332 2.734 0.823 2.734 2.084 0 1.355-1.184 2.159-2.966 2.159-1.298 0-2.534-0.37-3.434-1.1z"></path>
+                <path fill="#444" d="M24.583 15.752c0.746 0 1.202-0.352 1.202-0.912 0-0.586-0.456-0.899-1.212-0.899h-0.986v1.811h0.996zM21.486 12.343h3.248c1.916 0 3.152 0.893 3.152 2.43 0 1.617-1.377 2.469-3.26 2.469h-1.039v1.958h-2.1v-6.857z"></path>
+                <path fill="#444" d="M34.175 16.514l-0.819-1.933-0.83 1.933h1.65zM32.389 12.343h1.967l3.13 6.857h-2.186l-0.535-1.216h-2.838l-0.525 1.216h-2.144l3.131-6.857z"></path>
+                <path fill="#444" d="M40.686 12.343h1.997v5.192h3.489v1.666h-5.486v-6.857z"></path>
+                <path fill="#444" d="M54.291 16.514l-0.82-1.933-0.828 1.933h1.648zM52.504 12.343h1.965l3.131 6.857h-2.185l-0.536-1.216h-2.836l-0.527 1.216h-2.144l3.132-6.857z"></path>
+                <path fill="#444" d="M60.343 12.343h1.949v2.567h2.5v-2.567h1.95v6.857h-1.95v-2.606h-2.5v2.606h-1.949v-6.857z"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="uk-modal-layout-content">
+            <form action="#" class="form form-registration">
+              <div class="form-header">
+                <h4 class="form-title">Зарегистрируйся для того, чтобы знать, что ничего не знаешь</h4>
+              </div>
+              <div class="form-body">
+                <div class="form-groups form-group-fullname">
+                  <div class="form-group">
+                    <div class="form-icon flip">
+                      <span class="icon-user"></span>
+                    </div>
+                    <input type="text" required="" class="is-empty">
+                    <label class="placeholder">Имя</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" required="" class="is-empty">
+                    <label class="placeholder">Фамилия</label>
+                  </div>
+                </div>
+                <div class="form-groups form-group-email">
+                  <div class="form-group">
+                    <div class="form-icon flip">
+                      <span class="icon-envelope"></span>
+                    </div>
+                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="" class="is-empty">
+                    <label class="placeholder">E-mail</label>
+                  </div>
+                </div>
+                <div class="form-groups form-group-tel">
+                  <div class="form-group">
+                    <div class="form-icon flip">
+                      <span class="icon-mobile"></span>
+                    </div>
+                    <input type="tel" pattern="\+[0-9]{3}\s\([0-9]{2}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" data-inputmask-showmaskonhover="false" data-inputmask="'mask': '+380 (99) 999-99-99'" required="" class="is-empty">
+                    <label class="placeholder">Номер телефона</label>
+                  </div>
+                </div>
+                <div class="form-groups form-group-password">
+                  <div class="form-group">
+                    <div class="form-icon flip">
+                      <span class="icon-lock"></span>
+                    </div>
+                    <input type="password" minlength="6" required="" class="is-empty">
+                    <label class="placeholder">Пароль (мин. 6 символов)</label>
+                  </div>
+                </div>
+                <div class="form-groups form-group-contract">
+                  <div class="form-group-checkbox">
+                    <label class="label"><input type="checkbox">
+                      С <a href="#">публичным договором</a> ознакомлен</label>
+                  </div>
+                </div>
+                <div class="form-groups form-group-actions">
+                  <div>
+                    <button type="submit" class="button button-block">Создать аккаунт</button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-footer">
+                <div class="login-socials text-center">
+                  <div class="login-socials-title color-light">Создайте аккаунт с помощью</div>
+                  <div class="button-group login-socials-buttons">
+                    <button type="submit" class="button button-facebook">facebook</button>
+                    <button type="submit" class="button button-google">google</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="uk-modal-layout-footer text-center">
+            <div class="color-light">Уже есть аккаунт? <a href="#">Войти</a></div>
+          </div>
+        </div>
+        <div class="uk-modal-layout-body">
+          <div class="uk-modal-background">
+            <img src="../assets/images/photo-2.jpg" alt="photo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="modal-student-course-login" class="uk-modal uk-modal-student-course-login uk-modal-full" data-uk-modal="sel-close: .uk-modal-toggler">
+    <div class="uk-modal-dialog">
+      <div class="uk-modal-layout">
+        <div class="uk-modal-layout-sidebar">
+          <div class="uk-modal-layout-header">
+            <button class="uk-modal-toggler">
+              <span class="icon-arrow-left"></span>
+            </button>
+            <a class="uk-modal-brand">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="81" height="32" viewBox="0 0 81 32">
+                <title>i-logo</title>
+                <path fill="#444" d="M0 1.829v0l1.829-1.829v32l-1.829-1.829h81.371l-1.829 1.829v-32l1.829 1.829h-81.371zM0 0h81.371v32h-81.371v-32z"></path>
+                <path fill="#444" d="M11.429 18.1l1.131-1.22c0.723 0.519 1.529 0.795 2.377 0.795 0.546 0 0.839-0.172 0.839-0.474 0-0.275-0.242-0.426-1.237-0.634-1.56-0.323-2.765-0.72-2.765-2.102 0-1.232 1.080-2.122 2.837-2.122 1.248 0 2.222 0.304 3.018 0.882l-1.017 1.298c-0.67-0.426-1.404-0.654-2.053-0.654-0.492 0-0.733 0.189-0.733 0.444 0 0.304 0.251 0.436 1.268 0.644 1.687 0.332 2.734 0.823 2.734 2.084 0 1.355-1.184 2.159-2.966 2.159-1.298 0-2.534-0.37-3.434-1.1z"></path>
+                <path fill="#444" d="M24.583 15.752c0.746 0 1.202-0.352 1.202-0.912 0-0.586-0.456-0.899-1.212-0.899h-0.986v1.811h0.996zM21.486 12.343h3.248c1.916 0 3.152 0.893 3.152 2.43 0 1.617-1.377 2.469-3.26 2.469h-1.039v1.958h-2.1v-6.857z"></path>
+                <path fill="#444" d="M34.175 16.514l-0.819-1.933-0.83 1.933h1.65zM32.389 12.343h1.967l3.13 6.857h-2.186l-0.535-1.216h-2.838l-0.525 1.216h-2.144l3.131-6.857z"></path>
+                <path fill="#444" d="M40.686 12.343h1.997v5.192h3.489v1.666h-5.486v-6.857z"></path>
+                <path fill="#444" d="M54.291 16.514l-0.82-1.933-0.828 1.933h1.648zM52.504 12.343h1.965l3.131 6.857h-2.185l-0.536-1.216h-2.836l-0.527 1.216h-2.144l3.132-6.857z"></path>
+                <path fill="#444" d="M60.343 12.343h1.949v2.567h2.5v-2.567h1.95v6.857h-1.95v-2.606h-2.5v2.606h-1.949v-6.857z"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="uk-modal-layout-content">
+            <form action="#" class="form form-login">
+              <div class="form-header">
+                <h4 class="form-title">Вход в личный кабинет</h4>
+              </div>
+              <div class="form-body">
+                <div class="form-groups form-group-email">
+                  <div class="form-group">
+                    <div class="form-icon flip">
+                      <span class="icon-envelope"></span>
+                    </div>
+                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="" class="is-empty">
+                    <label class="placeholder">E-mail</label>
+                  </div>
+                </div>
+                <div class="form-groups form-group-password">
+                  <div class="form-group">
+                    <div class="control">
+                      <div class="form-icon flip">
+                        <span class="icon-lock"></span>
+                      </div>
+                      <input type="password" minlength="6" required="" class="is-empty">
+                      <label class="placeholder">Пароль</label>
+                    </div>
+                    <div class="form-text text-right">
+                      <a href="#">Забыли пароль?</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-groups form-group-actions">
+                  <div>
+                    <button type="submit" class="button button-block">Войти</button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-footer">
+                <div class="login-socials text-center">
+                  <div class="login-socials-title color-light">Войти в аккаунт с помощью</div>
+                  <div class="button-group login-socials-buttons">
+                    <button type="submit" class="button button-facebook">facebook</button>
+                    <button type="submit" class="button button-google">google</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="uk-modal-layout-footer text-center">
+            <div class="color-light">Еще нет аккаунта? <a href="#">Зарегистрироваться</a></div>
+          </div>
+        </div>
+        <div class="uk-modal-layout-body">
+          <div class="uk-modal-background">
+            <img src="../assets/images/photo-2.jpg" alt="photo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/dependencyLibs/inputmask.dependencyLib.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/inputmask/inputmask.js"></script>
+  <script src="../assets/scripts/progressbar.js"></script>
+  <script src="../assets/scripts/main.js"></script>
+</body>
+
+</html>

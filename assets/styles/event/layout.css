@@ -1,0 +1,66 @@
+.layout-about-event {
+  grid-template-columns: repeat(8, 1fr);
+  grid-row-gap: calc(var(--base-line-height) * 12);
+  grid-template-areas:
+      ". a a a . b b ."
+      "d d d d . c c ."
+      ". e e e . f f ."
+      ". g g g . . . .";
+}
+
+.layout-about-event .list-hyphen li:not(:last-child)  {
+  margin-bottom: calc(var(--base-line-height) * 0.5);
+}
+
+.layout-about-event > .layout-item:nth-child(2) {
+  align-self: center;
+  margin-top: -550px;
+}
+
+.layout-events {
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+      "a a a b b b"
+      "c c c c c c";
+}
+
+.layout-events > .layout-item:nth-child(2) {
+  align-self: center;
+  text-align: right;
+}
+
+.layout-events-overview {
+  margin-top: calc(var(--base-line-height) * 3);
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "a a b b b b b b";
+}
+
+.layout-program-event {
+  position: relative;
+  grid-template-columns: repeat(8, 1fr);
+  margin-top: calc(var(--base-line-height) * 3);
+  margin-bottom: calc(var(--base-line-height) * 3);
+  grid-template-areas:
+      "a a a a a a a a"
+      "b b b b c c c c";
+}
+
+.layout-program-event > .layout-item:nth-child(3) .box {
+  margin-bottom: calc(var(--base-line-height) * 3);
+}
+
+
+@media (min-width: 1441px) {
+  .layout-about-event {
+    grid-template-areas:
+        ". a a a . b b ."
+        "d d d d . c c ."
+        ". e e e . f f ."
+        ". g g g . . . .";
+  }
+  .layout-program-event {
+    grid-template-areas:
+        "a a a a a a a a"
+        "b b b b b c c c";
+  }
+}

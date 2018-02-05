@@ -1,0 +1,141 @@
+.card-event {
+  background-color: #fff;
+  z-index: 1;
+}
+
+.card-event .card-header {
+  padding-top: calc(var(--base-line-height) * 1);
+  padding-bottom: calc(var(--base-line-height) * 1);
+}
+
+.card-event .card-body {
+  flex-grow: 2;
+  text-align: left;
+  padding-top: calc(var(--base-line-height) * 1);
+  padding-bottom: calc(var(--base-line-height) * 1);
+  background-color: inherit;
+}
+
+.card-event .card-footer {
+  padding-top: calc(var(--base-line-height) * 1);
+  padding-bottom: calc(var(--base-line-height) * 1);
+}
+
+.card-event .card-date {
+  display: flex;
+  align-items: center;
+}
+
+.card-date .card-date-left {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.card-event .card-date-day {
+  font-size: 48px;
+  line-height: calc(var(--base-line-height) * 2);
+  font-weight: 700;
+}
+
+.card-event .card-date-body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+  font-size: 16px;
+}
+
+.card-event .card-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  color: var(--color-primary);
+  text-align: left;
+}
+
+.card-event.is-past,
+.card-event.is-past:hover,
+.card-event.is-past:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.card-event.is-past * {
+  color: inherit;
+}
+
+.card-event-registration {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background-color: #fff;
+}
+
+.card-event-registration .card-body {
+  padding-top: var(--base-line-height);
+  padding-bottom: var(--base-line-height);
+}
+.card-event-registration .card-price-list {
+  list-style: none;
+  color: var(--button-color);
+  padding-left: 0;
+}
+
+.card-event-registration .card-price-list .list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(var(--base-line-height) * 2 - 1px);
+  border-bottom: 1px solid;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.card-event-registration .card-price-list .list-title {
+  padding-bottom: var(--base-line-height);
+}
+
+.card-event-registration .card-price {
+  margin-top: 0;
+}
+
+.card-event-registration .card-price span {
+  font-size: 20px;
+  font-weight: 700;
+  padding-right: 10px;
+}
+
+.card-event-registration .link {
+  font-size: 12px;
+}
+
+.card-event-registration .card-actions {
+  text-align: center;
+}
+
+.is-overpast {
+  position: relative;
+}
+
+.is-overpast:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  background-color: currentcolor;
+  opacity: 0.8;
+}
+
+.is-inactive {
+  opacity: 0.5;
+}
+
+.inverse.card-event-second .card-price-list .list-item {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.card-social-link {
+  margin-bottom: calc(var(--base-line-height) *4);
+  font-size: 14px;
+}

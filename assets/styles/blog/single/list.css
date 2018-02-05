@@ -1,0 +1,16 @@
+.author-socials-list {
+  flex-direction: column;
+  display: flex;
+} 
+
+.author-socials-list > li {
+  margin: 10px 0;
+}
+
+.author-socials-list > li:first-child {
+  margin-top: 0;
+}
+
+.author-socials-list > li:last-child {
+  margin-bottom: 0;
+}

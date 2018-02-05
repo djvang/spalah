@@ -1,0 +1,42 @@
+/* Card Teacher  */
+.card-teacher {
+  min-height: calc(var(--base-line-height) * 15);
+  overflow: hidden;
+  background-color: var(--base-background);
+  border-radius: 20px;
+}
+
+.card-teacher .card-foreground {
+  padding: var(--base-line-height) 30px calc(var(--base-line-height) * 2);
+}
+
+.card-teacher .card-background {
+  display: flex;
+  justify-content: flex-end;
+  top: -24px;
+  left: auto;
+  width: 100%;
+}
+
+.card-teacher .teacher-name, 
+.card-teacher .teacher-lastname {
+  margin: 0;
+  padding-right: 5px;
+}
+
+.card-teacher .card-background img {
+  object-position: 130px 0;
+}
+
+.card-teacher .card-header {
+  margin-bottom: var(--base-line-height);
+}
+
+.card-teacher .card-profession {
+  margin-bottom: var(--base-line-height);
+}
+
+.card-teacher .card-footer {
+  margin-top: auto;
+}
+
