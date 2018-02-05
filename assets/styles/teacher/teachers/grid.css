@@ -1,0 +1,8 @@
+.grid-teachers {
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+
+.grid-teachers .grid-item:first-child .card-information {
+  margin-top: 0;
+}
+

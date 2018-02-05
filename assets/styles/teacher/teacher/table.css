@@ -1,0 +1,8 @@
+.table-teacher-courses {
+  border-top: 1px solid var(--border-color);
+}
+
+.table-teacher-courses th:first-child, 
+.table-teacher-courses td:first-child {
+  width: 70%;
+}

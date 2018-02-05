@@ -1,0 +1,50 @@
+.article-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-content-text {
+  max-width: 980px;
+}
+
+.article-content .quote {
+  margin-top: calc(var(--base-line-height) * 2);
+  margin-bottom: calc(var(--base-line-height) * 2);
+}
+
+.smoll {
+  font-size: 20px;
+  line-height: calc(var(--base-line-height) * 1.5);
+}
+
+.article-image {
+  height: calc(var(--base-line-height) * 18);
+  margin-top: calc(var(--base-line-height) * 3);
+  margin-bottom: calc(var(--base-line-height) * 3);
+}
+
+.article-image .card-image {
+  height: 100%;
+}
+
+.double {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.double .card-image {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.border-quote {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--color-primary);
+  min-height: calc(var(--base-line-height) * 6);
+  margin-bottom: calc(var(--base-line-height) * 2);
+}

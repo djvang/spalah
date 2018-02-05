@@ -1,0 +1,21 @@
+.tag {
+  display: inline-flex;
+  margin-right: 8px;
+  font-size: 14px;
+  color: var(--color-primary);
+}
+
+.tag[href]:hover,
+.tag[href]:focus,
+.tag[href]:active {
+  color: var(--base-color);
+  text-decoration: none;
+}
+
+.tag [class*="icon-"] {
+  margin-right: 5px;
+}
+
+.nav-tags .uk-active {
+  color: var(--base-color);
+}

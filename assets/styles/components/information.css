@@ -1,0 +1,40 @@
+.grid-item:first-child .card-information {
+  margin-top: calc(var(--base-line-height) * 3);
+}
+
+/* .card-information {
+  background-color: #fff;
+} */
+
+.card-information {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+}
+
+.card-information .card-body {
+  padding-top: var(--base-line-height);
+  padding-bottom: var(--base-line-height);
+}
+
+.informations {
+  display: grid;
+  grid-gap: 70px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 140px));
+}
+
+.information {
+  max-width: 140px;
+}
+
+.information-title {
+  font-size: 14px;
+  color: #95a5a9;
+  margin-bottom: var(--base-line-height);
+}
+
+.information-label {
+  font-size: 20px;
+  font-weight: bold;
+}

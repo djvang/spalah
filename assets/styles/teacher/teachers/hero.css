@@ -1,0 +1,13 @@
+.hero-teachers {
+  min-height: calc(100vh - 504px);
+}
+
+.hero-teachers .hero-body {
+  align-items: flex-end;
+}
+
+@media (min-width: 1441px){
+  .hero-teachers .hero-content-body {
+    grid-column: 1 / 8;
+  }
+}
