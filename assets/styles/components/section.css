@@ -93,6 +93,12 @@
 }
 
 .section-article {
-  margin-top: calc(var(--base-line-height) * 5) !important;
+  margin-top: calc(var(--base-line-height) * 3) !important;
   margin-bottom: calc(var(--base-line-height) * 5) !important;
+}
+
+.section-test {
+  margin-top: calc(var(--base-line-height) * 6) !important;
+  margin-bottom: calc(var(--base-line-height) * 6) !important;
+  
 }

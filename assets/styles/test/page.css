@@ -1,0 +1,28 @@
+.page-start-test {
+  height: 100vh;
+}
+
+.page-start-test .page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - calc(var(--base-line-height) * 12));
+}
+
+.page-start-test .page-body .student-name {
+  display: flex;
+  margin-bottom: calc(var(--base-line-height) * 2);
+}
+
+.page-start-test .page-body .student-fullname {
+  display: flex;
+}
+
+.page-body .student-name h4 {
+  margin: 0 5px 0 0;
+}
+
+.page-action {
+  display: flex;
+  justify-content: flex-end;
+}
