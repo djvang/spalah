@@ -26,11 +26,6 @@
   margin: 0 5px 0 0;
 }
 
-.page-action {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .page-test-checklist .active-group {
   display: flex;
   justify-content: space-between;
@@ -40,7 +35,6 @@
   justify-content: flex-end;
   display: flex;
 }
-
 
 .page-end-test .page-content {
   display: flex;
@@ -63,6 +57,49 @@
 
 .page-end-test .page-footer {
   text-align: center;
+}
+
+.footer-test-checklist {
+  padding-top: var(--base-line-height);
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-test-radiobutton {
+  padding-top: var(--base-line-height);
+  border-top: 1px solid var(--border-color);
+}
+
+.test-content {
+  margin-bottom: var(--base-line-height);
+  padding-left: 10%;
+}
+
+.body-test-radiobutton {
+  display: flex;
+  flex-grow: 1;
+}
+
+.body-test-checklist {
+  display: flex;
+  flex-grow: 1;
+}
+
+.body-test-checklist .content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.body-test-radiobutton .content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.header-test-checklist, .header-test-radiobutton {
+  margin-bottom: var(--base-line-height);
 }
 
 .page-end-test .title {
