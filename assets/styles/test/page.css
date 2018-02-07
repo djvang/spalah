@@ -1,0 +1,110 @@
+.page-start-test {
+  height: 100vh;
+}
+
+.page-start-test .page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - calc(var(--base-line-height) * 9));
+}
+
+.page-start-test .page-body {
+  max-width: 500px;
+}
+
+.page-start-test .page-body .student-name {
+  display: flex;
+  margin-bottom: calc(var(--base-line-height) * 2);
+}
+
+.page-start-test .page-body .student-fullname {
+  display: flex;
+}
+
+.page-body .student-name h4 {
+  margin: 0 5px 0 0;
+}
+
+.page-action {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-test-checklist .active-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-test-radiobutton .active-group {
+  justify-content: flex-end;
+  display: flex;
+}
+
+
+.page-end-test .page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - calc(var(--base-line-height) * 9));
+}
+
+.page-end-test .page-body {
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+  font-size: 20px;
+  text-align: center;
+}
+
+.page-end-test .page-footer {
+  text-align: center;
+}
+
+.page-end-test .title {
+  font-size: 100px;
+  line-height: calc(var(--base-line-height) * 4);
+  margin-bottom: calc(var(--base-line-height) * 3);
+}
+
+.page-end-test .text-result {
+  margin-bottom: calc(var(--base-line-height) * 2);
+}
+
+.page-end-test .info-test {
+  margin-bottom: calc(var(--base-line-height) * 2);
+}
+
+@media (max-width: 450px) {
+  .page-test-checklist .active-group {
+    flex-direction: column;
+  }
+
+  .page-test-checklist .active-group .button-outline {
+    margin-bottom: var(--base-line-height);
+  }
+
+  .page-test-radiobutton .active-group {
+    flex-direction: column;
+  }
+
+  .page-test-radiobutton .active-group .button-outline {
+    margin-bottom: var(--base-line-height);
+  }
+
+  .page-start-test .form-group-fullname {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .page-start-test .form-group:first-child {
+    margin-bottom: 0;
+  }
+
+  .page-start-test .page-action {
+    flex-direction: column;
+  }
+}

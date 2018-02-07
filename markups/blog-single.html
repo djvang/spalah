@@ -28,7 +28,7 @@
           <nav class="navbar" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
             <div class="container">
               <div class="navbar-container">
-                <div>
+                <div class="navbar-left">
                   <a class="navbar-brand">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="81" height="32" viewBox="0 0 81 32">
                       <title>i-logo</title>
@@ -63,41 +63,45 @@
                     </div>
                   </div>
                 </div>
-                <ul class="navbar-nav">
-                  <li class="is-active"><a href="#">Образование</a></li>
-                  <li><a href="#">Мероприятия</a></li>
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-button">Коворкинг <span class="icon-dropdown"></span></a>
-                    <div data-uk-dropdown="mode: click">
-                      <ul class="dropdown-list">
-                        <li><a href="#">на Девичей</a></li>
-                        <li><a href="#">на Лопанской набережной</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li><a href="#">Блог</a></li>
-                  <li><a href="#">Контакты</a></li>
-                </ul>
-                <div class="navbar-dropdown">
-                  <div class="dropdown dropdown-languages toggle-course" hidden>
-                    <a href="#" class="dropdown-button">
-                      <img src="../assets/images/ua.jpg" alt="">
-                      <span>УКР, ГРН</span>
-                      <span class="icon-dropdown"></span>
-                    </a>
-                    <div data-uk-dropdown="mode: click">
-                      <ul class="dropdown-list">
-                        <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
-                        <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
-                        <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
-                        <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
-                        <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
-                      </ul>
+                <div class="navbar-center">
+                  <ul class="navbar-nav">
+                    <li class="is-active"><a href="#">Образование</a></li>
+                    <li><a href="#">Мероприятия</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-button">Коворкинг <span class="icon-dropdown"></span></a>
+                      <div data-uk-dropdown="mode: click">
+                        <ul class="dropdown-list">
+                          <li><a href="#">на Девичей</a></li>
+                          <li><a href="#">на Лопанской набережной</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-right">
+                  <div class="navbar-dropdown">
+                    <div class="dropdown dropdown-languages toggle-course" hidden>
+                      <a href="#" class="dropdown-button">
+                        <img src="../assets/images/ua.jpg" alt="">
+                        <span>УКР, ГРН</span>
+                        <span class="icon-dropdown"></span>
+                      </a>
+                      <div data-uk-dropdown="mode: click">
+                        <ul class="dropdown-list">
+                          <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
+                          <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
+                          <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
+                          <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
+                          <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="navbar-phone">
-                  <span class="phone">+380 (67)-010-12-02</span>
+                  <div class="navbar-phone">
+                    <span class="phone">+380 (67)-010-12-02</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -232,9 +236,20 @@
       </div>
     </div>
     <main class="main" id="main">
-      <div class="section section-article">
+      <section class="section section-article">
         <article class="blog-post-content">
           <div class="container">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="#">Блог</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#">IT изнутри</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="#">Мария​ ​Кацель,​ ​Plarium:​ ​«Любовь​ ​к​ ​играм​ ​–​ ​показатель нашего​ ​кандидата»</a>
+              </li>
+            </ol>
             <div class="article-content">
               <div class="article-authors">
                 <div class="card-author">
@@ -272,6 +287,11 @@
                     <img src="../assets/images/img-interview-1.jpg" alt="image">
                   </div>
                 </div>
+                <div class="article-image article-image-fullsize">
+                    <div class="card-image">
+                      <img src="../assets/images/img-interview-1.jpg" alt="image">
+                    </div>
+                  </div>
                 <ul class="list list-hyphen article-list">
                   <li class="list-item">компания Plarium Global Ltd. основана в 2009 году и специализируется на создании мобильных, браузерных и социальных игр, которые объединяют более 250 миллионов пользователей по всему миру</li>
                   <li class="list-item">головной офис Plarium расположен в Израиле, а еще 7 студий находятся в Европе и США</li>
@@ -282,6 +302,14 @@
                   <li class="list-item">головной офис Plarium расположен в Израиле, а еще 7 студий находятся в Европе и США</li>
                   <li class="list-item">штат компании насчитывает свыше 1200 сотрудников</li>
                 </ul>
+                <ol class="list list-custom-counter">
+                  <li>компания Plarium Global Ltd. основана в 2009 году и специализируется на создании мобильных, браузерных и социальных игр, которые объединяют более 250 миллионов пользователей по всему миру</li>
+                  <li>головной офис Plarium расположен в Израиле, а еще 7 студий находятся в Европе и США</li>
+                  <li>штат компании насчитывает свыше 1200 сотрудников</li>
+                  <li>головной офис Plarium расположен в Израиле, а еще 7 студий находятся в Европе и США</li>
+                  <li>компания Plarium Global Ltd. основана в 2009 году и специализируется на создании мобильных, браузерных и социальных игр, которые объединяют более 250 миллионов пользователей по всему миру</li>
+                  <li>штат компании насчитывает свыше 1200 сотрудников</li>
+                </ol>
                 <div class="article-image double">
                   <div class="card-image">
                     <img src="../assets/images/img-interview-1.jpg" alt="image">
@@ -293,6 +321,15 @@
                 <div class="border-quote">
                   <h4>Любовь к играм – важный показатель нашего кандидата.</h4>
                 </div>
+                <h4 class="left-bloquote">
+                  Совет для собеседования – быть честным с собой и будущим работодателем, оценить свое желание работать в компании
+                </h4>
+                <p class="content">Многое зависит от специфики и сложности вакансии.  Но в целом рекрутер начинает с выбора источника поиска. Наиболее актуальными для нас остаются социальные сети LinkedIn и Facebook, профессиональные и IT-ресурсы (DOU, Artstation, Dribbble, Behance, GitHub). 
+                  Также используем AmazingHiring. А самые качественные резюме и портфолио чаще всего присылают на официальный сайт компании. 
+                </p>
+                <p class="content">Многое зависит от специфики и сложности вакансии.  Но в целом рекрутер начинает с выбора источника поиска. Наиболее актуальными для нас остаются социальные сети LinkedIn и Facebook, профессиональные и IT-ресурсы (DOU, Artstation, Dribbble, Behance, GitHub). 
+                  Также используем AmazingHiring. А самые качественные резюме и портфолио чаще всего присылают на официальный сайт компании. 
+                </p>
               </div>
               <div class="article-authors-socials">
                 <ul class="list socials-list author-socials-list">
@@ -316,7 +353,31 @@
             </div>
           </div>
         </article>
-      </div>
+      </section>
+      <section class="section section-subscription-blog">
+        <div class="container">
+          <div class="newsletter newsletter-blog">
+            <div class="newsletter-container">
+              <div class="newsletter-title">
+                Подпишись на рассылку, чтоб <br>не пропускать полезные статьи
+              </div>
+              <form action="#" class="form form-newsletter">
+                <div class="form-group">
+                  <input type="text" minlength="4" required="" class="is-empty">
+                  <label class="placeholder">Имя</label>
+                </div>
+                <div class="form-group">
+                  <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="" class="is-empty">
+                  <label class="placeholder">E-mail</label>
+                </div>
+                <div class="form-group-button">
+                  <button class="button">Подписаться</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section section-posts-secondary" id="section-posts-secondary">
         <div class="section-foreground">
           <div class="section-body">

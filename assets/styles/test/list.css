@@ -1,0 +1,13 @@
+.test-info-list {
+  margin-bottom: var(--base-line-height);
+  padding: 0;
+  list-style: none;
+}
+
+.test-info-list .list-item {
+  margin-bottom: var(--base-line-height);
+}
+
+.list-test {
+  padding-left: 7%;
+}

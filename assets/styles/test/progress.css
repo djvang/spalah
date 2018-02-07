@@ -1,0 +1,9 @@
+.progressbar {
+  width: 100%;
+}
+
+.progressbar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
