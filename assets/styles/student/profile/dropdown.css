@@ -13,9 +13,10 @@
 }
 
 .dropdown-student-profile .dropdown-button {
+  margin-left: -18px;
   display: flex;
   justify-content: center;
-  width: 120px;
+  /*width: 120px;*/
 }
 .dropdown-student-profile .dropdown-button::before {
   min-width: 120px;

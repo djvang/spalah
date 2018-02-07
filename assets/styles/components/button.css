@@ -27,6 +27,13 @@
   transition: background-color 0.25s, box-shadow 0.25s, opacity 0.25s;
 }
 
+.button-small {
+  min-height: 35px;
+  padding: 4px 16px;
+  font-size: 10px;
+}
+
+
 .button:not(:disabled) {
   cursor: pointer;
 }
