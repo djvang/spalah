@@ -26,12 +26,12 @@
   margin: 0 5px 0 0;
 }
 
-.page-test-checklist .active-group {
+.page-test-checklist .group-button {
   display: flex;
   justify-content: space-between;
 }
 
-.page-test-radiobutton .active-group {
+.page-test-radiobutton .group-button {
   justify-content: flex-end;
   display: flex;
 }
@@ -59,12 +59,7 @@
   text-align: center;
 }
 
-.footer-test-checklist {
-  padding-top: var(--base-line-height);
-  border-top: 1px solid var(--border-color);
-}
-
-.footer-test-radiobutton {
+.section-footer {
   padding-top: var(--base-line-height);
   border-top: 1px solid var(--border-color);
 }
@@ -74,31 +69,20 @@
   padding-left: 10%;
 }
 
-.body-test-radiobutton {
-  display: flex;
-  flex-grow: 1;
+.section-main-test .section-body {
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
 }
 
-.body-test-checklist {
-  display: flex;
-  flex-grow: 1;
-}
-
-.body-test-checklist .content-box {
+.section-body .content-box {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
 }
 
-.body-test-radiobutton .content-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 100%;
-}
-
-.header-test-checklist, .header-test-radiobutton {
+.section-header {
   margin-bottom: var(--base-line-height);
 }
 
@@ -117,19 +101,11 @@
 }
 
 @media (max-width: 450px) {
-  .page-test-checklist .active-group {
+  .section-main-test .group-button {
     flex-direction: column;
   }
 
-  .page-test-checklist .active-group .button-outline {
-    margin-bottom: var(--base-line-height);
-  }
-
-  .page-test-radiobutton .active-group {
-    flex-direction: column;
-  }
-
-  .page-test-radiobutton .active-group .button-outline {
+  .section-main-test .group-button .button-outline {
     margin-bottom: var(--base-line-height);
   }
 
