@@ -7,3 +7,7 @@
 .test-info-list .list-item {
   margin-bottom: var(--base-line-height);
 }
+
+.list-test {
+  padding-left: 7%;
+}

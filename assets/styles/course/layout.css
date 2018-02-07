@@ -67,6 +67,16 @@
   grid-template-areas: "a a a a a a a a" "b b b b b b b b";
 }
 
+.layout-direction {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "a a b b b b b b";
+}
+
+.layout-direction-courses {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: "a a a a a a a a";
+}
+
 @media (min-width: 768px) {
   .layout-program-course {
     grid-template-areas: "a a a a a a a a a a a a a a a a" "b b b b b c c c c . . . . . . ." "d d d d d d d d d d d d d d d d" "e e e e e e e e e e e e e e e e" "f f f f f f f f f f f f f f f f";

@@ -2,6 +2,7 @@
   z-index: 1;
   background-color: #fff;
   transition: filter 0.25s;
+  will-change: transform;
 }
 
 .card-course > * {
@@ -97,3 +98,22 @@
   transform: translateY(120%);
 }
 
+.card-direction-courses {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-direction-courses .card-body {
+margin-bottom: var(--base-line-height);
+}
+
+.card-direction-courses .card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.card-info-text .card-active {
+  display: flex;
+  justify-content: flex-end;
+}
