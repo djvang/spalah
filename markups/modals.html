@@ -27,6 +27,17 @@
       <button class="button" data-uk-toggle="target: #modal-student-course-request-towns-example">Покупка курса (Наборы на курс очно)</button>
       <button class="button" data-uk-toggle="target: #modal-student-course-registration">Регистрация на курс</button>
       <button class="button" data-uk-toggle="target: #modal-student-course-login">Вход в личный кабинет</button>
+      <button class="button" data-uk-toggle="target: #modal-call-me">Обратный звонок</button>
+      <button class="button" data-uk-toggle="target: #modal-call-me-end">Обратный звонок(end)</button>
+      <button class="button" data-uk-toggle="target: #modal-subscription-end">Подписка на новости(end)</button>
+      <button class="button" data-uk-toggle="target: #modal-intensive">modal-intensive</button>
+      <button class="button" data-uk-toggle="target: #modal-online-offline">modal-online-offline</button>
+      <button class="button" data-uk-toggle="target: #modal-intensive-intensity">modal-intensive-intensity</button>
+      <button class="button" data-uk-toggle="target: #modal-payment-by-installments">modal-payment-by-installments</button>
+      <button class="button" data-uk-toggle="target: #modal-discount-system">modal-discount-system</button>
+      <button class="button" data-uk-toggle="target: #modal-refund-policy">modal-refund-policy</button>
+      <button class="button" data-uk-toggle="target: #modal-get-program">Получить программу</button> 
+      <button class="button" data-uk-toggle="target: #modal-class-schedule">Календарь занятий</button>       
     </div>
   </div>
 
@@ -2011,6 +2022,465 @@
             <img src="../assets/images/photo-2.jpg" alt="photo">
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-call-me" class="uk-modal uk-modal-call-me uk-modal-small" uk-modal="sel-close: .uk-modal-close-default, .uk-modal-close">
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <div class="uk-modal-header">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h4 class="uk-modal-title">Обратный звонок</h4>
+      </div>
+      <div class="uk-modal-body">
+        <form action="#" class="form form-call-me">
+          <div class="form-groups form-group-fullname">
+            <div class="form-group">
+              <input type="text" required>
+              <label class="placeholder">Имя</label>
+            </div>
+            <div class="form-group">
+              <input type="tel" pattern="\+[0-9]{3}\s\([0-9]{2}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                      data-inputmask-showmaskonhover="false" data-inputmask="'mask': '+380 (99) 999-99-99'" required>
+              <label class="placeholder">Номер телефона</label>
+            </div>
+          </div>
+          <div class="form-groups form-group-info">
+            <div class="form-group">
+              После отправки заявки на обратный
+              звонок наш менеджер свяжется с вами
+              в течение 1-5 минут.
+            </div>
+          </div>
+          <div class="form-groups form-group-actions">
+            <div>
+              <button class="button button-block">Отправить заявку</button>
+              <button class="button-link button-block uk-modal-close">Отменить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-call-me-end" class="uk-modal uk-modal-call-me-end uk-modal-small" uk-modal="sel-close: .uk-modal-close-default, .uk-modal-close">
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <div class="uk-modal-header">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h4 class="uk-modal-title">Обратный звонок</h4>
+      </div>
+      <div class="uk-modal-body">
+        <div class="modal-image">
+          <span class="icon-check"></span>
+        </div>
+        <div class="modal-description">
+          Ваша заявка принята<br> и обрабатываеться менеджером. Ожидайте звонка
+        </div>
+        <div>
+          <button class="button button-block">Ок</button>
+          <button class="button-link button-block uk-modal-close">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-subscription-end" class="uk-modal uk-modal-subscription-end uk-modal-small" uk-modal="sel-close: .uk-modal-close-default, .uk-modal-close">
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <div class="uk-modal-header">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h4 class="uk-modal-title">Спасибо, что вы с нами!</h4>
+      </div>
+      <div class="uk-modal-body">
+        <div class="modal-image">
+          <span class="icon-check"></span>
+        </div>
+        <div class="modal-description">
+          Подписка на новости Spalah<br> прошла успешно
+        </div>
+        <div>
+          <button class="button button-block">Ок</button>
+          <button class="button-link button-block uk-modal-close">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-get-program" class="uk-modal uk-modal-get-program uk-modal-small" uk-modal="sel-close: .uk-modal-close-default, .uk-modal-close">
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <div class="uk-modal-header">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h4 class="uk-modal-title">Пролучить полную программу курса</h4>
+      </div>
+      <div class="uk-modal-body">
+        <form action="#" class="form form-call-me">
+          <div class="form-groups form-group-fullname">
+            <div class="form-group">
+              <input type="text" required>
+              <label class="placeholder">Имя</label>
+            </div>
+            <div class="form-groups form-group-email">
+              <div class="form-group">
+                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="" class="is-empty">
+                <label class="placeholder">E-mail</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-groups form-group-info">
+            <div class="form-group">
+              После отправки заявки в течении<br>
+              1-5 минут на ваш электронный ящик
+              придет письмо с программой
+            </div>
+          </div>
+          <div class="form-groups form-group-actions">
+            <div>
+              <button class="button button-block">Отправить заявку</button>
+              <button class="button-link button-block uk-modal-close">Отменить</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-online-offline" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <div class="uk-modal-header">
+        <button class="uk-modal-close-default uk-close uk-icon" type="button" uk-close="">
+          <!-- <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" ratio="1">
+            <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+            <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+          </svg> -->
+        </button>
+        <h4 class="uk-modal-title">Онлайн + Офлайн</h4>
+      </div>
+      <div class="uk-modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae dicta eveniet iusto praesentium sit! At
+        iure molestias nihil placeat quod sint veritatis. Nostrum quaerat quibusdam similique. Animi, officia, quae?
+        <ul class="list list-hyphen">
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+        </ul>
+        <a href="#">Link</a>
+      </div>
+    </div>
+  </div>
+  <div id="modal-intensive" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <div class="uk-modal-header">
+        <button class="uk-modal-close-default uk-close uk-icon" type="button" uk-close="">
+          <!-- <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" ratio="1">
+            <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+            <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+          </svg> -->
+        </button>
+        <h4 class="uk-modal-title">Интенсив</h4>
+      </div>
+      <div class="uk-modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae dicta eveniet iusto praesentium sit! At
+        iure molestias nihil placeat quod sint veritatis. Nostrum quaerat quibusdam similique. Animi, officia, quae?
+        <ul class="list list-hyphen">
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+        </ul>
+        <a href="#">Link</a>
+      </div>
+    </div>
+  </div>
+  <div id="modal-intensive-intensity" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <div class="uk-modal-header">
+        <button class="uk-modal-close-default uk-close uk-icon" type="button" uk-close="">
+          <!-- <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" ratio="1">
+            <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+            <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+          </svg> -->
+        </button>
+        <h4 class="uk-modal-title">Очный интенсив</h4>
+      </div>
+      <div class="uk-modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae dicta eveniet iusto praesentium sit! At
+        iure molestias nihil placeat quod sint veritatis. Nostrum quaerat quibusdam similique. Animi, officia, quae?
+        <ul class="list list-hyphen">
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+        </ul>
+        <a href="#">Link</a>
+      </div>
+    </div>
+  </div>
+  <div id="modal-payment-by-installments" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <div class="uk-modal-header">
+        <button class="uk-modal-close-default uk-close uk-icon" type="button" uk-close="">
+          <!-- <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" ratio="1">
+            <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+            <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+          </svg> -->
+        </button>
+        <h4 class="uk-modal-title">Оплата частями</h4>
+      </div>
+      <div class="uk-modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae dicta eveniet iusto praesentium sit! At
+        iure molestias nihil placeat quod sint veritatis. Nostrum quaerat quibusdam similique. Animi, officia, quae?
+        <ul class="list list-hyphen">
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+        </ul>
+        <a href="#">Link</a>
+      </div>
+    </div>
+  </div>
+  <div id="modal-discount-system" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <div class="uk-modal-header">
+        <button class="uk-modal-close-default uk-close uk-icon" type="button" uk-close="">
+          <!-- <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" ratio="1">
+            <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+            <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+          </svg> -->
+        </button>
+        <h4 class="uk-modal-title">Cкидочная система</h4>
+      </div>
+      <div class="uk-modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae dicta eveniet iusto praesentium sit! At
+        iure molestias nihil placeat quod sint veritatis. Nostrum quaerat quibusdam similique. Animi, officia, quae?
+        <ul class="list list-hyphen">
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+        </ul>
+        <a href="#">Link</a>
+      </div>
+    </div>
+  </div>
+  <div id="modal-refund-policy" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <div class="uk-modal-header">
+        <button class="uk-modal-close-default uk-close uk-icon" type="button" uk-close="">
+          <!-- <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" ratio="1">
+            <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+            <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+          </svg> -->
+        </button>
+        <h4 class="uk-modal-title">Условия возврата денег</h4>
+      </div>
+      <div class="uk-modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae dicta eveniet iusto praesentium sit! At
+        iure molestias nihil placeat quod sint veritatis. Nostrum quaerat quibusdam similique. Animi, officia, quae?
+        <ul class="list list-hyphen">
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+          <li>Lorem ipsum dolor.</li>
+        </ul>
+        <a href="#">Link</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-class-schedule" class="uk-modal uk-modal-class-schedule" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+      <div class="uk-modal-header">
+        <button class="uk-modal-close-default uk-close uk-icon" type="button" uk-close=""></button>
+        <h4 class="uk-modal-title">Календарь занятий</h4>
+      </div>
+      <div class="uk-modal-body" uk-overflow-auto>
+        <table class="table table-program-course">
+          <tbody>
+            <tr>
+              <td>
+                <div class="course-program-module">
+                  <div class="course-program-module-header">
+                    <span class="course-program-module-count">Занятие 1.</span>
+                    <span class="course-program-module-title">Лекция.</span>
+                    <span class="course-program-module-teacher">Денис Ликсунов</span>
+                  </div>
+                  <div class="course-program-module-description">
+                    Введения в дизайн. Основные визуальные принципы
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="schedule">
+                  <span class="date">5 янв.</span>
+                  <span class="time">19:00</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="course-program-module">
+                  <div class="course-program-module-header">
+                    <span class="course-program-module-count">Занятие 1.</span>
+                    <span class="course-program-module-title">Лекция.</span>
+                    <span class="course-program-module-teacher">Денис Ликсунов</span>
+                  </div>
+                  <div class="course-program-module-description">
+                    Введения в дизайн. Основные визуальные принципы
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="schedule">
+                  <span class="date">5 янв.</span>
+                  <span class="time">19:00</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="course-program-module">
+                  <div class="course-program-module-header">
+                    <span class="course-program-module-count">Занятие 1.</span>
+                    <span class="course-program-module-title">Лекция.</span>
+                    <span class="course-program-module-teacher">Денис Ликсунов</span>
+                  </div>
+                  <div class="course-program-module-description">
+                    Введения в дизайн. Основные визуальные принципы
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="schedule">
+                  <span class="date">5 янв</span>
+                  <span class="time">19:00</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="course-program-module">
+                  <div class="course-program-module-header">
+                    <span class="course-program-module-count">Занятие 1.</span>
+                    <span class="course-program-module-title">Лекция.</span>
+                    <span class="course-program-module-teacher">Денис Ликсунов</span>
+                  </div>
+                  <div class="course-program-module-description">
+                    Введения в дизайн. Основные визуальные принципы
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="schedule">
+                  <span class="date">5 янв.</span>
+                  <span class="time">19:00</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="course-program-module">
+                  <div class="course-program-module-header">
+                    <span class="course-program-module-count">Занятие 1.</span>
+                    <span class="course-program-module-title">Лекция.</span>
+                    <span class="course-program-module-teacher">Денис Ликсунов</span>
+                  </div>
+                  <div class="course-program-module-description">
+                    Введения в дизайн. Основные визуальные принципы
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="schedule">
+                  <span class="date">5 янв.</span>
+                  <span class="time">19:00</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="course-program-module">
+                  <div class="course-program-module-header">
+                    <span class="course-program-module-count">Занятие 1.</span>
+                    <span class="course-program-module-title">Лекция.</span>
+                    <span class="course-program-module-teacher">Денис Ликсунов</span>
+                  </div>
+                  <div class="course-program-module-description">
+                    Введения в дизайн. Основные визуальные принципы
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="schedule">
+                  <span class="date">5 янв.</span>
+                  <span class="time">19:00</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="course-program-module">
+                  <div class="course-program-module-header">
+                    <span class="course-program-module-count">Занятие 1.</span>
+                    <span class="course-program-module-title">Лекция.</span>
+                    <span class="course-program-module-teacher">Денис Ликсунов</span>
+                  </div>
+                  <div class="course-program-module-description">
+                    Введения в дизайн. Основные визуальные принципы
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="schedule">
+                  <span class="date">5 янв.</span>
+                  <span class="time">19:00</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="course-program-module">
+                  <div class="course-program-module-header">
+                    <span class="course-program-module-count">Занятие 1.</span>
+                    <span class="course-program-module-title">Лекция.</span>
+                    <span class="course-program-module-teacher">Денис Ликсунов</span>
+                  </div>
+                  <div class="course-program-module-description">
+                    Введения в дизайн. Основные визуальные принципы
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="schedule">
+                  <span class="date">5 янв.</span>
+                  <span class="time">19:00</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="uk-modal-footer">
+        <div class="button-calendar-group">  
+          <div class="button-calendar-google">
+            <a href="#" class="calendar">
+              <img src="../assets/images/google-calendar.png" alt="google calendar">
+            </a>
+            <div class="add-description color-light">Добавить расписание<br> в свой Google календарь</div>                 
+          </div>
+          <div class="button-calendar-apple">
+            <a href="#" class="calendar">
+              <img src="../assets/images/google-calendar.png" alt="google calendar">
+            </a>
+            <div class="add-description color-light">Добавить расписание<br> в свой Apple календарь</div>                 
+          </div>
+        </div>   
       </div>
     </div>
   </div>

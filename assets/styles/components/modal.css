@@ -234,3 +234,108 @@
   object-fit: cover;
   opacity: 0.5;
 }
+
+.uk-modal-class-schedule .course-program-module > * {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: var(--color-light);
+  font-weight: 300;
+}
+
+.uk-modal-class-schedule .course-program-module-title {
+  color: var(--color-light);
+  font-weight: 300;
+}
+
+.uk-modal-class-schedule .course-program-module-description {
+  color: var(--base-color);
+  font-weight: 500;
+}
+
+.uk-modal-class-schedule .schedule {
+  text-align: right;
+}
+
+.uk-modal-class-schedule .uk-modal-dialog {
+  width: 800px;
+}
+
+.uk-modal-class-schedule .table-program-course th:first-child, 
+.uk-modal-class-schedule .table-program-course td:first-child {
+  width: 70%;
+  padding-right: 40px;
+}
+
+.uk-modal-class-schedule .calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+}
+
+.uk-modal-class-schedule .uk-modal-footer {
+  padding: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.uk-modal-footer .button-calendar-group {
+  display: flex;
+}
+
+.uk-modal-footer .icon-calendar {
+  padding-right: 10px;
+}
+
+.uk-modal-footer .button-calendar-google {
+  border-right: 1px solid var(--border-color);
+}
+
+.uk-modal-footer .button-calendar-google,
+.uk-modal-footer .button-calendar-apple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 15px 30px;
+}
+
+.uk-modal-call-me-end .modal-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.uk-modal-call-me-end span {
+  font-size: 180px;
+  color: var(--color-primary);
+  line-height: 0.9;
+}
+
+.uk-modal-call-me-end .modal-description {
+  text-align: center;
+  margin-bottom: var(--base-line-height);
+}
+
+.uk-modal-subscription-end .modal-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.uk-modal-subscription-end span {
+  font-size: 180px;
+  color: var(--color-primary);
+  line-height: 0.9;
+}
+
+.uk-modal-subscription-end .modal-description {
+  text-align: center;
+  margin-bottom: var(--base-line-height);
+}
+
+.uk-overflow-auto {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
