@@ -26,7 +26,7 @@
         <nav class="navbar" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
           <div class="container">
             <div class="navbar-container">
-              <div>
+              <div class="navbar-left">
                 <a class="navbar-brand">
                   <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="81" height="32" viewBox="0 0 81 32">
                     <title>i-logo</title>
@@ -46,51 +46,55 @@
                   </svg>
                 </a>
               </div>
-              <ul class="navbar-nav">
-                <li><a href="#">Образование</a></li>
-                <li><a href="#">Мероприятия</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-button">Коворкинг <span class="icon-dropdown"></span></a>
-                  <div data-uk-dropdown="mode: click">
-                    <ul class="dropdown-list">
-                      <li><a href="#">на Девичей</a></li>
-                      <li><a href="#">на Лопанской набережной</a></li>
-                    </ul>
+              <div class="navbar-center">
+                <ul class="navbar-nav">
+                  <li><a href="#">Образование</a></li>
+                  <li><a href="#">Мероприятия</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-button">Коворкинг <span class="icon-dropdown"></span></a>
+                    <div data-uk-dropdown="mode: click">
+                      <ul class="dropdown-list">
+                        <li><a href="#">на Девичей</a></li>
+                        <li><a href="#">на Лопанской набережной</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#">Блог</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="navbar-right">
+                <div class="navbar-dropdown">
+                  <div class="dropdown dropdown-languages toggle-course" hidden>
+                    <a href="#" class="dropdown-button">
+                      <img src="../assets/images/ua.jpg" alt="">
+                      <span>УКР, ГРН</span>
+                      <span class="icon-dropdown"></span>
+                    </a>
+                    <div data-uk-dropdown="mode: click">
+                      <ul class="dropdown-list">
+                        <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
+                        <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
+                        <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
+                        <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
+                        <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
+                      </ul>
+                    </div>
                   </div>
-                </li>
-                <li><a href="#">Блог</a></li>
-                <li><a href="#">Контакты</a></li>
-              </ul>
-              <div class="navbar-dropdown">
-                <div class="dropdown dropdown-languages toggle-course" hidden>
+                </div>
+                <div class="dropdown dropdown-student-profile">
                   <a href="#" class="dropdown-button">
-                    <img src="../assets/images/ua.jpg" alt="">
-                    <span>УКР, ГРН</span>
+                    <div class="dropdown-student-profile-avatar">
+                      <img src="../assets/images/img-interview-1.jpg" alt="">
+                    </div>
                     <span class="icon-dropdown"></span>
                   </a>
                   <div data-uk-dropdown="mode: click">
                     <ul class="dropdown-list">
-                      <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
-                      <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
-                      <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
-                      <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
-                      <li><a href="#"><img src="../assets/images/ua.jpg" alt=""><span>УКР, ГРН</span></a></li>
+                      <li><a href="#">Настройки</a></li>
+                      <li><a href="#">Выход</a></li>
                     </ul>
                   </div>
-                </div>
-              </div>
-              <div class="dropdown dropdown-student-profile">
-                <a href="#" class="dropdown-button">
-                  <div class="dropdown-student-profile-avatar">
-                    <img src="../assets/images/img-interview-1.jpg" alt="">
-                  </div>
-                  <span class="icon-dropdown"></span>
-                </a>
-                <div data-uk-dropdown="mode: click">
-                  <ul class="dropdown-list">
-                    <li><a href="#">Настройки</a></li>
-                    <li><a href="#">Выход</a></li>
-                  </ul>
                 </div>
               </div>
             </div>

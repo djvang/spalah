@@ -14,3 +14,28 @@
 .author-socials-list > li:last-child {
   margin-bottom: 0;
 }
+
+.list-custom-counter {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.list-custom-counter > li {
+  counter-increment: step-counter;
+  margin-bottom: var(--base-line-height);
+  padding-left: 60px;
+  position: relative;
+}
+
+.list-custom-counter > li:before {
+  content: "0" counter(step-counter);
+  margin-right: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 3px 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--color-primary);
+}

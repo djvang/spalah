@@ -15,10 +15,10 @@
 .swiper-course-teachers .swiper-pagination-custom,
 .swiper-course-teachers .swiper-pagination-bullets {
   display: flex;
-  bottom: auto !important;
+  bottom: auto;
   top: 0;
-  left: 50% !important;
-  width: auto !important;
+  left: 535px;
+  width: auto;
 }
 
 .swiper-work-students-course .swiper-buttons {
