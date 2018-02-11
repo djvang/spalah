@@ -38,6 +38,7 @@
 .layout-program-event {
   position: relative;
   grid-template-columns: repeat(8, 1fr);
+    grid-gap: 72px var(--grid-gap);
   margin-top: calc(var(--base-line-height) * 3);
   margin-bottom: calc(var(--base-line-height) * 3);
   grid-template-areas:

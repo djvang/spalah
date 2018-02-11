@@ -78,11 +78,9 @@
   overflow: hidden;
 }
 
-.section-actions {
+* + .section-actions {
   margin-top: calc(var(--base-line-height) * 4);
-  text-align: center;
 }
-
 
 .section-profile-student {
   padding-top: calc(var(--base-line-height) * 6);
@@ -93,23 +91,8 @@
 }
 
 .section-article {
-  margin-top: calc(var(--base-line-height) * 3) !important;
-  margin-bottom: calc(var(--base-line-height) * 5) !important;
-}
-
-.section-test {
-  margin-top: calc(var(--base-line-height) * 6) !important;
-  margin-bottom: calc(var(--base-line-height) * 3) !important;
-}
-
-.section-main-test {
   margin-top: calc(var(--base-line-height) * 3);
-  margin-bottom: calc(var(--base-line-height) * 3);
-  height: calc(100vh - calc(var(--base-line-height) * 6));
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  margin-bottom: calc(var(--base-line-height) * 5);
 }
-
 
 

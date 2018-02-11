@@ -9,15 +9,7 @@
 }
 
 .teacher-fullname {
-  margin-right: -10px;
-  margin-left: -10px;
-  display: flex;
-}
-
-.teacher-fullname h1{
   font-size: 60px;
-  margin-top: 0;
-  padding: 0 10px;
 }
 
 .teacher-social-list {
