@@ -1,0 +1,11 @@
+.section-test {
+    user-select: none;
+}
+.section-test > * {
+    padding-top: calc(var(--base-line-height));
+    padding-bottom: calc(var(--base-line-height));
+}
+
+.section-test .section-actions {
+    display: flex;
+}

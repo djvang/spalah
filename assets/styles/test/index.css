@@ -1,3 +1,19 @@
-@import "page.css";
 @import "list.css";
-@import "progress.css";
+@import "section.css";
+@import "form.css";
+
+
+.test-result {
+    font-size: 20px;
+}
+.test-result-value {
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.test-meta-list {
+    list-style: none;
+    padding-left: 0;
+}

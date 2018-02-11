@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'spalah';
-  src:  url('fonts/spalah.eot?pj31pf');
-  src:  url('fonts/spalah.eot?pj31pf#iefix') format('embedded-opentype'),
-    url('fonts/spalah.ttf?pj31pf') format('truetype'),
-    url('fonts/spalah.woff?pj31pf') format('woff'),
-    url('fonts/spalah.svg?pj31pf#spalah') format('svg');
+  src:  url('fonts/spalah.eot?urvltj');
+  src:  url('fonts/spalah.eot?urvltj#iefix') format('embedded-opentype'),
+    url('fonts/spalah.ttf?urvltj') format('truetype'),
+    url('fonts/spalah.woff?urvltj') format('woff'),
+    url('fonts/spalah.svg?urvltj#spalah') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -29,6 +29,9 @@
 }
 .icon-sign-in:before {
   content: "\f090";
+}
+.icon-unlock:before {
+  content: "\f09c";
 }
 .icon-mobile:before {
   content: "\f10b";
