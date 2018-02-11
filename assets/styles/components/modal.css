@@ -71,8 +71,44 @@
 .uk-modal-footer {
   padding: 15px 30px;
   background: #fff;
-  border-top: 1px solid #e5e5e5
+  border-top: 1px solid #e5e5e5;
+
 }
+
+.uk-modal-footer-items {
+  display: flex;
+  align-items: center;
+}
+
+.uk-modal-footer-item + .uk-modal-footer-item {
+  border-left: 1px solid #e5e5e5
+}
+
+.uk-modal-footer-item {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.uk-modal-footer-action {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--color-light);
+  text-align: left;
+  padding: 10px;
+}
+
+.uk-modal-footer-action-icon {
+  margin-right: 16px;
+}
+
+.uk-modal-footer-action-icon img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  display: block;
+}
+
 
 .uk-modal-body::before, .uk-modal-body::after, .uk-modal-header::before, .uk-modal-header::after, .uk-modal-footer::before, .uk-modal-footer::after {
   content: "";

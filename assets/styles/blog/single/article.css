@@ -1,49 +1,9 @@
-.article-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.article-content-text {
-  max-width: 700px;
-  padding: 0 25px;
-}
-
 .article-content .quote {
   margin-top: calc(var(--base-line-height) * 2);
   margin-bottom: calc(var(--base-line-height) * 2);
 }
 
-.smoll {
-  font-size: 20px;
-  line-height: calc(var(--base-line-height) * 1.5);
-}
-
-.article-image {
-  height: calc(var(--base-line-height) * 18);
-  margin-top: calc(var(--base-line-height) * 3);
-  margin-bottom: calc(var(--base-line-height) * 3);
-}
-
-.article-image > div {
-  height: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.article-image img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.double {
-  display: flex;
-  justify-content: space-between;
-  margin-left: -10px;
-  margin-right: -10px;
-}
-
-.border-quote {
+.quote-border {
   padding: 15px;
   display: flex;
   justify-content: center;
@@ -53,12 +13,63 @@
   margin-bottom: calc(var(--base-line-height) * 2);
 }
 
-.blog-post-content .breadcrumb {
+.quote.small {
+  font-size: 20px;
+  line-height: calc(var(--base-line-height) * 1.5);
+}
+
+.article {
+  max-width: 1154px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-gap: var(--grid-gap);
+}
+
+.article:not(:first-child) {
+  margin-top: calc(var(--base-line-height) * 4);
+}
+
+.article-body {
+  grid-column: 3 / 6;
+}
+
+.article-aside-left {
+  grid-column: 1 / 3;
+}
+
+.article-aside-right {
+  grid-column: 6 / 9;
+}
+
+.article-image {
+  margin-top: calc(var(--base-line-height) * 3);
   margin-bottom: calc(var(--base-line-height) * 3);
 }
 
+.article-image.double {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.article-image img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .article-image-fullsize {
-  margin-left: calc((100vw -100%) / -2);
-  margin-right: calc((100vw -100%) / -2);
-  height: auto;
+  margin-left: calc((100vw - 100%) / -2);
+  margin-right: calc((100vw - 100%) / -2);
+}
+
+.article-image-fullsize img {
+  max-height: 70vh;
+}
+
+.article-socials .socials-list > li  {
+  display: flex;
+  margin-bottom: 8px;
 }

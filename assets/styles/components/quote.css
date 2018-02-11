@@ -12,7 +12,7 @@
   margin-bottom: 0;
 }
 
-.left-bloquote {
+.quote-left {
   border-bottom: 1px solid var(--border-color);
   border-top: 1px solid var(--border-color);
   float: left;
@@ -21,4 +21,19 @@
   text-align: left;
   width: 70%;
   min-width: 250px;
+}
+
+
+.quote-left {
+  border-bottom: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+  float: left;
+  padding: 35px 0;
+  text-align: left;
+  margin-left: calc((100vw - 100%) / -6);
+  margin-right: 35px;
+  margin-top: 10px;
+  max-width: 450px;
+  font-size: 20px;
+  font-weight: bold;
 }
