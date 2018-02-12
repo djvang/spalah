@@ -16,6 +16,8 @@
 @import "toolbar.css";
 @import "offcanvas.css";
 @import "filters.css";
+@import "progress.css";
+@import "badge.css";
 
 @import "container.css";
 @import "grid.css";

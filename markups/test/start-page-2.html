@@ -12,44 +12,53 @@
   <link rel="stylesheet" href="../../assets/styles/main.css">
 
 </head>
-<body class="page page-start-test">
+<body class="page page-test page-test-start">
   <div class="wrapper uk-offcanvas-content">
     <main class="main" id="main">
-      <div class="section section-test">
-        <div class="container-full">
-          <div class="page-content">
-            <div class="page-header">
-              <h1 class="title">Тест <br>HTML/CSS <br>Advanced</h1>
+      <form action="#">
+        <div class="section section-test section-test-start section-height-fill">
+          <div class="section-body">
+            <div class="container-full">
+              <h1 class="section-title">Тест HTML/CSS Advanced</h1>
+              <div class="form form-test">
+                <h4 class="form-title">Введите свои данные, чтобы мы могли сгенерировать для Вас тест:</h4>
+                  <div class="form-groups form-group-fullname">
+                    <div class="form-group">
+                      <input type="text" required>
+                      <label class="placeholder">Имя</label>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" required>
+                      <label class="placeholder">Фамилия</label>
+                    </div>
+                  </div>
+                  <div class="form-groups form-group-email">
+                    <div class="form-group">
+                      <input type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                      <label class="placeholder">E-mail</label>
+                    </div>
+                  </div>
+              </div>
             </div>
-            <div class="page-body">
-              <h4 class="page-subtitle">Введите свои данные, чтобы мы могли сгенерировать для Вас тест:</h4>
-              <form action="#" class="form form-test-registretion">
-                <div class="form-groups form-group-fullname">
-                  <div class="form-group">
-                    <input type="text" required="" class="is-empty">
-                    <label class="placeholder">Имя</label>
-                  </div>
-                  <div class="form-group">
-                    <input type="text" required="" class="is-empty">
-                    <label class="placeholder">Фамилия</label>
-                  </div>
-                </div>
-                <div class="form-groups form-group-email">
-                  <div class="form-group">
-                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="" class="is-empty">
-                    <label class="placeholder">E-mail</label>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="page-action">
-              <a href="#" class="button">Начать тест</a>
+          </div>
+          <div class="section-footer">
+            <div class="container-full">
+              <div class="section-actions">
+                <button class="button">Начать тест</button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </main>
-    
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.35/js/uikit.min.js"></script>
+  <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/dependencyLibs/inputmask.dependencyLib.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/inputmask/inputmask.js"></script>
+  <script src="../../assets/scripts/progressbar.js"></script>
+  <script src="../../assets/scripts/main.js"></script>
 </body>
 </html>

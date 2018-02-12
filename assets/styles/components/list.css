@@ -4,7 +4,7 @@
 }
 
 .list > li {
-  margin-bottom: var(--base-line-height);
+  /*margin-bottom: var(--base-line-height);*/
 }
 
 
