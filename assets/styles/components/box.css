@@ -26,6 +26,7 @@
 .box-foreground {
   position: relative;
   display: flex;
+  flex-direction: column;
 }
 
 .box-header {
@@ -104,4 +105,32 @@
 
 .inverse.background-primary.box {
   filter: drop-shadow(0 20px 20px rgba(56, 173, 158, 0.3));
+}
+
+.box-form-event-newsletter-subscription {
+  justify-content: flex-start;
+  min-height: 662px;
+}
+
+.box-form-event-newsletter-subscription .box-header {
+  text-align: center;
+  margin-bottom: calc(var(--base-line-height) * 2);
+}
+
+.box-form-event-newsletter-subscription .form-group-actions {
+  text-align: center;
+}
+
+.box-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.box-pattern.pattern {
+  background-size: 530px 530px;
+  background-position: calc(100% + 8px) calc(100% + 260px);
+  opacity: 0.5;
 }
