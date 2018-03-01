@@ -159,6 +159,16 @@
   transition: box-shadow 0.25s;
 }
 
+.card-message {
+  text-align: center;
+}
+.card-message .icon {
+  font-size: 1.8em;
+  color: var(--background-primary);
+  display: inline-flex;
+  margin-bottom: 8px;
+}
+
 /*.card-hover > * {}*/
 
 /*.card-hover::after {*/
