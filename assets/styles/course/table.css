@@ -43,6 +43,11 @@
   width: 40%;
 }
 
+.table-courses th:nth-child(2),
+.table-courses td:nth-child(2) {
+    /*width: 30%;*/
+}
+
 .table-courses th:last-child,
 .table-courses td:last-child {
   text-align: right;
