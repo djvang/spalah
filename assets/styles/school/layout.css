@@ -36,9 +36,15 @@
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1368px) {
     .layout-educational-programs-body {
         grid-template-areas: "a b b b b b b b" "c c c c c c c c";
+    }
+}
+
+@media (max-width: 1367px) {
+    .layout-educational-programs-body {
+        grid-template-areas: "a a a a a a a a" "b b b b b b b b" "c c c c c c c c";
     }
 }
 

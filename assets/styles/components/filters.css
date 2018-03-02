@@ -21,3 +21,54 @@
 .content-filter > :not(.uk-active) {
   display: none;
 }
+
+@media (max-width: 1367px) {
+  .list-filters {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .list-filters .list-item:first-child {
+    width: 65%;
+    min-width: 290px;
+    padding-right: 40px;
+  }
+  .filter-title {
+    border-bottom: none;
+  }
+  .filter-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .filter-item {
+    overflow: hidden;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: none;
+  }
+  .filter-control label {
+    padding: 3px 10px 4px 12px;
+    color: var(--color-light);
+    font-size: 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+  }
+  .filter-control label:hover {
+    color: #000;
+    border-color: #000;
+  }
+  .filter-control label:active, 
+  .filter-control label:focus {
+    background-color: var(--color-primary);
+    color: #fff;
+    border-color: var(--color-primary);
+  }
+  .filter-control label input {
+    display: none;
+  }
+
+  
+}
