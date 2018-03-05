@@ -25,14 +25,78 @@
   color: var(--color-light);
 }
 
-@media (max-width: 1023px) {
-    .table-program-course th:not(:nth-child(1)),
-    .table-program-course td:not(:nth-child(1)) {
-        display: none;
-    }
+/* ------------------------ */
+.table-program-course-online td:first-child {
+  border-top: 1px solid var(--border-color);
+}
+
+.table-program-lessons-online th:first-child,
+.table-program-lessons-online td:first-child {
+  width: 60%;
+  padding-right: 40px;
+}
+
+.table-program-lessons-online th:nth-child(2),
+.table-program-lessons-online td:nth-child(2) {
+  width: 10%;
+}
+
+.table-program-course-online .course-program-module {
+  width: 65%;
+}
+
+.table-program-course-online .course-program-module-count {
+  font-size: 20px;
+}
+
+.table-program-course-online .course-program-module-title {
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.table-program-course-online .button {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.course-program-module-description .label {
+  color: #000;
+}
+
+.table-program-lessons-online td {
+  border-bottom: none;
+  border-top: 1px solid var(--border-color);
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.table-program-lessons-online td, th {
+  height: calc(var(--base-line-height) * 2 - 1px);
+}
+
+.sub-table {
+  margin-left: 70px;
+  padding-bottom: calc(var(--base-line-height) * 2);
+  padding-top: calc(var(--base-line-height) * 1);
+}
+
+.table-action {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.lesson-program-module-title {
+  color: #000;
+}
+
+.table-program-course-online .lesson-program-module-count {
+  color: var(--color-light);
 }
 
 
+/* -------------------- */
 .table-courses th,
 .table-courses td {
   padding-right: 35px;
@@ -62,4 +126,22 @@
 
 .table-courses .button-icon:not(:hover):not(:focus):not(:active) {
   color: var(--color-light);
+}
+
+
+@media (max-width: 1200px) {
+  .table-program-course-online .course-program-module {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1023px) {
+    .table-program-course th:not(:nth-child(1)),
+    .table-program-course td:not(:nth-child(1)) {
+        display: none;
+    }
+    .table-program-course-online th:not(:nth-child(1)),
+    .table-program-course-online td:not(:nth-child(1)) {
+        display: none;
+    }
 }
